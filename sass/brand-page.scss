@@ -1,0 +1,109 @@
+#brand-page{
+    .section-title{
+        color: white; position: relative; display: grid;  grid-gap: 50px; font-family: "Avenir-Condenced-Italic"; text-align: left; justify-content: flex-start;
+        
+        &::after{display: none;}
+    }
+
+    section.section{background: #022c86;}
+    .section.gold {
+        background: #022c86 url('../images/backgrounds/bay-of-gold-bg.jpg');
+        .container{padding-left: 0; max-width: 100%;}
+        .content-data{
+            display: grid; grid-template-columns: 1fr 1fr; color: white; 
+
+            .image-responsive{position: absolute; width: 45vw; height: 100%;}
+            .image-responsive img{object-position: center right;}
+            .content-area{
+                padding-bottom: 200px; margin-left: -20vw; position: relative; z-index: 9;
+                .description-holder{
+                    max-width: 950px;
+                    p{font-size: 30px; line-height: 1.6; }
+                
+    
+                }
+                .availability-data{
+                    padding-left: 25%; margin-top: 100px;
+                    h5{font-size: 30px; margin-bottom: 50px;}
+
+                    .items-holder{
+                        display: grid;grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 1200px;
+                        .item img{width: 100%;}
+                                              
+                    }
+                }
+
+            }
+        }
+    }
+
+    &.gold-standard{
+        .section.gold .content-data{
+            .image-responsive{width: 50vw;}
+            .content-area{
+                padding-bottom: 120px; padding-top: 75px;
+                .description-holder{max-width: 100%;}
+                .availability-data{
+                    margin-top: 340px; padding-left: 37%;
+                    
+                    .items-holder{grid-template-columns: repeat(3, 1fr);}
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 1280px) {
+        &.gold-standard .section.gold .content-data, .section.gold .content-data{
+
+            .image-responsive{position: relative; width: initial; height: initial;}
+            .content-area{
+                padding-bottom: initial; margin-left: 0; 
+                .description-holder{
+                    max-width: 100%;
+                    p{font-size: 16px; }
+                
+    
+                }
+                .availability-data{
+                    padding-left: 0; margin-top: 100px;
+                    h5{font-size: 30px; margin-bottom: 50px;}
+
+                    .items-holder{
+                        display: grid;grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 1200px;
+                        .item img{width: 100%;}
+                                              
+                    }
+                }
+
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        .section.gold .content-data{
+
+            .content-area{
+                .availability-data{
+                    margin-top: 30px;
+                }
+
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .section.gold .content-data{
+            grid-template-columns: 1fr;
+            .image-responsive{width: 70%;}
+            .content-area{
+                padding-top: 140px; padding:30px 20px;
+                .availability-data{
+                    margin-top: 20px; width: 100%;
+                }
+
+            }
+        }
+    }
+
+}
+
+
