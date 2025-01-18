@@ -427,7 +427,7 @@ h3.section-sub-title{
 	}
 
 	background-color: var(--primary-color);
-	.container{background-color: var(--primary-dark); background-image: url("../images/backgrounds/organizationbg.jpg"); background-size: cover;}
+	.organization-section .container{background-color: var(--primary-dark); background-image: url("../images/backgrounds/organizationbg.jpg"); background-size: cover;}
 	.organization-section{
 		.content-data{padding: 80px 0px 120px;}
 		&.corporate{.content-data{padding: 80px 0px 40px;}}
@@ -944,3 +944,33 @@ body.mobile-menu-active{
 }
 
 .model-fade-bg{position: fixed; left: 0; top: 0; height: 100vh; width: 100vw; background: rgba(0, 0, 0, .6); z-index: 5; opacity: 0; transition: 0.3s all; pointer-events: none;}
+
+
+// custom
+.g-hero-banner{
+	background-color: var(--primary-color); background-size: cover; background-position: center; margin-top: 84px;
+	
+	.content-data{min-height: 825px;  display: flex; align-items: center; position: relative;}
+	.banner--title{
+		padding-left: 120px; 
+		h1{ font-size: 100px; color: white; letter-spacing: 2px; font-style: italic; font-family: "Avenir-Condenced-Italic"; text-shadow: 3px 4px 3px #0c0c0c; font-weight: 700; max-width: 800px; text-transform: uppercase; position: relative; z-index: 9;}
+	}
+	.image-responsive{
+		position: absolute; right: 0; left: 50%; height: 100%;
+		
+		img{object-position: left;}
+	}
+	
+	@media (max-width: 1440px) {
+		.content-data{min-height: 500px;}
+		.banner--title h1{font-size: 74px; }
+	}
+	@media (max-width: 768px) {
+		.banner--title{
+			padding-left: 0; 
+			h1 {font-size: 54px;  text-align: center;}
+		}
+		.image-responsive{left: initial;}
+	}
+}
+// custom

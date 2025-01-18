@@ -31,17 +31,27 @@
   width: 390px;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 #careers .search-jobs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 24px;
   margin-bottom: 158px;
 }
 #careers .search-jobs .dropdown-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 18px;
   width: 100%;
   position: relative;
@@ -53,7 +63,9 @@
   margin-left: 20px;
 }
 #careers .search-jobs .dropdown-wrapper .select-dropdown {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 25px 24px 30px 24px;
   width: 100%;
   cursor: pointer;
@@ -71,7 +83,8 @@
   position: absolute;
   right: 15px;
   top: 70%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 0;
   height: 0;
   border-left: 13.5px solid transparent;
@@ -85,19 +98,29 @@
   text-decoration: none;
   font-weight: bold;
   padding: 22px 65px;
-  box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5);
+          box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5);
   font-size: 22px;
 }
 #careers .cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
   margin-bottom: 145px;
 }
 #careers .cards-wrapper .job-card {
   padding: 30px 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 15px;
   font-size: 18px;
 }
@@ -133,10 +156,15 @@
   color: #363636;
 }
 #careers .cards-wrapper .job-card .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   color: var(--primary-dark);
 }
 #careers .cards-wrapper .job-card .location .icon-holder {
@@ -158,8 +186,12 @@
   bottom: 0;
 }
 #careers .contact-info .left .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   margin-top: 42px;
 }
@@ -170,9 +202,16 @@
 }
 #careers .contact-info .file-upload {
   padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   cursor: pointer;
   position: relative;
@@ -198,7 +237,10 @@
     margin-bottom: 80px;
   }
   #careers .apply-job .content-data .grid-box {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 20px;
   }
   #careers .apply-job .content-data .contact-info .left {
@@ -223,7 +265,10 @@
   }
   #careers .search-jobs {
     margin-bottom: 40px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #careers .search-jobs .button-primary {
     width: 100%;
@@ -243,7 +288,10 @@
     padding: 30px;
   }
   #careers .apply-job .content-data .contact-info .form-wrapper form .input-group {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 20px;
   }
   #careers .apply-job .content-data .contact-info .form-wrapper form {
@@ -255,7 +303,10 @@
 }
 @media (max-width: 650px) {
   #careers .cards-wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #careers .select-dropdown {
     max-width: 550px;

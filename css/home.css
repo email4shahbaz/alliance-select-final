@@ -12,8 +12,12 @@
 }
 #home .hero-banner .content-data .home-swiper .swiper-pagination {
   padding-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 14px;
 }
 @media (max-width: 1152px) {
@@ -39,6 +43,7 @@
   }
 }
 #home .who-we-are {
+  background: -webkit-gradient(linear, left top, left bottom, from(#091880), color-stop(20%, #003fa9), color-stop(80%, #003fa9), to(#091880));
   background: linear-gradient(to bottom, #091880 0%, #003fa9 20%, #003fa9 80%, #091880 100%);
 }
 #home .who-we-are .container {
@@ -61,7 +66,8 @@
   background-image: url("../images/backgrounds/who-weare-strip.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
+  -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
+          clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
 }
 #home .who-we-are .content-data .bottom-corner {
   position: absolute;
@@ -70,7 +76,8 @@
   width: 240px;
   height: 500px;
   background: linear-gradient(-40deg, #015eea 0%, #00c0fa 100%);
-  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
+          clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
 #home .who-we-are .content-data .bottom-right-img {
   position: absolute;
@@ -79,7 +86,8 @@
   right: 0px;
   width: 665px;
   height: 1246px;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
 #home .who-we-are .content-data .bottom-right-img::before {
   display: block;
@@ -99,8 +107,10 @@
   right: 0px;
   width: 700px;
   height: 722px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff887c), to(#ff0029));
   background-image: linear-gradient(0deg, #ff887c 0%, #ff0029 100%);
-  clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%);
 }
 @media (max-width: 1440px) {
   #home .who-we-are .content-data {
@@ -151,8 +161,10 @@
     top: 300px;
     width: 310px;
     height: 555px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff887c), to(#ff0029));
     background-image: linear-gradient(0deg, #ff887c 0%, #ff0029 100%);
-    clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 @media (max-width: 1024px) {
@@ -174,8 +186,10 @@
     top: 250px;
     width: 270px;
     height: 525px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff887c), to(#ff0029));
     background-image: linear-gradient(0deg, #ff887c 0%, #ff0029 100%);
-    clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 @media (max-width: 768px) {
@@ -201,8 +215,10 @@
     top: 260px;
     width: 250px;
     height: 400px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff887c), to(#ff0029));
     background-image: linear-gradient(0deg, #ff887c 0%, #ff0029 100%);
-    clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 @media (max-width: 650px) {
@@ -228,8 +244,10 @@
     top: 260px;
     width: 250px;
     height: 400px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff887c), to(#ff0029));
     background-image: linear-gradient(0deg, #ff887c 0%, #ff0029 100%);
-    clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 @media (max-width: 480px) {
@@ -241,7 +259,8 @@
     left: -70px;
     width: 240px;
     height: 240px;
-    clip-path: polygon(0 0, 30% 0, 100% 100%, 70% 100%);
+    -webkit-clip-path: polygon(0 0, 30% 0, 100% 100%, 70% 100%);
+            clip-path: polygon(0 0, 30% 0, 100% 100%, 70% 100%);
   }
   #home .who-we-are .content-data .bottom-corner {
     width: 70px;
@@ -259,8 +278,10 @@
     top: 220px;
     width: 150px;
     height: 320px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff887c), to(#ff0029));
     background-image: linear-gradient(0deg, #ff887c 0%, #ff0029 100%);
-    clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 @media (max-width: 430px) {
@@ -272,7 +293,8 @@
     left: -105px;
     width: 240px;
     height: 240px;
-    clip-path: polygon(0 0, 30% 0, 100% 100%, 70% 100%);
+    -webkit-clip-path: polygon(0 0, 30% 0, 100% 100%, 70% 100%);
+            clip-path: polygon(0 0, 30% 0, 100% 100%, 70% 100%);
   }
   #home .who-we-are .content-data .bottom-corner {
     width: 50px;
@@ -287,8 +309,10 @@
     top: 230px;
     width: 110px;
     height: 320px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff887c), to(#ff0029));
     background-image: linear-gradient(0deg, #ff887c 0%, #ff0029 100%);
-    clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(62% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 #home .products {
@@ -303,6 +327,7 @@
   width: 100%;
   position: relative;
   padding-bottom: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#091880), color-stop(20%, rgba(0, 63, 169, 0.0666666667)), color-stop(60%, rgba(0, 63, 169, 0.0666666667)), to(#091880));
   background: linear-gradient(to bottom, #091880 0%, rgba(0, 63, 169, 0.0666666667) 20%, rgba(0, 63, 169, 0.0666666667) 60%, #091880 100%);
 }
 #home .products .content-data .product-holder {
@@ -320,8 +345,12 @@
 }
 #home .products .content-data .organization-holder {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 120px;
 }
 #home .products .content-data .organization-holder .content {
@@ -342,11 +371,20 @@
   position: relative;
   width: 100%;
   padding: 35px 60px 30px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 20px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #home .products .content-data .box-holder .box .title-group {
   position: relative;
@@ -363,6 +401,8 @@
   line-height: 24px;
 }
 #home .products .content-data .box-holder .box .button-primary {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #home .products .content-data .box-holder .box1::before {
@@ -375,7 +415,8 @@
   top: 0;
   z-index: 0;
   height: 100%;
-  transform: skewX(-23deg);
+  -webkit-transform: skewX(-23deg);
+          transform: skewX(-23deg);
 }
 #home .products .content-data .box-holder .box2 .button-primary {
   background-color: #3f52f7;
@@ -393,7 +434,8 @@
   top: 0;
   z-index: 0;
   height: 100%;
-  transform: skewX(-23deg);
+  -webkit-transform: skewX(-23deg);
+          transform: skewX(-23deg);
 }
 @media (max-width: 1600px) {
   #home .products .content-data .box-holder {
@@ -408,7 +450,8 @@
     padding: 50px 500px 0 75px;
   }
   #home .products .content-data .box-holder .box::before {
-    transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+            transform: skewX(-20deg);
   }
   #home .products .content-data .box-holder .box1 {
     padding: 20px 50px 20px 50px;
@@ -520,11 +563,13 @@
     padding-left: 80px;
   }
   #home .products .content-data .box-holder .box1::before {
-    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+            transform: skewX(-10deg);
     right: 45px;
   }
   #home .products .content-data .box-holder .box2::before {
-    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+            transform: skewX(-10deg);
     left: 45px;
   }
 }
