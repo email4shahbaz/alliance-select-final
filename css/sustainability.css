@@ -1,0 +1,217 @@
+#sustainability .main-section {
+  background-color: #a9ccf0;
+}
+#sustainability .main-section .container {
+  padding: 0px;
+}
+#sustainability .main-section .container .content-data {
+  background: url("../images/backgrounds/sustainbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sustainability .main-section .container .content-data .image-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#sustainability .main-section .container .content-data .image-content .img-holder {
+  max-height: 590px;
+  position: relative;
+}
+#sustainability .main-section .container .content-data .image-content .img-holder img {
+  width: 100%;
+  height: 100%;
+  object-position: right;
+  object-fit: cover;
+}
+#sustainability .main-section .container .content-data .image-content .title-group {
+  padding: 40px 0;
+  position: relative;
+  left: -40px;
+}
+#sustainability .main-section .container .content-data .image-content .title-group .description-holder {
+  display: grid;
+  gap: 40px;
+}
+#sustainability .main-section .container .content-data .image-content .title-group .description-holder p {
+  padding: 0 40px;
+  line-height: 40px;
+}
+#sustainability .main-section .container .content-data .image-content:nth-child(even) .title-group {
+  order: 1;
+  left: 0;
+}
+#sustainability .main-section .container .content-data .image-content:nth-child(even) .img-holder {
+  order: 2;
+}
+#sustainability .main-section .container .content-data .image-content:nth-child(even) .img-holder img {
+  object-position: left;
+}
+@media (max-width: 1600px) {
+  #sustainability .risk-management .content-data .box {
+    width: calc(100% + 80px);
+  }
+  #sustainability .risk-management .content-data .box .title-group {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 1440px) {
+  #sustainability .image-section .content-data .title-group {
+    left: -60px;
+    margin-bottom: 0px;
+  }
+  #sustainability .image-section .content-data .title-group .description-holder p {
+    padding: 0 30px;
+  }
+  #sustainability .risk-management .content-data .box {
+    width: calc(100% + 80px);
+  }
+  #sustainability .risk-management .content-data .box .title-group {
+    padding-right: 80px;
+  }
+  #sustainability .risk-management .content-data .box.pink {
+    width: calc(100% + 80px);
+    left: -80px;
+  }
+  #sustainability .risk-management .content-data .box.pink .title-group {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 1280px) {
+  #sustainability .social-responsibilities .box-container .title-group h1 {
+    font-size: 28px;
+  }
+  #sustainability .box-container .box {
+    padding: 40px;
+  }
+  #sustainability .risk-management .content-data .box {
+    padding: 40px 0;
+  }
+  #sustainability .risk-management .content-data .box.pink {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 1152px) {
+  #sustainability .box-container .box {
+    padding: 30px 40px;
+  }
+  #sustainability .risk-management .content-data .box {
+    padding: 40px 0px;
+  }
+  #sustainability .risk-management .content-data .box.pink {
+    left: -60px;
+  }
+}
+@media (max-width: 1024px) {
+  #sustainability .social-responsibilities .box-container .title-group h1 {
+    font-size: 24px;
+  }
+  #sustainability .image-section .content-data .title-group {
+    width: calc(100% + 60px);
+    left: -120px;
+  }
+  #sustainability .image-section .content-data .img-holder {
+    border-width: 20px;
+    padding-right: 80px;
+  }
+  #sustainability .image-section.right .content-data .img-holder {
+    border-width: 20px;
+    padding-left: 80px;
+  }
+  #sustainability .risk-management .content-data .box {
+    width: calc(100% + 70px);
+  }
+  #sustainability .image-section.right .content-data .title-group {
+    right: -40px;
+  }
+}
+@media (max-width: 850px) {
+  #sustainability .image-section .content-data .img-holder {
+    height: 475px;
+  }
+  #sustainability .box-container {
+    grid-template-columns: 1fr;
+  }
+  #sustainability .risk-management .content-data .box-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: 0px;
+    gap: 20px;
+  }
+  #sustainability .risk-management .content-data .box-container .box {
+    padding: 20px;
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+  #sustainability .risk-management .content-data .box-container .box.pink {
+    left: 0px;
+    top: 0px;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@media (max-width: 768px) {
+  #sustainability .image-section .content-data .img-holder {
+    height: 375px;
+  }
+  #sustainability .social-responsibilities .container {
+    padding: 30px 0;
+  }
+  #sustainability .risk-management .content-data {
+    padding: 30px 0;
+  }
+  #sustainability .enterprise-risk .content-data .left .process-holder {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 650px) {
+  #sustainability .image-section .content-data .img-holder {
+    height: 300px;
+  }
+  #sustainability .box-container .box {
+    padding: 20px;
+  }
+  #sustainability .image-section .content-data .title-group {
+    width: calc(100% + 120px);
+  }
+  #sustainability .image-section .content-data .title-group .description-holder {
+    gap: 10px;
+  }
+  #sustainability .risk-management .content-data .box .title-group {
+    padding-left: 0px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 480px) {
+  #sustainability .social-responsibilities .box-container .title-group h1 {
+    font-size: 18px;
+  }
+  #sustainability .image-section .content-data .img-holder {
+    border-width: 10px;
+    padding-right: 40px;
+  }
+  #sustainability .image-section.right .content-data .img-holder {
+    border-width: 10px;
+    padding-left: 40px;
+  }
+  #sustainability .enterprise-risk .content-data .left {
+    padding-left: 20px;
+  }
+  #sustainability .enterprise-risk .content-data .left .description-holder {
+    padding-top: 20px;
+    gap: 10px;
+  }
+  #sustainability .enterprise-risk .content-data .left {
+    gap: 0px;
+  }
+  #sustainability .enterprise-risk .content-data .left .process-holder {
+    padding-left: 0;
+  }
+}
+#sustainability.reports section.section {
+  background-color: #00226d;
+  padding: 125px 0;
+}
+@media (max-width: 1440px) {
+  #sustainability.reports section.section {
+    padding: 80px 0;
+  }
+}

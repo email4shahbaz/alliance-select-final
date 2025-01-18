@@ -80,7 +80,8 @@
   gap: 40px;
 }
 #corporate-governance-main .image-section .content-data .title-group .description-holder p {
-  padding: 0 120px;
+  padding: 0 40px;
+  line-height: 40px;
 }
 #corporate-governance-main .image-section.right .content-data .img-holder {
   padding-right: initial;
