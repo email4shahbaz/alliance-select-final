@@ -1,0 +1,115 @@
+#investor-relations .hero-banner {
+  margin-top: 84px;
+  width: 100%;
+  position: relative;
+  background-color: var(--primary-dark);
+}
+#investor-relations .hero-banner .container {
+  padding: 0;
+}
+#investor-relations .hero-banner .title-group {
+  max-width: 240px;
+}
+#investor-relations .hero-banner .title-group h1 {
+  line-height: 1;
+  font-size: 120px;
+}
+#investor-relations .hero-banner .content-data {
+  position: relative;
+}
+#investor-relations .hero-banner .content-data .home-swiper .right-img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#investor-relations .title-group {
+  flex: 1;
+}
+#investor-relations .title-group h1 {
+  text-shadow: 0.138px 6.582px 2.5px #000000;
+  font-family: "Avenir-Condenced-Italic";
+  font-style: italic;
+  font-weight: 700;
+}
+#investor-relations .section-title {
+  color: white;
+  position: relative;
+  display: grid;
+  grid-gap: 50px;
+}
+#investor-relations .section-title::after {
+  content: "";
+  position: relative;
+  height: 16px;
+  width: 480px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 70%, rgba(255, 255, 255, 0) 100%);
+}
+@media (max-width: 1440px) {
+  #investor-relations .section-title {
+    grid-gap: 30px;
+  }
+  #investor-relations .section-title::after {
+    width: 300px;
+    height: 8px;
+  }
+}
+#investor-relations section.section {
+  background: #022c86;
+}
+#investor-relations .section.programs {
+  background: #022c86 url("../images/backgrounds/investors-relations-bg.png");
+}
+#investor-relations .section.programs .container {
+  padding-left: 0;
+  max-width: 100%;
+}
+#investor-relations .section.programs .section-title::after {
+  left: 160px;
+  height: 11px;
+  width: 103px;
+  border-radius: 3px;
+  background: white;
+}
+@media (max-width: 1440px) {
+  #investor-relations .section.programs .section-title {
+    grid-gap: 30px;
+  }
+  #investor-relations .section.programs .section-title::after {
+    width: 100px;
+    height: 8px;
+  }
+}
+#investor-relations .section.programs .content-data {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  color: white;
+  min-height: 1144px;
+}
+#investor-relations .section.programs .content-data .image-responsive {
+  position: absolute;
+  width: 45vw;
+  height: 100%;
+}
+#investor-relations .section.programs .content-data .image-responsive img {
+  object-position: center right;
+}
+#investor-relations .section.programs .content-data .content-area {
+  padding-top: 90px;
+  padding-bottom: 200px;
+}
+#investor-relations .section.programs .content-data .content-area .description-holder {
+  margin-top: 70px;
+}
+#investor-relations .section.programs .content-data .content-area .description-holder p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-left: 11.2vw;
+}
+#investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(2) {
+  margin-top: 45px;
+  margin-left: 15.89vw;
+}
+#investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(3) {
+  margin-top: 75px;
+  margin-left: 26.8vw;
+}

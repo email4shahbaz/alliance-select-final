@@ -1,0 +1,94 @@
+#contact {
+    .hero-banner{
+        margin-top: 84px;
+        width: 100%; position: relative;
+        background-color: var(--primary-dark);
+        .container{padding: 0;}
+    }
+
+    .connect-with-you {
+        padding: 140px 0;
+
+        .location-info {
+            margin: 140px 0 110px 0;
+            .left {
+                padding: 90px 70px 90px 65px; display: flex; align-items: flex-start; justify-content: center; flex-direction: column; width: 38%;
+                .group {
+                    margin-bottom: 20px;
+                    .h-list {margin-bottom: 15px; gap: 20px; flex-wrap: nowrap;}
+                    h3 {color: var(--primary-dark); font-weight: bold; font-size: 24px; margin-bottom: 20px; }
+                    p {color: var(--primary-dark); font-size: 18px;}
+                    .icon-holder {
+                        max-width: 35px;
+                        &.pin {width: 56px;}
+                    
+                    }
+                }
+            }
+            .map {width: 62%}
+        }
+        .contact-info {
+            h2 {font-size: 44px;}
+            textarea {height: 210px;}
+        }
+
+    }
+
+    @media (max-width: 1440px) {
+        .connect-with-you{padding: 90px 0 130px 0}
+        .connect-with-you .location-info{margin: 70px 0 60px 0;}
+        .location-info {
+            margin: 80px 0 95px 0;
+        }
+        & .location-info {
+            margin: 72px 0 85px 0;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .connect-with-you .location-info .left{padding: 40px 30px}
+        .page-title h1{font-size: 48px;}
+    }
+
+    @media (max-width: 1024px) {
+        .page-title h1{font-size: 38px;}
+        .connect-with-you{padding-top: 50px; padding-bottom: 50px;}
+        .connect-with-you .location-info{margin: 40px 0;}
+        .connect-with-you .content-data .contact-info .left, .apply-job .content-data .contact-info .left{padding: 0 30px;}
+        .connect-with-you .content-data .contact-info .form-wrapper, .apply-job .content-data .contact-info .form-wrapper{padding: 30px;}
+    }
+    @media (max-width: 768px) {
+        .hero-banner{margin-top: 60px;}
+        .page-title h1{font-size: 32px;}
+        .connect-with-you .location-info{flex-direction: column;}
+        .connect-with-you .location-info .left{width: 100%; padding-bottom: 0px;}
+        .connect-with-you .location-info .map{width: 100%; height: 400px;}
+        .connect-with-you .content-data .grid-box, .apply-job .content-data .grid-box{
+            flex-direction: column;
+            gap: 30px;
+        }
+        .connect-with-you .content-data .contact-info .left{width: 100%;}
+        .connect-with-you .content-data .contact-info .form-wrapper{width: 100%;}
+    }
+
+    @media (max-width: 650px) {
+        .connect-with-you{padding-top: 10px}
+        .page-title{h1{margin-bottom: 0px; font-size: 24px;}}
+        .connect-with-you .content-data .contact-info .left{padding-top: 20px;}
+        .connect-with-you .contact-info h2{font-size: 32px; padding-bottom: 10px;}
+        .connect-with-you .content-data .contact-info .form-wrapper form .input-group{flex-direction: column; gap: 10px; margin-bottom: 20px;}
+    }
+
+    @media (max-width: 480px) {
+        .page-title h1{font-size: 20px; line-height: 24px; margin-top: 20px}
+        .connect-with-you .location-info .left .group h3{margin-bottom: 0px;}
+        .connect-with-you .content-data .grid-box{margin-top: 20px;}
+        .connect-with-you .location-info .left{padding: 20px;}
+        .connect-with-you .location-info .left .group .icon-holder.pin{img{width: 24px;}}
+        .connect-with-you .location-info .left .group .icon-holder.phone{img{width: 24px;}}
+        .connect-with-you .content-data .grid-box{gap: 0px}
+        .connect-with-you .content-data .contact-info .form-wrapper{padding: 15px}
+        .connect-with-you .location-info .left .group .h-list{margin-bottom: 0px;}
+        .connect-with-you .contact-info h2{font-size: 24px;}
+    }
+}
