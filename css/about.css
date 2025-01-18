@@ -12,12 +12,8 @@
 }
 #about-main .hero-banner .content-data .home-swiper .swiper-pagination {
   padding-bottom: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 14px;
 }
 @media (max-width: 1152px) {
@@ -43,7 +39,6 @@
   }
 }
 #about-main .who-we-are {
-  background: -webkit-gradient(linear, left top, left bottom, from(#091880), color-stop(20%, #003fa9), color-stop(80%, #003fa9), to(#091880));
   background: linear-gradient(to bottom, #091880 0%, #003fa9 20%, #003fa9 80%, #091880 100%);
 }
 #about-main .who-we-are .container {
@@ -51,8 +46,6 @@
 }
 #about-main .who-we-are .content-data {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 40px;
   padding: 0px 160px 0 0;
@@ -68,7 +61,6 @@
   width: 100%;
 }
 #about-main .world {
-  background: -webkit-gradient(linear, left top, left bottom, from(#091880), color-stop(20%, rgba(0, 63, 169, 0.0666666667)), color-stop(60%, rgba(0, 63, 169, 0.0666666667)), to(#091880));
   background: linear-gradient(to bottom, #091880 0%, rgba(0, 63, 169, 0.0666666667) 20%, rgba(0, 63, 169, 0.0666666667) 60%, #091880 100%);
 }
 #about-main .world .container {
@@ -101,12 +93,8 @@
 }
 #about-main .world .content-data .map-holder {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 120px;
 }
 #about-main .world .content-data .map-holder .content .title-group {
@@ -120,8 +108,6 @@
   left: 100px;
   bottom: 100px;
   z-index: 100;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 20px;
   border-radius: 3px;
@@ -152,20 +138,11 @@
   position: relative;
   width: 100%;
   padding: 35px 60px 30px 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #about-main .world .content-data .box-holder .box .title-group {
   position: relative;
@@ -182,8 +159,6 @@
   line-height: 24px;
 }
 #about-main .world .content-data .box-holder .box .button-primary {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 #about-main .world .content-data .box-holder .box1::before {
@@ -196,8 +171,7 @@
   top: 0;
   z-index: 0;
   height: 100%;
-  -webkit-transform: skewX(-23deg);
-          transform: skewX(-23deg);
+  transform: skewX(-23deg);
 }
 #about-main .world .content-data .box-holder .box2 .button-primary {
   background-color: #3f52f7;
@@ -215,11 +189,9 @@
   top: 0;
   z-index: 0;
   height: 100%;
-  -webkit-transform: skewX(-23deg);
-          transform: skewX(-23deg);
+  transform: skewX(-23deg);
 }
 #about-main .what-we-do {
-  background: -webkit-gradient(linear, left top, left bottom, from(#091880), color-stop(20%, rgba(0, 63, 169, 0.0666666667)), color-stop(60%, rgba(0, 63, 169, 0.0666666667)), to(#091880));
   background: linear-gradient(to bottom, #091880 0%, rgba(0, 63, 169, 0.0666666667) 20%, rgba(0, 63, 169, 0.0666666667) 60%, #091880 100%);
 }
 #about-main .what-we-do .container {
@@ -251,8 +223,6 @@
 #about-main .what-we-do .content-data .box-holder {
   padding: 60px 0;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   width: 100%;
@@ -269,8 +239,7 @@
   left: 0;
   position: absolute;
   z-index: 0;
-  -webkit-transform: skewX(-28deg) translateY(-50%);
-          transform: skewX(-28deg) translateY(-50%);
+  transform: skewX(-28deg) translateY(-50%);
 }
 #about-main .what-we-do .content-data .box-holder .box .title-group {
   gap: 0px;
@@ -286,8 +255,7 @@
   position: absolute;
   z-index: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 #about-main .what-we-do .content-data .box-holder .box:nth-child(1) {
   width: 53%;
@@ -310,8 +278,7 @@
   height: 500px;
 }
 #about-main .what-we-do .content-data .box-holder .box:nth-child(2) {
-  -webkit-transform: translateY(12%);
-          transform: translateY(12%);
+  transform: translateY(12%);
   width: 47%;
 }
 #about-main .what-we-do .content-data .box-holder .box:nth-child(2) .bg {
@@ -322,8 +289,7 @@
   right: 100px;
   width: 340px;
   height: 500px;
-  -webkit-transform: rotate(40deg) translateY(-58%);
-          transform: rotate(40deg) translateY(-58%);
+  transform: rotate(40deg) translateY(-58%);
 }
 #about-main .what-we-do .content-data .box-holder .box:nth-child(2) .title-group {
   padding: 20px 280px 40px 80px;
@@ -344,8 +310,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 #about-main .what-we-do .content-data .certificate-holder .certificate-desc-holder p {
   text-align: left;
@@ -360,8 +325,7 @@
   padding: 60px 100px;
 }
 #about-main .what-we-do .content-data .certificate-slider-holder .swiper-container .swiper-button-prev {
-  -webkit-filter: brightness(1000%) saturate(1) invert(0);
-          filter: brightness(1000%) saturate(1) invert(0);
+  filter: brightness(1000%) saturate(1) invert(0);
   width: 48px;
   height: 48px;
   margin-left: 36px;
@@ -375,8 +339,7 @@
   background-repeat: no-repeat;
 }
 #about-main .what-we-do .content-data .certificate-slider-holder .swiper-container .swiper-button-next {
-  -webkit-filter: brightness(1000%) saturate(1) invert(0);
-          filter: brightness(1000%) saturate(1) invert(0);
+  filter: brightness(1000%) saturate(1) invert(0);
   width: 48px;
   height: 48px;
   margin-right: 36px;
@@ -392,7 +355,6 @@
 #about-main .market-success {
   position: relative;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(#091880), color-stop(20%, #003fa9), color-stop(80%, #003fa9), to(#091880));
   background: linear-gradient(to bottom, #091880 0%, #003fa9 20%, #003fa9 80%, #091880 100%);
 }
 #about-main .market-success .container {
@@ -409,13 +371,9 @@
   background-repeat: no-repeat;
 }
 #about-main .market-success .content-data .content-top .content-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 1000px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 70px;
 }
 #about-main .market-success .content-data .content-top .content-header .num {
@@ -469,12 +427,8 @@
 }
 #about-main .market-success .content-data .content-bottom .bottom-data-cont .bottom-row {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #about-main .market-success .content-data .content-bottom .bottom-data-cont .bottom-row .heading {
   width: 40%;
@@ -591,10 +545,7 @@
     padding: 0 260px;
   }
   #about-main .what-we-do .content-data .box-holder {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #about-main .what-we-do .content-data .box-holder .box:nth-child(1), #about-main .what-we-do .content-data .box-holder .box:nth-child(2) {
     width: 90%;
@@ -636,14 +587,9 @@
     padding-left: 40px;
   }
   #about-main .market-success .content-data .content-bottom .bottom-data-cont .bottom-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 80%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    align-items: flex-start;
   }
   #about-main .market-success .content-data .content-bottom .bottom-data-cont .bottom-row .heading {
     border-right: none;
@@ -651,7 +597,6 @@
   }
 }
 #about-main .our-vision {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0b1177), color-stop(20%, #0053bb));
   background: linear-gradient(to bottom, #0b1177 0%, #0053bb 20%);
 }
 #about-main .our-vision .container {
@@ -672,15 +617,9 @@
 }
 #about-main .our-vision .content-data .content-holder {
   height: 2050px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 23% 50%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 23% 50%);
+  flex-direction: column;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 23% 50%);
 }
 #about-main .our-vision .content-data .content-holder .content-half {
   width: 100%;
@@ -688,8 +627,7 @@
 }
 #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) {
   height: 47%;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  align-content: flex-end;
 }
 #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
   background-color: #eb1d39;
@@ -710,12 +648,8 @@
   font-size: 40px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 40px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-title {
@@ -751,8 +685,7 @@
     left: -780px;
   }
   #about-main .our-vision .content-data .content-holder {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
   }
 }
 @media (max-width: 1440px) {
@@ -760,8 +693,7 @@
     left: -800px;
   }
   #about-main .our-vision .content-data .content-holder {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 240px;
@@ -790,8 +722,7 @@
 }
 @media (max-width: 1300px) {
   #about-main .our-vision .content-data .content-holder {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 33% 50%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 33% 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 33% 50%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 240px;
@@ -856,8 +787,7 @@
   }
   #about-main .our-vision .content-data .content-holder {
     height: 1200px;
-    -webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 30% 50%);
-            clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 30% 50%);
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 30% 50%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 200px;
@@ -910,8 +840,7 @@
   }
   #about-main .our-vision .content-data .content-holder {
     height: 1200px;
-    -webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 35% 50%);
-            clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 35% 50%);
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 35% 50%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 200px;
@@ -992,12 +921,8 @@
     padding-right: 80px;
   }
   #about-main .what-we-do .content-data .certificate-slider-holder .swiper-container .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #about-main .market-success .right-image img {
     width: 500px;
@@ -1014,8 +939,7 @@
   }
   #about-main .our-vision .content-data .content-holder {
     height: 1100px;
-    -webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 35% 50%);
-            clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 35% 50%);
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 35% 50%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 180px;
@@ -1054,8 +978,7 @@
     gap: 20px;
   }
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 10px;
   }
 }
@@ -1075,8 +998,7 @@
   }
   #about-main .our-vision .content-data .content-holder {
     height: 1000px;
-    -webkit-clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 40% 50%);
-            clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 40% 50%);
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 40% 50%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 180px;
@@ -1106,10 +1028,7 @@
     height: 160px;
   }
   #about-main .who-we-are .content-data {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 20px;
   }
   #about-main .who-we-are .content-data .title-group {
@@ -1138,8 +1057,7 @@
     padding-top: 0px;
   }
   #about-main .what-we-do .content-data .box-holder .box .bg {
-    -webkit-transform: skewX(-18deg) translateY(-50%);
-            transform: skewX(-18deg) translateY(-50%);
+    transform: skewX(-18deg) translateY(-50%);
   }
   #about-main .what-we-do .content-data .product-holder .title-group {
     margin-bottom: 0px;
@@ -1151,10 +1069,7 @@
     padding: 20px;
   }
   #about-main .market-success .content-data .content-top .content-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 0px;
   }
   #about-main .market-success .content-data .content-top .content-header .txt {
@@ -1224,8 +1139,7 @@
   }
   #about-main .our-vision .content-data .content-holder {
     height: 910px;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 40% 42%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 40% 42%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 40% 42%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 40px;
@@ -1239,8 +1153,7 @@
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) {
     height: 46%;
     margin-top: 40px;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
+    align-content: flex-start;
   }
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
     padding-left: 170px;
@@ -1256,9 +1169,7 @@
     padding-left: 190px;
   }
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
     padding-left: 165px;
@@ -1280,8 +1191,7 @@
     padding-right: 0px;
   }
   #about-main .what-we-do .content-data .box-holder .box .bg {
-    -webkit-transform: skewX(-18deg) translateY(-50%);
-            transform: skewX(-18deg) translateY(-50%);
+    transform: skewX(-18deg) translateY(-50%);
   }
   #about-main .what-we-do .content-data .box-holder .box:nth-child(2) .title-group .description-holder .text-shape {
     width: 60px;
@@ -1293,13 +1203,8 @@
     padding: 0px;
   }
   #about-main .what-we-do .content-data .certificate-holder .certificate-desc-holder {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #about-main .world .content-data .map-holder .world-map .map-legend {
     left: 0px;
@@ -1338,8 +1243,7 @@
   }
   #about-main .our-vision .content-data .content-holder {
     height: 910px;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 40% 42%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 40% 42%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 40% 42%);
   }
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
     padding-left: 150px;

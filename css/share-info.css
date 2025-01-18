@@ -1,0 +1,259 @@
+#share-info .box-container {
+  display: grid;
+  gap: 36px;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+#share-info .box-container .box {
+  display: grid;
+  align-content: center;
+  background: #0054bc;
+  padding: 60px 80px;
+}
+#share-info .box-container .box.red {
+  background: var(--primary-red);
+}
+#share-info .box-container .box.pink {
+  background: #f73f40;
+}
+#share-info .box-container .title-group {
+  gap: 10px;
+  margin-bottom: 0px;
+  display: flex;
+}
+#share-info .box-container .title-group h1 {
+  font-size: 7vw;
+  font-family: "Avenir-Condenced-Italic";
+}
+#share-info .share-content {
+  width: 100%;
+  background: #a9ccf0;
+}
+#share-info .share-content .container {
+  padding: 0;
+}
+#share-info .share-content .content-data {
+  overflow: hidden;
+  padding: 70px 0px;
+  background: var(--primary-dark);
+}
+#share-info .share-content .content-data .title-group {
+  padding: 0 30px;
+}
+#share-info .share-content .content-data .box-container {
+  grid-template-columns: 2fr 4fr;
+  overflow: initial; /*transform: scale(1.1)*/
+  padding: 40px 0;
+  gap: 0px;
+}
+#share-info .share-content .content-data .box {
+  position: relative;
+  padding: 80px 0px;
+  width: calc(100% + 110px);
+  justify-content: center;
+  transform: none;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+#share-info .share-content .content-data .box.blue {
+  top: 80px;
+  width: calc(100% + 110px);
+  left: -60px;
+  clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 2% 100%);
+}
+#share-info .share-content .content-data .box.blue .title-group {
+  flex-direction: column;
+}
+#share-info .share-content .content-data .box.blue .title-group .description-holder p {
+  font-size: 36px;
+}
+#share-info .share-content .grid-container {
+  background: var(--primary-dark);
+  padding-bottom: 60px;
+}
+#share-info .share-content .grid-container .box-grid {
+  padding: 80px 60px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+#share-info .share-content .grid-container .box-grid .property-box {
+  font-family: "Avenir-heavy-Demi-Condenced";
+}
+#share-info .share-content .grid-container .box-grid .property-box .box-title {
+  text-align: center;
+  background: #0054bc;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+#share-info .share-content .grid-container .box-grid .property-box .box-value {
+  text-align: center;
+  font-weight: 700;
+  background-color: white;
+  padding: 20px;
+  font-size: 28px;
+}
+#share-info .share-content .grid-container .box-grid .property-box:nth-child(even) .box-title {
+  background: #f73f40;
+}
+@media (max-width: 1600px) {
+  #share-info .risk-management .content-data .box {
+    width: calc(100% + 80px);
+  }
+  #share-info .risk-management .content-data .box .title-group {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 1440px) {
+  #share-info .image-section .content-data .title-group {
+    left: -60px;
+    margin-bottom: 0px;
+  }
+  #share-info .image-section .content-data .title-group .description-holder p {
+    padding: 0 30px;
+  }
+  #share-info .risk-management .content-data .box {
+    width: calc(100% + 80px);
+  }
+  #share-info .risk-management .content-data .box .title-group {
+    padding-right: 80px;
+  }
+  #share-info .risk-management .content-data .box.pink {
+    width: calc(100% + 80px);
+    left: -80px;
+  }
+  #share-info .risk-management .content-data .box.pink .title-group {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 1280px) {
+  #share-info .social-responsibilities .box-container .title-group h1 {
+    font-size: 28px;
+  }
+  #share-info .box-container .box {
+    padding: 40px;
+  }
+  #share-info .risk-management .content-data .box {
+    padding: 40px 0;
+  }
+  #share-info .risk-management .content-data .box.pink {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 1152px) {
+  #share-info .box-container .box {
+    padding: 30px 40px;
+  }
+  #share-info .risk-management .content-data .box {
+    padding: 40px 0px;
+  }
+  #share-info .risk-management .content-data .box.pink {
+    left: -60px;
+  }
+}
+@media (max-width: 1024px) {
+  #share-info .social-responsibilities .box-container .title-group h1 {
+    font-size: 24px;
+  }
+  #share-info .image-section .content-data .title-group {
+    width: calc(100% + 60px);
+    left: -120px;
+  }
+  #share-info .image-section .content-data .img-holder {
+    border-width: 20px;
+    padding-right: 80px;
+  }
+  #share-info .image-section.right .content-data .img-holder {
+    border-width: 20px;
+    padding-left: 80px;
+  }
+  #share-info .risk-management .content-data .box {
+    width: calc(100% + 70px);
+  }
+  #share-info .image-section.right .content-data .title-group {
+    right: -40px;
+  }
+}
+@media (max-width: 850px) {
+  #share-info .image-section .content-data .img-holder {
+    height: 475px;
+  }
+  #share-info .box-container {
+    grid-template-columns: 1fr;
+  }
+  #share-info .risk-management .content-data .box-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: 0px;
+    gap: 20px;
+  }
+  #share-info .risk-management .content-data .box-container .box {
+    padding: 20px;
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+  #share-info .risk-management .content-data .box-container .box.pink {
+    left: 0px;
+    top: 0px;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@media (max-width: 768px) {
+  #share-info .image-section .content-data .img-holder {
+    height: 375px;
+  }
+  #share-info .social-responsibilities .container {
+    padding: 30px 0;
+  }
+  #share-info .risk-management .content-data {
+    padding: 30px 0;
+  }
+  #share-info .enterprise-risk .content-data .left .process-holder {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 650px) {
+  #share-info .image-section .content-data .img-holder {
+    height: 300px;
+  }
+  #share-info .box-container .box {
+    padding: 20px;
+  }
+  #share-info .image-section .content-data .title-group {
+    width: calc(100% + 120px);
+  }
+  #share-info .image-section .content-data .title-group .description-holder {
+    gap: 10px;
+  }
+  #share-info .risk-management .content-data .box .title-group {
+    padding-left: 0px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 480px) {
+  #share-info .social-responsibilities .box-container .title-group h1 {
+    font-size: 18px;
+  }
+  #share-info .image-section .content-data .img-holder {
+    border-width: 10px;
+    padding-right: 40px;
+  }
+  #share-info .image-section.right .content-data .img-holder {
+    border-width: 10px;
+    padding-left: 40px;
+  }
+  #share-info .enterprise-risk .content-data .left {
+    padding-left: 20px;
+  }
+  #share-info .enterprise-risk .content-data .left .description-holder {
+    padding-top: 20px;
+    gap: 10px;
+  }
+  #share-info .enterprise-risk .content-data .left {
+    gap: 0px;
+  }
+  #share-info .enterprise-risk .content-data .left .process-holder {
+    padding-left: 0;
+  }
+}

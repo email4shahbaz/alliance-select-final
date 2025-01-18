@@ -23,9 +23,7 @@
   right: 0px;
 }
 #investor-relations .title-group {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 #investor-relations .title-group h1 {
   text-shadow: 0.138px 6.582px 2.5px #000000;
@@ -44,7 +42,6 @@
   position: relative;
   height: 16px;
   width: 480px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(0%, rgba(255, 255, 255, 0)), color-stop(30%, rgb(255, 255, 255)), color-stop(50%, rgb(255, 255, 255)), color-stop(70%, rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 70%, rgba(255, 255, 255, 0) 100%);
 }
 @media (max-width: 1440px) {
@@ -94,8 +91,7 @@
   height: 100%;
 }
 #investor-relations .section.programs .content-data .image-responsive img {
-  -o-object-position: center right;
-     object-position: center right;
+  object-position: center right;
 }
 #investor-relations .section.programs .content-data .content-area {
   padding-top: 90px;
