@@ -973,6 +973,7 @@ body.mobile-menu-active{
 		.banner--title h1{font-size: 74px; }
 	}
 	@media (max-width: 768px) {
+		.content-data{min-height: 300px;}
 		.banner--title{
 			padding-left: 0; 
 			h1 {font-size: 54px;  text-align: center;}

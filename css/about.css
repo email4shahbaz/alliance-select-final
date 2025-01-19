@@ -349,6 +349,7 @@
 }
 #about-main .what-we-do .content-data .certificate-holder .certificate-desc-holder p {
   text-align: left;
+  line-height: 1.6;
 }
 #about-main .what-we-do .content-data .certificate-slider-holder {
   padding: 20px 120px;
@@ -955,6 +956,13 @@
   }
 }
 @media (max-width: 768px) {
+  #about-main .who-we-are .content-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
   #about-main .who-we-are .content-data .bottom-img {
     width: 350px;
   }
@@ -1104,13 +1112,6 @@
   }
   #about-main .who-we-are .content-data .bottom-img img {
     height: 160px;
-  }
-  #about-main .who-we-are .content-data {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 20px;
   }
   #about-main .who-we-are .content-data .title-group {
     padding-left: 30px;

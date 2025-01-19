@@ -3758,6 +3758,9 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   }
 }
 @media (max-width: 768px) {
+  .g-hero-banner .content-data {
+    min-height: 300px;
+  }
   .g-hero-banner .banner--title {
     padding-left: 0;
   }

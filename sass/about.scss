@@ -150,11 +150,12 @@
              .certificate-holder{
                 padding: 20px 120px;
                 .certificate-desc-holder{
+                    
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 48px;
                     flex-wrap: nowrap;
-                    p{text-align: left;}
+                    p{text-align: left; line-height: 1.6;}
                 }
             }
 
@@ -423,6 +424,7 @@
     }
 
     @media (max-width: 768px) {
+        .who-we-are .content-data{flex-direction: column; gap: 20px;}
         .who-we-are .content-data .bottom-img{width: 350px}
         .world .content-data .product-holder{padding:0 60px}
         .world .content-data .map-holder .world-map{padding-bottom: 100px;}
@@ -467,7 +469,6 @@
 
     @media (max-width: 480px) {
         .who-we-are .content-data .bottom-img{ height: 160px; img{height: 160px;}}
-        .who-we-are .content-data{flex-direction: column; gap: 20px;}
         .who-we-are .content-data .title-group{padding-left: 30px}
         .world .content-data .product-holder{padding: 0px;}
         .what-we-do .content-data .box-holder{padding-top: 20px;}
