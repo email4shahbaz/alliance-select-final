@@ -933,6 +933,13 @@ body.mobile-menu-active{
 		}
 
 	}
+
+	@media (max-width: 1024px) {
+		.accordion-item-header{font-size: 24px;}
+		.accordion-item-header svg{--size: 20px; height: var(--size); width: var(--size);}
+		.expendable-area .content-data a{font-size: 20px;}
+		
+	}
 }
 
 

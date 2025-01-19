@@ -20,8 +20,10 @@
 #sustainability .main-section .container .content-data .image-content .img-holder img {
   width: 100%;
   height: 100%;
-  object-position: right;
-  object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #sustainability .main-section .container .content-data .image-content .title-group {
   padding: 40px 0;
@@ -37,14 +39,19 @@
   line-height: 40px;
 }
 #sustainability .main-section .container .content-data .image-content:nth-child(even) .title-group {
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   left: 0;
 }
 #sustainability .main-section .container .content-data .image-content:nth-child(even) .img-holder {
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 #sustainability .main-section .container .content-data .image-content:nth-child(even) .img-holder img {
-  object-position: left;
+  -o-object-position: left;
+     object-position: left;
 }
 @media (max-width: 1600px) {
   #sustainability .risk-management .content-data .box {
@@ -140,12 +147,14 @@
   #sustainability .risk-management .content-data .box-container .box {
     padding: 20px;
     width: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
   }
   #sustainability .risk-management .content-data .box-container .box.pink {
     left: 0px;
     top: 0px;
-    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 @media (max-width: 768px) {

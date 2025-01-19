@@ -5,7 +5,9 @@
   grid-gap: 50px;
   font-family: "Avenir-Condenced-Italic";
   text-align: left;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 #brand-page .section-title::after {
   display: none;
@@ -31,7 +33,8 @@
   height: 100%;
 }
 #brand-page .section.gold .content-data .image-responsive img {
-  object-position: center right;
+  -o-object-position: center right;
+     object-position: center right;
 }
 #brand-page .section.gold .content-data .content-area {
   padding-bottom: 200px;

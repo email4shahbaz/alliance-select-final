@@ -23,7 +23,9 @@
   right: 0px;
 }
 #investor-relations .title-group {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 #investor-relations .title-group h1 {
   text-shadow: 0.138px 6.582px 2.5px #000000;
@@ -36,12 +38,17 @@
   position: relative;
   display: grid;
   grid-gap: 50px;
+  justify-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 #investor-relations .section-title::after {
   content: "";
   position: relative;
   height: 16px;
   width: 480px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(0%, rgba(255, 255, 255, 0)), color-stop(30%, rgb(255, 255, 255)), color-stop(50%, rgb(255, 255, 255)), color-stop(70%, rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 70%, rgba(255, 255, 255, 0) 100%);
 }
 @media (max-width: 1440px) {
@@ -54,17 +61,18 @@
   }
 }
 #investor-relations section.section {
-  background: #022c86;
+  background-color: #022c86;
 }
 #investor-relations .section.programs {
-  background: #022c86 url("../images/backgrounds/investors-relations-bg.png");
+  background: #022c86 url("../images/backgrounds/investor-relations-bg.jpg");
+  background-size: cover;
 }
 #investor-relations .section.programs .container {
   padding-left: 0;
   max-width: 100%;
 }
 #investor-relations .section.programs .section-title::after {
-  left: 160px;
+  left: 120px;
   height: 11px;
   width: 103px;
   border-radius: 3px;
@@ -91,7 +99,8 @@
   height: 100%;
 }
 #investor-relations .section.programs .content-data .image-responsive img {
-  object-position: center right;
+  -o-object-position: center right;
+     object-position: center right;
 }
 #investor-relations .section.programs .content-data .content-area {
   padding-top: 90px;
@@ -112,4 +121,197 @@
 #investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(3) {
   margin-top: 75px;
   margin-left: 26.8vw;
+}
+@media (max-width: 1024px) {
+  #investor-relations .section.programs .content-data {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
+  #investor-relations .section.programs .content-data .section-title::after {
+    left: 0;
+  }
+  #investor-relations .section.programs .content-data .content-area {
+    padding-bottom: 0px;
+  }
+  #investor-relations .section.programs .content-data .content-area .description-holder p {
+    margin-left: 0;
+  }
+  #investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(2) {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  #investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(3) {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  #investor-relations .section.programs .content-data .image-responsive {
+    display: none;
+  }
+}
+#investor-relations .investor-relations {
+  background-image: url("../images/banners/investors-relation-banner-v2.jpg");
+}
+#investor-relations .investor-relations .section-title {
+  color: white;
+  grid-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+#investor-relations .investor-relations .section-title::after {
+  height: 11px;
+  width: 104px;
+  background: white;
+  border-radius: 3px;
+}
+@media (max-width: 1440px) {
+  #investor-relations .investor-relations .section-title {
+    grid-gap: 30px;
+  }
+  #investor-relations .investor-relations .section-title::after {
+    width: 300px;
+    height: 8px;
+  }
+}
+#investor-relations .investor-relations .arrow-image {
+  position: relative;
+}
+#investor-relations .investor-relations .arrow-image img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: -98%;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+#investor-relations .investor-relations .content-data {
+  padding-bottom: 100px;
+}
+#investor-relations .investor-relations .cards-holder {
+  padding: 25px 0;
+  width: 100%;
+  gap: 45px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#investor-relations .investor-relations .cards-holder .card-item {
+  position: relative;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 10px;
+  height: 305px;
+  overflow: hidden;
+  background: white;
+  padding: 30px 40px;
+  -webkit-box-shadow: 2px 2px 16px #000;
+          box-shadow: 2px 2px 16px #000;
+  padding-bottom: 40px;
+}
+#investor-relations .investor-relations .cards-holder .card-item .card-date {
+  font-family: "Avenir-heavy-Italic";
+  font-size: 40px;
+  font-weight: bold;
+  color: #f73f40;
+  white-space: nowrap;
+}
+#investor-relations .investor-relations .cards-holder .card-item .card-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #022c86;
+  font-family: "Avenir-Condenced-Italic";
+  font-style: italic;
+}
+#investor-relations .investor-relations .cards-holder .card-item .card-description {
+  font-size: 24px;
+  color: #022c86;
+}
+#investor-relations .investor-relations .cards-holder .card-item .btn-cont {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(56%, rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, rgb(255, 255, 255) 56%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 150px;
+}
+@media (max-width: 1024px) {
+  #investor-relations .investor-relations .cards-holder {
+    grid-gap: 20px;
+  }
+  #investor-relations .investor-relations .cards-holder .card-item {
+    height: 230px;
+  }
+  #investor-relations .investor-relations .cards-holder .card-item .card-date {
+    font-size: 20px;
+  }
+  #investor-relations .investor-relations .cards-holder .card-item .card-title {
+    font-size: 20px;
+  }
+  #investor-relations .investor-relations .cards-holder .card-item .card-description {
+    font-size: 24px;
+    color: #022c86;
+  }
+  #investor-relations .investor-relations .cards-holder .card-item .btn-cont {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(56%, rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(0deg, rgb(255, 255, 255) 56%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  #investor-relations .investor-relations .cards-holder {
+    grid-template-columns: 1fr;
+  }
+  #investor-relations .investor-relations .cards-holder .card-item {
+    height: 200px;
+  }
+  #investor-relations .investor-relations .cards-holder .card-item .btn-cont {
+    min-height: 80px;
+  }
+}
+#investor-relations .investor-relations .view-all-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+#investor-relations .investor-relations .view-all-button a {
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  #investor-relations .investor-relations .arrow-image {
+    display: none;
+  }
 }
