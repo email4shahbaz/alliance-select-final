@@ -43,6 +43,9 @@
           align-items: flex-end;
   gap: 24px;
   margin-bottom: 158px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 #careers .search-jobs .dropdown-wrapper {
   display: -webkit-box;
@@ -62,10 +65,21 @@
   font-weight: 600;
   margin-left: 20px;
 }
+#careers .search-jobs .dropdown-wrapper .round-edges {
+  background: transparent;
+}
 #careers .search-jobs .dropdown-wrapper .select-dropdown {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  color: #464646;
+  font-size: 24px;
+  justify-items: flex-start;
+  position: relative;
+  background-color: #e9eef6;
+  border-radius: 12px;
+  position: relative;
+  z-index: 9;
   padding: 25px 24px 30px 24px;
   width: 100%;
   cursor: pointer;
@@ -74,15 +88,11 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-#careers .search-jobs .dropdown-wrapper .select-dropdown option:disabled {
-  color: #464646;
-  font-weight: bold;
-}
-#careers .search-jobs .dropdown-wrapper::after {
+#careers .search-jobs .dropdown-wrapper .select-dropdown::after {
   content: "";
   position: absolute;
   right: 15px;
-  top: 70%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 0;
@@ -91,6 +101,37 @@
   border-right: 13.5px solid transparent;
   border-top: 15px solid #464646;
   pointer-events: none;
+}
+#careers .search-jobs .dropdown-wrapper .expendable-area {
+  background: white;
+  position: relative;
+  top: -10px;
+  border-radius: 0 0 12px 12px;
+}
+#careers .search-jobs .dropdown-wrapper .dd-item {
+  padding: 10px 30px;
+  font-size: 24px;
+  color: #464646;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+}
+#careers .search-jobs .dropdown-wrapper .dd-item:hover {
+  background: #e9eef6;
+}
+#careers .search-jobs .dropdown-wrapper .accordion-item.active .expendable-area {
+  padding-top: 10px;
+}
+#careers .search-jobs .dropdown-wrapper .accordion-item.active .expendable-area .content-data {
+  padding: 5px 0 !important;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: block;
 }
 #careers .search-jobs .button-primary {
   border-radius: 12px;
@@ -101,6 +142,8 @@
   -webkit-box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5);
           box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5);
   font-size: 22px;
+  min-height: 87px;
+  margin-top: 42px;
 }
 #careers .cards-wrapper {
   display: -webkit-box;
