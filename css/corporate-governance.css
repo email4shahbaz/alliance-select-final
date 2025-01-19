@@ -205,6 +205,55 @@
 #corporate-governance-main .enterprise-risk .content-data .right img {
   width: 70%;
 }
+#corporate-governance-main .press-release {
+  width: 100%;
+  background: #a9ccf0;
+}
+#corporate-governance-main .press-release .container {
+  padding: 0px;
+}
+#corporate-governance-main .press-release .content-data {
+  background-image: url(../images/backgrounds/press-releasebg2.jpg);
+  background-size: cover;
+  background-position-y: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+#corporate-governance-main .press-release .content-data .title-group .description-holder p {
+  text-align: left;
+  font-size: 28px;
+}
+#corporate-governance-main .press-release .content-data .title-group h5, #corporate-governance-main .press-release .content-data .title-group h4 {
+  font-size: 32px;
+  color: white;
+  text-align: left;
+}
+#corporate-governance-main .press-release .content-data .title-group h4 {
+  font-size: 36px;
+  font-style: italic;
+}
+#corporate-governance-main .press-release .content-data .right {
+  padding: 80px 60px 40px;
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+}
+#corporate-governance-main .press-release .content-data .right .description-holder {
+  display: grid;
+  gap: 30px;
+}
+#corporate-governance-main .press-release .content-data .right .description-holder p {
+  line-height: 1.5;
+}
+#corporate-governance-main .press-release .content-data .left {
+  justify-content: flex-start;
+  width: 100%;
+}
+#corporate-governance-main .press-release .content-data .left img {
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 1600px) {
   #corporate-governance-main .risk-management .content-data .box {
     width: calc(100% + 80px);
@@ -233,6 +282,9 @@
   }
   #corporate-governance-main .risk-management .content-data .box.pink .title-group {
     padding-right: 0px;
+  }
+  #corporate-governance-main .press-release .content-data .title-group .description-holder p {
+    font-size: 22px;
   }
 }
 @media (max-width: 1280px) {
@@ -282,6 +334,18 @@
   #corporate-governance-main .image-section.right .content-data .title-group {
     right: -40px;
   }
+  #corporate-governance-main .press-release .content-data .right {
+    padding: 40px 30px 0;
+  }
+  #corporate-governance-main .press-release .content-data .title-group h4 {
+    font-size: 24px;
+  }
+  #corporate-governance-main .press-release .content-data .title-group h5 {
+    font-size: 20px;
+  }
+  #corporate-governance-main .press-release .content-data .title-group .description-holder p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 850px) {
   #corporate-governance-main .image-section .content-data .img-holder {
@@ -320,6 +384,9 @@
   #corporate-governance-main .enterprise-risk .content-data .left .process-holder {
     padding-left: 20px;
   }
+  #corporate-governance-main .press-release .content-data .title-group .description-holder {
+    gap: 10px;
+  }
 }
 @media (max-width: 650px) {
   #corporate-governance-main .image-section .content-data .img-holder {
@@ -337,6 +404,12 @@
   #corporate-governance-main .risk-management .content-data .box .title-group {
     padding-left: 0px;
     padding-right: 40px;
+  }
+  #corporate-governance-main .press-release .content-data .right {
+    padding: 20px 20px 20px 0;
+  }
+  #corporate-governance-main .press-release .content-data .right .description-holder p {
+    line-height: 1.2;
   }
 }
 @media (max-width: 480px) {
@@ -363,6 +436,15 @@
   }
   #corporate-governance-main .enterprise-risk .content-data .left .process-holder {
     padding-left: 0;
+  }
+  #corporate-governance-main .press-release .content-data {
+    grid-template-columns: 1fr;
+  }
+  #corporate-governance-main .press-release .content-data .left {
+    display: none;
+  }
+  #corporate-governance-main .press-release .content-data .right {
+    padding: 20px;
   }
 }
 #corporate-governance-main.reports section.section {
