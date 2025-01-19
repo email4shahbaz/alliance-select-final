@@ -213,7 +213,7 @@
                            <div class="box-container">
                                 <div class="box pink">
                                     <div class="title-group shadow">
-                                        <img src="./images/cutlery-icon.png" />
+                                        <img class="food-icon" src="./images/cutlery-icon.png" />
                                         <h1>FOOD</h1>
                                     </div>
                                 </div>
@@ -333,7 +333,7 @@
                                     <p>View updated stock data at The PSE Electronic Disclosure Generation Technology or PSE EDGE website.</p>
                                 </div>
                             </div>
-                            <div class="h-list justify-content-center">
+                            <div class="bottom-logo">
                                 <img src="./images/edge-logo.png" alt="" />
                             </div>
                         </div>
@@ -432,41 +432,35 @@
             },
         });
 
-        document.addEventListener('DOMContentLoaded', function() {
+        let resizeTimeout;
+
+        function updateGridColors(){
             const grid = document.querySelector('.box-grid');
-       
             const items = Array.from(grid.children);
             const columns = getComputedStyle(grid).gridTemplateColumns.split(' ').length;
             const rows = getComputedStyle(grid).gridTemplateRows.split(' ').length;
-
-           let lastRow=0;
-           let lastCol=0;
-           let changeColor=false;
+            let lastColor=null;
+            const colors=['#0054bb', '#f73f40'];
 
             for(let r=0; r< rows; r++){
-                lastRow=r;
-
                 for(let c=0; c< columns; c++){
-                  
-                    const index = r * columns + c;
-                    const item = items[index];
-
-                    if(lastCol == columns-1){
-                        changeColor=true;
-                    }
-                    else{
-                        changeColor=false;
-                    }
-                
-                    item.style.backgroundColor = index%2 == 0 ?  'lightblue' : 'red';
-                    lastCol=c;
+                    const item = items[r * columns + c];
+                    lastColor = 
+                    (r==0 && c==0) ? colors[0] : 
+                    (columns % 2==0 && c==0) ? lastColor:
+                    lastColor == colors[0] ? colors[1]: colors[0];
+                    item.style.backgroundColor = lastColor;
                 }
             }
-                    
+        }
 
-        })
-
-       
+        document.addEventListener('DOMContentLoaded', updateGridColors);
+        window.addEventListener('resize', ()=>{
+            clearTimeout(resizeTimeout);
+            resizeTimeout=setTimeout(()=>{
+                updateGridColors();
+            }, 200);
+        });
 
         
     </script>
