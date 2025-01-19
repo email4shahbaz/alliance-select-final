@@ -16,7 +16,7 @@
                         padding: 40px 0;
                         position: relative;
                         left: -40px;
-                        .description-holder{display: grid; gap: 40px; p{padding: 0 40px; line-height: 40px;}}
+                        .description-holder{display: grid; gap: 40px; p{padding: 0 40px; line-height: 1.5;}}
                     }
 
                     &:nth-child(even){

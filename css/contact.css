@@ -15,19 +15,10 @@
 }
 #contact .connect-with-you .location-info .left {
   padding: 90px 70px 90px 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
   width: 38%;
 }
 #contact .connect-with-you .location-info .left .group {
@@ -36,8 +27,7 @@
 #contact .connect-with-you .location-info .left .group .h-list {
   margin-bottom: 15px;
   gap: 20px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 #contact .connect-with-you .location-info .left .group h3 {
   color: var(--primary-dark);
@@ -112,10 +102,7 @@
     font-size: 32px;
   }
   #contact .connect-with-you .location-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #contact .connect-with-you .location-info .left {
     width: 100%;
@@ -126,10 +113,7 @@
     height: 400px;
   }
   #contact .connect-with-you .content-data .grid-box, #contact .apply-job .content-data .grid-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30px;
   }
   #contact .connect-with-you .content-data .contact-info .left {
@@ -155,10 +139,7 @@
     padding-bottom: 10px;
   }
   #contact .connect-with-you .content-data .contact-info .form-wrapper form .input-group {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
   }

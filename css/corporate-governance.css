@@ -6,12 +6,10 @@
 }
 #corporate-governance-main .box-container .box {
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   background: #0054bc;
   padding: 60px 80px;
-  -webkit-transform: skewX(-25deg);
-          transform: skewX(-25deg);
+  transform: skewX(-25deg);
 }
 #corporate-governance-main .box-container .box.red {
   background: var(--primary-red);
@@ -22,8 +20,7 @@
 #corporate-governance-main .box-container .title-group {
   gap: 10px;
   margin-bottom: 0px;
-  -webkit-transform: skewX(25deg);
-          transform: skewX(25deg);
+  transform: skewX(25deg);
 }
 #corporate-governance-main .box-container .title-group h1 {
   line-height: 1.2;
@@ -50,8 +47,7 @@
   background: #a9ccf0;
   padding-right: 156px;
   border-right: 60px solid white;
-  -webkit-transform: skewX(32deg);
-          transform: skewX(32deg);
+  transform: skewX(32deg);
 }
 #corporate-governance-main .image-section .content-data .img-holder.right {
   padding-right: initial;
@@ -60,16 +56,13 @@
   border-right: none;
   right: -180px;
   left: initial;
-  -webkit-transform: skewX(-32deg);
-          transform: skewX(-32deg);
+  transform: skewX(-32deg);
 }
 #corporate-governance-main .image-section .content-data .img-holder img {
   width: 100%;
   height: 100%;
-  -o-object-position: right;
-     object-position: right;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-position: right;
+  object-fit: cover;
 }
 #corporate-governance-main .image-section .content-data .title-group {
   position: relative;
@@ -81,7 +74,7 @@
 }
 #corporate-governance-main .image-section .content-data .title-group .description-holder p {
   padding: 0 40px;
-  line-height: 40px;
+  line-height: 1.5;
 }
 #corporate-governance-main .image-section.right .content-data .img-holder {
   padding-right: initial;
@@ -90,12 +83,10 @@
   border-right: none;
   right: -180px;
   left: initial;
-  -webkit-transform: skewX(-32deg);
-          transform: skewX(-32deg);
+  transform: skewX(-32deg);
 }
 #corporate-governance-main .image-section.right .content-data .img-holder img {
-  -o-object-position: left;
-     object-position: left;
+  object-position: left;
 }
 #corporate-governance-main .image-section.right .content-data .title-group {
   left: initial;
@@ -147,18 +138,13 @@
   position: relative;
   padding: 80px 0px;
   width: calc(100% + 110px);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: none;
-          transform: none;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+  justify-content: center;
+  transform: none;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
 }
 #corporate-governance-main .risk-management .content-data .box .title-group {
   padding-left: 40px;
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 #corporate-governance-main .risk-management .content-data .box .title-group h1 .button-primary {
   margin-left: 20px;
@@ -169,8 +155,7 @@
   top: 80px;
   width: calc(100% + 110px);
   left: -110px;
-  -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 #corporate-governance-main .enterprise-risk {
   width: 100%;
@@ -192,20 +177,14 @@
   padding-left: 40px;
   display: grid;
   gap: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #corporate-governance-main .enterprise-risk .content-data .left .process-holder {
   padding-left: 60px;
 }
 #corporate-governance-main .enterprise-risk .content-data .left .process {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #corporate-governance-main .enterprise-risk .content-data .left .description-holder {
   padding: 40px 20px;
@@ -219,12 +198,8 @@
   width: 100%;
 }
 #corporate-governance-main .enterprise-risk .content-data .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   width: 100%;
 }
 #corporate-governance-main .enterprise-risk .content-data .right img {
@@ -262,9 +237,7 @@
   padding: 80px 60px 40px;
   display: grid;
   gap: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #corporate-governance-main .press-release .content-data .right .description-holder {
   display: grid;
@@ -274,9 +247,7 @@
   line-height: 1.5;
 }
 #corporate-governance-main .press-release .content-data .left {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   width: 100%;
 }
 #corporate-governance-main .press-release .content-data .left img {
@@ -293,13 +264,8 @@
   left: 0;
   padding: 40px 0px 40px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4352941176)), color-stop(20%, rgba(255, 255, 255, 0.8823529412)), to(#ffffff));
+  justify-content: center;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4352941176) 0%, rgba(255, 255, 255, 0.8823529412) 20%, #ffffff);
 }
 #corporate-governance-main .press-release-cards .container {
@@ -316,7 +282,6 @@
 }
 #corporate-governance-main .press-release-cards .content-data .cards-container .bottom .btn-cont {
   padding: 250px 0 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 23, 107, 0)), color-stop(50%, rgba(0, 23, 107, 0.7725490196)), color-stop(75%, rgba(0, 23, 107, 0.9647058824)));
   background: linear-gradient(to bottom, rgba(0, 23, 107, 0) 0%, rgba(0, 23, 107, 0.7725490196) 50%, rgba(0, 23, 107, 0.9647058824) 75%);
 }
 #corporate-governance-main .press-release-cards .content-data .cards-container .bottom .btn-cont .button-primary {
@@ -332,17 +297,13 @@
 #corporate-governance-main .press-release-cards .content-data .cards-container .cards-holder .press-card {
   position: relative;
   display: grid;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   gap: 20;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   gap: 10px;
   background: white;
   padding: 30px 40px;
-  -webkit-box-shadow: 2px 2px 16px #000;
-          box-shadow: 2px 2px 16px #000;
+  box-shadow: 2px 2px 16px #000;
   padding-bottom: 40px;
 }
 #corporate-governance-main .press-release-cards .content-data .cards-container .cards-holder .press-card .card-date {
@@ -498,14 +459,12 @@
   #corporate-governance-main .risk-management .content-data .box-container .box {
     padding: 20px;
     width: 100%;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
   }
   #corporate-governance-main .risk-management .content-data .box-container .box.pink {
     left: 0px;
     top: 0px;
-    -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 @media (max-width: 768px) {

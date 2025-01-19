@@ -20,13 +20,9 @@
   overflow: hidden;
 }
 #products .products-section .title-group.horizontal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 100px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0 60px;
   margin-bottom: 80px;
 }
@@ -51,41 +47,26 @@
   font-weight: 700;
 }
 #products .products-section .products-with-categories .cards-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   gap: 52px;
   margin: 0 90px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #products .products-section .products-with-categories .cards-holder .cat-box {
   cursor: pointer;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   width: 33%;
   height: 470px;
   padding: 40px 30px 80px 20px;
 }
 #products .products-section .products-with-categories .cards-holder .cat-box .bg {
-  -webkit-transform: skewX(-15deg);
-          transform: skewX(-15deg);
+  transform: skewX(-15deg);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -234,13 +215,8 @@
     right: -50px;
   }
   #products .products-section .title-group.horizontal {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   #products .products-section .title-group.horizontal h1 {
     font-size: 28px;
@@ -253,10 +229,7 @@
     font-size: 24px;
   }
   #products .products-section .products-with-categories .cards-holder {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #products .products-section .products-with-categories .cards-holder .cat-box {
     width: 100%;
@@ -328,8 +301,7 @@
   overflow: hidden;
   width: 100%;
   min-width: 600px;
-  -webkit-box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.9);
-          box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.9);
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.9);
 }
 #products-details .product-details-section .table-wrapper table td {
   max-width: 33%;
