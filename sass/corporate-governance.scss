@@ -153,12 +153,56 @@
         }
     }
 
+    .press-release-cards{
+        width: 100%;
+        background: #a9ccf0;
+
+        .btn-cont{
+            position: absolute; bottom: 0px; left: 0;
+            padding: 40px 0px 40px;
+            width: 100%; display: flex; justify-content: center;
+            background: linear-gradient(to bottom,  #ffffff6f 0%, #ffffffe1 20%, #ffffff);
+            //.button-primary{padding: 10px 40px;}
+        }
+
+
+        .container{padding: 0px;}
+        .content-data{
+            background-image: url(../images/backgrounds/press-releasebg2.jpg);
+            background-size: cover;
+            background-position-y: 100%;
+            position: relative;
+            .cards-container{
+                width: 100%; .bottom{.btn-cont{ padding: 250px 0 100px; background: linear-gradient(to bottom, #00176b00 0%, #00176bc5 50%, #00176bf6 75%); .button-primary{padding: 20px 25px;}}}
+                .cards-holder{
+                    padding: 80px 110px;
+                    width: 100%;
+                    gap: 100px;
+                    display: grid;
+                    //grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns:  repeat(auto-fill, minmax(420px, 1fr));
+
+                    .press-card{
+                        position: relative; display: grid; align-items: flex-start; gap: 20; align-content: flex-start; gap: 10px;
+                        background: white; padding: 30px 40px; box-shadow: 2px 2px 16px #000;
+                        .card-date{font-family: 'Avenir-heavy-Italic'; font-size: 40px; font-weight: bold; color: #f73f40; white-space: nowrap;} 
+                        .card-title{font-size: 40px; font-weight: bold; color: #022c86; font-family: 'Avenir-Condenced-Italic'; font-style: italic;}
+                        .card-description{font-size: 24px; color: #022c86; }
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+
 
    
    
 
     @media (max-width: 1600px) {
         .risk-management .content-data .box{width: calc(100% + 80px); .title-group{padding-right: 30px;}}
+        .press-release-cards .content-data .cards-container .cards-holder{ padding: 60px 80px;}
+        .press-release-cards .content-data .cards-container .cards-holder{gap: 60px;}
        
     }
 
@@ -168,6 +212,7 @@
         .risk-management .content-data .box{&.pink{width: calc(100% + 80px); left: -80px; .title-group{padding-right: 0px;}}}
 
         .press-release .content-data .title-group .description-holder p{font-size: 22px;}
+        .press-release-cards .content-data .cards-container .cards-holder{gap: 30px;}
     }
 
     @media (max-width: 1280px) {
@@ -198,6 +243,12 @@
         .press-release .content-data .title-group h4{font-size: 24px;}
         .press-release .content-data .title-group h5{font-size: 20px;}
         .press-release .content-data .title-group .description-holder p{font-size: 16px;}
+
+        .press-release-cards .content-data .cards-container .cards-holder{ padding: 30px; justify-items: center;}
+        .press-release-cards .content-data .cards-container .cards-holder .press-card{min-height: 500px; max-width: 420px;}
+        .press-release-cards .content-data .cards-container .cards-holder .press-card .card-date{font-size: 28px;}
+        .press-release-cards .content-data .cards-container .cards-holder .press-card .card-title{font-size: 32px;}
+        .press-release-cards .content-data .cards-container .cards-holder .press-card .card-description{font-size: 18px;}
     }
     
 
@@ -240,7 +291,8 @@
     }
 
     @media (max-width: 430px) {
-     
+        .press-release-cards .content-data .cards-container .cards-holder{padding: 20px; grid-template-columns:  repeat(auto-fill, minmax(320px, 1fr));}
+        
     }
 
     @media (max-width: 380px) {
