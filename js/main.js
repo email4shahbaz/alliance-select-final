@@ -2,8 +2,8 @@
 AOS.init();
 
 // Initialize Lozad
-const observer = lozad();
-observer.observe();
+// const observer = lozad();
+// observer.observe();
 
 const preloader=document.querySelector('#preloader');
 const pageOverlay = document.querySelector('#page-overlay');

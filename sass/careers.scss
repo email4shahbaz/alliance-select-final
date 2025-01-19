@@ -10,20 +10,32 @@
         }
     }
     .search-jobs {
-        display: flex; align-items: flex-end; gap: 24px; margin-bottom: 158px;
+        display: flex; align-items: flex-end; gap: 24px; margin-bottom: 158px; align-items: flex-start;
 
         .dropdown-wrapper {
             display: flex; flex-direction: column; gap: 18px; width: 100%; position: relative;
             label { font-size: 22px; color: #ffffff; font-weight: 600; margin-left: 20px;}
+            .round-edges{background: transparent;}
             .select-dropdown {
-                flex: 1;
+                flex: 1; color: #464646; font-size: 24px; justify-items: flex-start; position: relative; background-color: #e9eef6; border-radius: 12px; position: relative; z-index: 9;
                 padding: 25px 24px 30px 24px; width: 100%; cursor: pointer; outline: none; appearance: none; -webkit-appearance: none; -moz-appearance: none;
 
-                option:disabled {color: #464646; font-weight: bold;}
+                &::after { content: ''; position: absolute; right: 15px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-left: 13.5px solid transparent; border-right: 13.5px solid transparent; border-top: 15px solid #464646; pointer-events: none; }
             }
-            &::after { content: ''; position: absolute; right: 15px; top: 70%; transform: translateY(-50%); width: 0; height: 0; border-left: 13.5px solid transparent; border-right: 13.5px solid transparent; border-top: 15px solid #464646; pointer-events: none; }
+
+            .expendable-area{
+                background: white; position: relative; top: -10px;border-radius: 0 0 12px 12px; 
+                
+            }
+            .dd-item{padding: 10px 30px; font-size: 24px; color: #464646; cursor: pointer; transition: all 0.3s ease;  display: block; text-decoration: none; text-align: left;}
+            .dd-item:hover{background: #e9eef6;}
+            .accordion-item.active{
+                .expendable-area{padding-top: 10px;}
+                .expendable-area .content-data{padding: 5px 0 !important; width: 100%; justify-content: flex-start; display: block;}
+
+            }
         }
-        .button-primary {border-radius: 12px; background-color: #ec1d39; text-decoration: none; font-weight: bold; padding: 22px 65px; box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5); font-size: 22px;}
+        .button-primary {border-radius: 12px; background-color: #ec1d39; text-decoration: none; font-weight: bold; padding: 22px 65px; box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5); font-size: 22px; min-height: 87px; margin-top: 42px;}
     }
     .cards-wrapper {
         display: flex; align-items: center; gap: 50px; margin-bottom: 145px;
