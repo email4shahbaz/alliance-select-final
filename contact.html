@@ -254,38 +254,44 @@
                                     <h2>How can we assist you today?</h2>
                                 </div>
                                 <div class="round-edges form-wrapper">
-                                    <form onsubmit="">
+                                    <form onsubmit="return validateContactForm()">
                                         <div>
                                             <div class="input-group">
                                                 <div class="input-wrapper">
                                                     <label>Name</label>
-                                                    <input class="input-field" placeholder="Name" />
+                                                    <input id="name" name="name" class="input-field" placeholder="Name" />
+                                                    <div class="form-error" id="nameError">Please enter a name</div>
                                                 </div>
                                                 <div class="input-wrapper">
                                                     <label>Company</label>
-                                                    <input class="input-field" placeholder="Company" />
+                                                    <input id="company" name="company" class="input-field" placeholder="Company" />
+                                                    <div class="form-error" id="companyError">Please enter a company name</div>
                                                 </div>
                                             </div>
                                             <div class="input-group">
                                                 <div class="input-wrapper">
                                                     <label>E-mail Address</label>
-                                                    <input class="input-field" placeholder="E-mail Address" />
+                                                    <input id="email" name="email" class="input-field" placeholder="E-mail Address" />
+                                                    <div class="form-error" id="emailError">Please enter a valid email</div>
                                                 </div>
                                                 <div class="input-wrapper">
                                                     <label>Contact Number</label>
-                                                    <input class="input-field" placeholder="Contact Number" />
+                                                    <input id="contactNumber" name="contactNumber" class="input-field" placeholder="Contact Number" />
+                                                    <div class="form-error" id="contactError">Please enter a contact number</div>
                                                 </div>
                                             </div>
                                             <div class="input-wrapper">
                                                 <label>Subject</label>
-                                                <input class="input-field" placeholder="Subject" />
+                                                <input id="subject" name="subject" class="input-field" placeholder="Subject" />
+                                                <div class="form-error" id="subjectError">Please enter a subject</div>
                                             </div>
                                             <div class="input-wrapper">
                                                 <label>Message</label>
-                                                <textarea rows="4" cols="50">Message</textarea>
+                                                <textarea id="message" name="message" rows="4" cols="50">Message</textarea>
+                                                <div class="form-error" id="messageError">Please enter a message</div>
                                             </div>
                                         </div>
-                                        <input type="button" value="SEND" class="btn button-rounded" />
+                                        <input type="submit" value="SEND" class="btn button-rounded" />
                                     </form>
                                 </div>
                             </div>
