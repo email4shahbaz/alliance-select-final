@@ -1,13 +1,14 @@
-#brand-page .section-title {
+#brand-page .main-heading .section-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
   color: white;
   position: relative;
   display: grid;
   grid-gap: 50px;
-  font-family: "Avenir-Condenced-Italic";
   text-align: left;
   justify-content: flex-start;
 }
-#brand-page .section-title::after {
+#brand-page .main-heading .section-title::after {
   display: none;
 }
 #brand-page section.section {
@@ -27,11 +28,11 @@
 }
 #brand-page .section.gold .content-data .image-responsive {
   position: absolute;
-  width: 45vw;
+  width: 50vw;
   height: 100%;
 }
 #brand-page .section.gold .content-data .image-responsive img {
-  object-position: center right;
+  object-position: right;
 }
 #brand-page .section.gold .content-data .content-area {
   padding-bottom: 200px;
@@ -43,7 +44,7 @@
   max-width: 950px;
 }
 #brand-page .section.gold .content-data .content-area .description-holder p {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 1.6;
 }
 #brand-page .section.gold .content-data .content-area .availability-data {
@@ -71,7 +72,7 @@
   padding-top: 75px;
 }
 #brand-page.gold-standard .section.gold .content-data .content-area .description-holder {
-  max-width: 100%;
+  max-width: 1140px;
 }
 #brand-page.gold-standard .section.gold .content-data .content-area .availability-data {
   margin-top: 340px;

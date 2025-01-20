@@ -16,52 +16,51 @@
   --content-size: 16px;
   --container-width: 1920px;
   --container-padding: 50px;
-  --primary-font: "Avenir", Arial, sans-serif;
+  --primary-font: "AvenirRegular";
   --button-height: 35px;
   --input-height: 40px;
 }
 
 @font-face {
-  font-family: "Avenir", Arial, sans-serif;
+  font-family: "AvenirRegular";
   font-style: normal;
   font-weight: 400;
-  src: local("AvenirNext LT Pro Regular"), url("../fonts/AvenirNextLTPro-Regular.otf");
+  src: local("AvenirNext LT Pro Regular"), url("../fonts/AvenirNextLTPro-Regular.otf") format("opentype");
   font-display: swap;
 }
 @font-face {
-  font-family: "Avenir", Arial, sans-serif;
+  font-family: "AvenirDemi";
   font-style: normal;
   font-weight: 600;
-  src: local("AvenirNext LT Pro Regular"), url("../fonts/AvenirNextLTPro-Demi.otf");
+  src: local("AvenirNext LT Pro Regular"), url("../fonts/AvenirNextLTPro-Demi.otf") format("opentype");
   font-display: swap;
 }
 @font-face {
-  font-family: "Avenir", Arial, sans-serif;
+  font-family: "AvenirBold";
   font-style: bold;
   font-weight: 700;
-  src: local("AvenirNext LT Pro Bold"), url("../fonts/AvenirNextLTPro-Bold.otf");
+  src: local("AvenirNext LT Pro Bold"), url("../fonts/AvenirNextLTPro-Bold.otf") format("opentype");
   font-display: swap;
 }
 @font-face {
-  font-family: "Avenir-Condenced-Italic";
+  font-family: "AvenirCondencedItalic";
   font-style: normal;
   font-weight: 500;
-  src: local("AvenirNext LT Pro MediumCn"), url("../fonts/AvenirNextLTPro-BoldCnIt.otf");
+  src: local("AvenirNext LT Pro MediumCn"), url("../fonts/AvenirNextLTPro-BoldCnIt.otf") format("opentype");
   font-display: swap;
 }
 @font-face {
-  font-family: "Avenir-heavy-Italic";
+  font-family: "AvenirHeavyItalic";
   font-style: normal;
   font-weight: 500;
-  src: local("AvenirNext LT Pro MediumCn"), url("../fonts/AvenirNextLTPro-HeavyCnIt.otf");
+  src: local("AvenirNext LT Pro MediumCn"), url("../fonts/AvenirNextLTPro-HeavyCnIt.otf") format("opentype");
   font-display: swap;
 }
 @font-face {
-  font-family: "Avenir-heavy-Demi-Condenced";
+  font-family: "AvenirHeavyDemiCondenced";
   font-style: normal;
   font-weight: 500;
   src: local("AvenirNext LT Pro MediumCn"), url("../fonts/AvenirNextLTPro-DemiCn.otf");
-  font-display: swap;
 }
 html {
   scroll-behavior: smooth;
@@ -1611,7 +1610,7 @@ h2.section-title.shadow {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 h2.section-title.italic {
-  font-family: "Avenir-Condenced-Italic";
+  font-family: "AvenirCondencedItalic";
   font-style: italic;
 }
 @media (max-width: 1440px) {
@@ -1709,12 +1708,16 @@ h3.section-sub-title.shadow {
 .title-group.half-width {
   max-width: 636px;
 }
-.title-group h1 {
+.title-group h1, .title-group h3 {
   font-size: 70px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: bold;
+  font-family: "AvenirCondencedItalic";
+}
+.title-group h3 {
+  font-size: 56px;
 }
 .title-group .description-holder p {
   font-size: 22px;
@@ -1729,6 +1732,9 @@ h3.section-sub-title.shadow {
   .title-group h1 {
     font-size: 64px;
   }
+  .title-group h3 {
+    font-size: 48px;
+  }
 }
 @media (max-width: 1300px) {
   .title-group h1 {
@@ -1738,6 +1744,9 @@ h3.section-sub-title.shadow {
     font-size: 18px;
     line-height: 22px;
   }
+  .title-group h3 {
+    font-size: 42px;
+  }
 }
 @media (max-width: 1024px) {
   .title-group h1 {
@@ -1746,6 +1755,9 @@ h3.section-sub-title.shadow {
   .title-group .description-holder p {
     font-size: 16px;
     line-height: 18px;
+  }
+  .title-group h3 {
+    font-size: 32px;
   }
 }
 @media (max-width: 992px) {
@@ -1767,6 +1779,9 @@ h3.section-sub-title.shadow {
     font-size: 14px;
     line-height: 16px;
   }
+  .title-group h3 {
+    font-size: 28px;
+  }
 }
 @media (max-width: 650px) {
   .title-group {
@@ -1779,6 +1794,9 @@ h3.section-sub-title.shadow {
     font-size: 14px;
     line-height: 16px;
   }
+  .title-group h3 {
+    font-size: 22px;
+  }
 }
 @media (max-width: 480px) {
   .title-group {
@@ -1790,6 +1808,9 @@ h3.section-sub-title.shadow {
   .title-group .description-holder p {
     font-size: 12px;
     line-height: 14px;
+  }
+  .title-group h3 {
+    font-size: 18px;
   }
 }
 
@@ -1830,7 +1851,7 @@ h3.section-sub-title.shadow {
   line-height: 1;
   letter-spacing: 2px;
   font-style: italic;
-  font-family: "Avenir-Condenced-Italic";
+  font-family: "AvenirCondencedItalic";
 }
 @media (max-width: 1600px) {
   .hero-banner .container .title-group {
@@ -1873,12 +1894,13 @@ h3.section-sub-title.shadow {
 }
 
 .section-title, .section-sub-title {
+  font-family: "AvenirCondencedItalic";
   color: white;
   text-align: center;
   position: relative;
   display: grid;
   justify-items: center;
-  grid-gap: 50px;
+  grid-gap: 20px;
 }
 
 .section-title {
@@ -3414,7 +3436,7 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   color: white;
   letter-spacing: 2px;
   font-style: italic;
-  font-family: "Avenir-Condenced-Italic";
+  font-family: "AvenirCondencedItalic";
   text-shadow: 3px 4px 3px #0c0c0c;
   font-weight: 700;
   max-width: 800px;

@@ -1,8 +1,12 @@
 #brand-page{
-    .section-title{
-        color: white; position: relative; display: grid;  grid-gap: 50px; font-family: "Avenir-Condenced-Italic"; text-align: left; justify-content: flex-start;
-        
-        &::after{display: none;}
+    .main-heading{
+        .section-title{
+            margin-top: 60px;
+            margin-bottom: 20px;
+            color: white; position: relative; display: grid;  grid-gap: 50px; text-align: left; justify-content: flex-start;
+            
+            &::after{display: none;}
+        }
     }
 
     section.section{background: #022c86;}
@@ -12,13 +16,13 @@
         .content-data{
             display: grid; grid-template-columns: 1fr 1fr; color: white; 
 
-            .image-responsive{position: absolute; width: 45vw; height: 100%;}
-            .image-responsive img{object-position: center right;}
+            .image-responsive{position: absolute; width: 50vw; height: 100%;}
+            .image-responsive img{object-position: right;}
             .content-area{
                 padding-bottom: 200px; margin-left: -20vw; position: relative; z-index: 9;
                 .description-holder{
                     max-width: 950px;
-                    p{font-size: 30px; line-height: 1.6; }
+                    p{font-size: 26px; line-height: 1.6; }
                 
     
                 }
@@ -42,7 +46,7 @@
             .image-responsive{width: 50vw;}
             .content-area{
                 padding-bottom: 120px; padding-top: 75px;
-                .description-holder{max-width: 100%;}
+                .description-holder{max-width: 1140px;}
                 .availability-data{
                     margin-top: 340px; padding-left: 37%;
                     

@@ -261,7 +261,7 @@
   width: 53%;
 }
 #about-main .what-we-do .content-data .box-holder .box:nth-child(1) .title-group {
-  padding: 0 20px 40px 380px;
+  padding: 0 20px 40px 410px;
 }
 #about-main .what-we-do .content-data .box-holder .box:nth-child(1) .title-group .description-holder p {
   text-align: left;
@@ -270,7 +270,7 @@
   width: 120px;
   height: 100%;
   float: left;
-  shape-outside: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
+  shape-outside: polygon(0% 0%, 60% 0%, 0% 100%, 0% 100%);
 }
 #about-main .what-we-do .content-data .box-holder .box:nth-child(1) img {
   left: -80px;
@@ -378,7 +378,7 @@
   gap: 70px;
 }
 #about-main .market-success .content-data .content-top .content-header .num {
-  font-family: "Avenir-heavy-Italic";
+  font-family: "AvenirHeavyItalic";
   font-size: 200px;
   color: #f73f40;
   font-style: italic;
@@ -387,7 +387,7 @@
 #about-main .market-success .content-data .content-top .content-header .txt {
   font-size: 75px;
   max-width: 500px;
-  font-family: "Avenir-heavy-Italic";
+  font-family: "AvenirHeavyItalic";
   color: #ffffff;
   font-style: italic;
 }
@@ -438,7 +438,7 @@
   text-align: center;
   color: #022c86;
   font-weight: bold;
-  font-family: "Avenir-heavy-Demi-Condenced";
+  font-family: "AvenirHeavyDemiCondenced";
   border-right: 2px solid #022c86;
 }
 #about-main .market-success .content-data .content-bottom .bottom-data-cont .bottom-row .desc {
@@ -509,7 +509,7 @@
     height: 400px;
   }
   #about-main .what-we-do .content-data .box-holder .box:nth-child(1) .title-group {
-    padding-left: 270px;
+    padding-left: 290px;
   }
   #about-main .what-we-do .content-data .box-holder .box:nth-child(2) img {
     width: 240px;
@@ -606,7 +606,6 @@
 #about-main .our-vision .content-data {
   position: relative;
   height: 2050px;
-  overflow: hidden;
   background: url(../images/backgrounds/vision\ mission\ background.jpg);
 }
 #about-main .our-vision .content-data .left-img {
@@ -615,6 +614,11 @@
   left: 0;
   width: 1167px;
   left: -770px;
+}
+#about-main .our-vision .content-data .content-inner {
+  position: relative;
+  top: -300px;
+  overflow: hidden;
 }
 #about-main .our-vision .content-data .content-holder {
   height: 2050px;
@@ -637,7 +641,7 @@
 }
 #about-main .our-vision .content-data .content-holder .content-half .description-holder p {
   text-align: left;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 1.2;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list {
@@ -646,7 +650,7 @@
   display: grid;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-  font-size: 40px;
+  font-size: 36px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder {
   display: flex;
@@ -795,6 +799,9 @@
   }
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-holder {
     padding: 30px;
+  }
+  #about-main .our-vision .content-data .content-inner {
+    top: -150px;
   }
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) {
     height: 49%;
@@ -1091,7 +1098,7 @@
     height: 100px;
   }
   #about-main .market-success .right-image img {
-    width: 300px;
+    width: 250px;
     height: 400px;
   }
   #about-main .market-success .content-data .content-bottom {
