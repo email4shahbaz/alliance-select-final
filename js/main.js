@@ -8,6 +8,7 @@ AOS.init();
 const preloader=document.querySelector('#preloader');
 const pageOverlay = document.querySelector('#page-overlay');
 const navList = document.querySelector('.nav-list');
+let lastOpenMenu = null;
 
 document.addEventListener("DOMContentLoaded", function () {
 	const modalOverlay = document.createElement("div");
@@ -16,9 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	modalOverlay.addEventListener('click', () => {
 		document.body.classList.remove('mobile-menu-active');
-		document.querySelector('.nav-list').classList.remove('active')
+		document.querySelector('.nav-list').classList.remove('mobile')
 	});
 
+
+	document.querySelectorAll(".menu-item-arrow").forEach((arrow)=>{
+		arrow.addEventListener("click", (e)=>{
+			if(navList.classList.contains("mobile")){
+				if(e.currentTarget.parentNode.classList.contains('active')){
+					e.currentTarget.parentNode.classList.remove('active');
+				}
+				else{
+					if(lastOpenMenu!=null){
+						lastOpenMenu.classList.remove('active');
+					}
+					e.currentTarget.parentNode.classList.add('active')
+					lastOpenMenu = e.currentTarget.parentNode;
+				}
+			}
+		})
+	})
 
 
 	document.querySelectorAll(".menu-item").forEach((item)=>{
@@ -31,6 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	})
 });
+
+const unselectAll=()=>{
+	document.querySelectorAll(".nav-item").forEach((item)=>{
+		if(item.classList.contains('active')){
+			item.classList.toggle("active");
+		}
+	})
+}
 
 
 
@@ -109,6 +135,7 @@ document.querySelectorAll(".accordion-item").forEach((item) => {
 // mobile menu menu start
 document.querySelector('#hamburger-btn').addEventListener('click', () => {
 	document.body.classList.toggle('mobile-menu-active');
-	document.querySelector('.nav-list').classList.toggle('active')
+	document.querySelector('.nav-list').classList.toggle('desktop');
+	document.querySelector('.nav-list').classList.toggle('mobile')
 });
 
