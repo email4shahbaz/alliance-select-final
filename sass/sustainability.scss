@@ -16,6 +16,7 @@
                         padding: 40px 0;
                         position: relative;
                         left: -40px;
+                        margin-bottom: 0px;
                         .description-holder{display: grid; gap: 40px; p{padding: 0 40px; line-height: 1.5;}}
                     }
 
@@ -92,6 +93,9 @@
         .box-container .box{padding: 20px;}
         .image-section .content-data .title-group{width: calc(100% + 120px); .description-holder{gap: 10px;}}
         .risk-management .content-data .box .title-group{padding-left: 0px; padding-right: 40px;}
+        //.main-section .container .content-data .image-content .img-holder img{left: -50%; position: relative;}
+        .main-section .container .content-data .image-content{grid-template-columns: 1fr 3fr;}
+        .main-section .container .content-data .image-content:nth-child(even){grid-template-columns: 3fr 1fr;}
     }
 
     @media (max-width: 480px) {
@@ -102,6 +106,8 @@
         .enterprise-risk .content-data .left{padding-left: 20px;}
         .enterprise-risk .content-data .left .description-holder{padding-top: 20px; gap: 10px;}
         .enterprise-risk .content-data .left{gap: 0px; .process-holder{padding-left: 0;}}
+        .main-section .container .content-data .image-content .title-group{padding: 20px; margin-bottom: 0px; left: 0; .description-holder{p{padding: 0px; line-height: 1.2;}}}
+        
     }
 
     @media (max-width: 430px) {

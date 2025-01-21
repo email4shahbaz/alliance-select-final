@@ -36,6 +36,7 @@
             .title-group{
                 position: relative;
                 left: -120px;
+                margin-top: 20px;
                 .description-holder{display: grid; gap: 40px; p{padding: 0 40px; line-height: 1.5;}}
             }
            
@@ -233,7 +234,7 @@
    
     @media (max-width: 1024px) {
         .social-responsibilities .box-container .title-group h1{font-size: 24px;}
-        .image-section .content-data .title-group{width: calc(100% + 60px); left: -120px;}
+        .image-section .content-data .title-group{width: calc(100% + 60px); left: -80px;}
         .image-section .content-data .img-holder{border-width: 20px; padding-right: 80px;}
         .image-section {&.right{.content-data .img-holder{border-width: 20px; padding-left: 80px;}}}
         .risk-management .content-data .box{width: calc(100% + 70px);}
@@ -263,6 +264,8 @@
         .image-section .content-data .img-holder{height: 375px;}
         .social-responsibilities .container{padding: 30px 0;}
         .risk-management .content-data{padding: 30px 0;}
+        .image-section .content-data .title-group .description-holder{gap: 20px;}
+        //.image-section .content-data .title-group .description-holder p{pa}
 
         .enterprise-risk .content-data .left .process-holder{padding-left: 20px;}
         .press-release .content-data .title-group .description-holder{gap: 10px;}
@@ -271,7 +274,7 @@
     @media (max-width: 650px) {
         .image-section .content-data .img-holder{height: 300px;}
         .box-container .box{padding: 20px;}
-        .image-section .content-data .title-group{width: calc(100% + 120px); .description-holder{gap: 10px;}}
+        //.image-section .content-data .title-group{width: calc(100% + 120px); .description-holder{gap: 10px;}}
         .risk-management .content-data .box .title-group{padding-left: 0px; padding-right: 40px;}
         .press-release .content-data .right{padding: 20px 20px 20px 0;}
         .press-release .content-data .right{.description-holder p{line-height: 1.2;}}
@@ -281,6 +284,8 @@
         .social-responsibilities .box-container .title-group h1{font-size: 18px;}
         .image-section .content-data .img-holder{border-width: 10px; padding-right: 40px;}
         .image-section {&.right{.content-data .img-holder{border-width: 10px; padding-left: 40px;}}}
+        .image-section .content-data .title-group .description-holder p{line-height: 1.2; padding: 0px;}
+        .image-section .content-data .title-group{margin-top: 10px;}
 
         .enterprise-risk .content-data .left{padding-left: 20px;}
         .enterprise-risk .content-data .left .description-holder{padding-top: 20px; gap: 10px;}

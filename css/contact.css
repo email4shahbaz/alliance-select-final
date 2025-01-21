@@ -177,4 +177,7 @@
   #contact .connect-with-you .contact-info h2 {
     font-size: 24px;
   }
+  #contact .connect-with-you .location-info .left .group .h-list img {
+    width: 24px;
+  }
 }

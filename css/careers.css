@@ -228,6 +228,9 @@
 #careers .contact-info .file-upload input {
   display: none;
 }
+#careers .contact-info .input-field::before {
+  display: none;
+}
 @media (max-width: 1200px) {
   #careers .apply-job {
     padding: 40px 0;
@@ -319,5 +322,24 @@
   }
   #careers .apply-job .content-data .contact-info .form-wrapper {
     padding: 20px;
+  }
+  #careers .search-jobs .dropdown-wrapper .select-dropdown {
+    padding: 15px;
+  }
+  #careers .search-jobs .button-primary {
+    padding: 15px;
+    min-height: 60px;
+    box-shadow: 4.866px 4.508px 6.5px rgba(0, 0, 0, 0.5);
+  }
+  #careers .search-jobs .dropdown-wrapper .round-edges {
+    box-shadow: 4.866px 4.508px 6.5px rgba(0, 0, 0, 0.5);
+  }
+  #careers .contact-info .left .email {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  #careers .contact-info .left .email p {
+    font-size: 18px;
   }
 }

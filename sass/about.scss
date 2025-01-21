@@ -203,10 +203,26 @@
                         display: grid;
                         gap: 24px;
                         justify-items: center;
-                        .year{font-size: 48px;
-                            font-weight: bold;
-                            text-align: center;
+                        &:first-child{.year-txt-cont{&::before{visibility: hidden;}}}
+                        &:last-child{.year-txt-cont{&::after{visibility: hidden;}}}
+
+                        .year-txt-cont{
+
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            &::before{content: ''; display: block; width: 90%; height: 2px; background:white; flex-wrap: nowrap; top: 50% }
+                            &::after{content: ''; display: block; width: 90%; height: 2px; background: white; flex-wrap: nowrap; top: 50% }
+                            .year{
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                font-size: 48px;
+                                font-weight: bold;
+                            }
                         }
+
                         .thumb{width: 125px;
                             height: 139px;
                             border-radius: 3px;
@@ -385,7 +401,7 @@
         .world .content-data .map-holder .world-map .map-legend{left: 20px; bottom: 10px;}
         .what-we-do .content-data .product-holder .title-group{padding: 0 180px}
         .market-success .content-data .content-top{padding-right: 220px; .content-header{.num{font-size: 180px;} .txt{font-size: 60px;}}}
-        .market-success .content-data .content-top .years-container .year-item{.year{font-size: 36px;} .desc{font-size: 24px;}}
+        .market-success .content-data .content-top .years-container .year-item .year-txt-cont{.year{font-size: 36px;} .desc{font-size: 24px;}}
 
         .our-vision .content-data{height: 1240px; .left-img{left: -900px; top: -420px}}
         .our-vision .content-data .content-holder{ height: 1200px; clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 30% 50%);}
@@ -439,7 +455,8 @@
         .what-we-do .content-data .box-holder .box:nth-child(1) .title-group{padding-left: 180px}
         .what-we-do .content-data .box-holder .box:nth-child(2) img{width: 190px; height: 320px;}
         .what-we-do .content-data .box-holder .box:nth-child(2) .title-group{padding-right: 80px}
-        .what-we-do .content-data .certificate-slider-holder .swiper-container{.swiper-slide{display: flex; justify-content: center;}}
+        .what-we-do .content-data .certificate-slider-holder .swiper-container{.swiper-slide{display: flex; justify-content: center; img{width: 100%;}}}
+        
         .market-success .right-image img{width: 500px;}
         .market-success .content-data .content-top{padding: 40px;}
 
@@ -489,10 +506,10 @@
 
         .market-success .content-data .content-top{padding: 20px;}
         .market-success .content-data .content-top .content-header{flex-direction: column; gap: 0px}
-        .market-success .content-data .content-top .content-header .txt{font-size: 48px; text-align: center;}
+        .market-success .content-data .content-top .content-header .num{font-size: 80px;}
+        .market-success .content-data .content-top .content-header .txt{font-size: 32px; text-align: center;}
+        .market-success .content-data .content-top .years-container .year-item .year-txt-cont .year{font-size: 24px;}
 
-        .market-success .content-data .content-top .content-header .num{font-size: 120px;}
-        .market-success .content-data .content-top .years-container .year-item .year{font-size: 24px;}
         .market-success .content-data .content-top .years-container .year-item .desc{font-size: 16px;}
         .market-success .content-data .content-top .years-container .year-item .thumb{width: 80px; height: 100px;}
         .market-success .right-image img{width: 250px; height: 400px;}
@@ -535,10 +552,11 @@
         .what-we-do .content-data .box-holder .box:nth-child(2) .title-group{padding-left: 40px;}
         .market-success .content-data .content-bottom{padding: 0px;}
         .what-we-do .content-data .certificate-holder .certificate-desc-holder{display: flex; flex-direction: column;}
-        .world .content-data .map-holder .world-map .map-legend{left: 0px}
+        .world .content-data .map-holder .world-map{ul{gap: 10px} .map-legend{left: 0px; padding: 10px;}}
+
         .what-we-do .content-data .product-holder .title-group{padding: 20px;}
         .market-success .right-image img{width: 220px; height: 300px;}
-        .market-success .content-data .content-bottom .bottom-data-cont .bottom-row .heading{font-size: 60px;}
+        .market-success .content-data .content-bottom .bottom-data-cont .bottom-row .heading{font-size: 60px; margin-top: 20px}
         .market-success .content-data .content-bottom .bottom-data-cont .bottom-row{
             &:nth-child(1){.desc{width: 100%;}}
             &:nth-child(2){.desc{width: 50%;}}

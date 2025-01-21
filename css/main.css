@@ -2025,6 +2025,9 @@ h3.section-sub-title.shadow {
   #organization .designation-holder .person {
     font-size: 18px;
   }
+  #organization .organization-section.corporate .content-data {
+    padding: 20px 0;
+  }
 }
 
 .round-edges {
@@ -2195,6 +2198,9 @@ h3.section-sub-title.shadow {
   cursor: pointer;
   padding: 0 32px;
 }
+.main-header .mainmenu-holder .nav-list a.menu-link {
+  padding: 0px;
+}
 .main-header .mainmenu-holder .nav-list .nav-item:hover, .main-header .mainmenu-holder .nav-list .menu-item:hover, .main-header .mainmenu-holder .nav-list .submenu-dd a:hover {
   background: #e9eef6;
   color: var(--primary-dark);
@@ -2253,12 +2259,6 @@ h3.section-sub-title.shadow {
 @media (max-width: 1660px) {
   .main-header .mainmenu-holder .nav-list > .nav-item {
     padding: 0 18px;
-  }
-}
-@media (max-width: 1460px) {
-  .main-header .mainmenu-holder .nav-list > .nav-item {
-    padding: 0 12px;
-    font-size: 14px;
   }
 }
 @media (max-width: 1200px) {
@@ -3477,5 +3477,11 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   }
   .g-hero-banner .image-responsive {
     left: initial;
+  }
+}
+@media (max-width: 480px) {
+  .g-hero-banner .banner--title h1 {
+    font-size: 46px;
+    letter-spacing: 0px;
   }
 }

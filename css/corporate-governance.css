@@ -67,6 +67,7 @@
 #corporate-governance-main .image-section .content-data .title-group {
   position: relative;
   left: -120px;
+  margin-top: 20px;
 }
 #corporate-governance-main .image-section .content-data .title-group .description-holder {
   display: grid;
@@ -397,7 +398,7 @@
   }
   #corporate-governance-main .image-section .content-data .title-group {
     width: calc(100% + 60px);
-    left: -120px;
+    left: -80px;
   }
   #corporate-governance-main .image-section .content-data .img-holder {
     border-width: 20px;
@@ -477,6 +478,9 @@
   #corporate-governance-main .risk-management .content-data {
     padding: 30px 0;
   }
+  #corporate-governance-main .image-section .content-data .title-group .description-holder {
+    gap: 20px;
+  }
   #corporate-governance-main .enterprise-risk .content-data .left .process-holder {
     padding-left: 20px;
   }
@@ -490,12 +494,6 @@
   }
   #corporate-governance-main .box-container .box {
     padding: 20px;
-  }
-  #corporate-governance-main .image-section .content-data .title-group {
-    width: calc(100% + 120px);
-  }
-  #corporate-governance-main .image-section .content-data .title-group .description-holder {
-    gap: 10px;
   }
   #corporate-governance-main .risk-management .content-data .box .title-group {
     padding-left: 0px;
@@ -519,6 +517,13 @@
   #corporate-governance-main .image-section.right .content-data .img-holder {
     border-width: 10px;
     padding-left: 40px;
+  }
+  #corporate-governance-main .image-section .content-data .title-group .description-holder p {
+    line-height: 1.2;
+    padding: 0px;
+  }
+  #corporate-governance-main .image-section .content-data .title-group {
+    margin-top: 10px;
   }
   #corporate-governance-main .enterprise-risk .content-data .left {
     padding-left: 20px;
