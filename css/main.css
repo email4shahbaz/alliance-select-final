@@ -2163,7 +2163,6 @@ h3.section-sub-title.shadow {
   z-index: 1000;
   background: #fff;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
-  /* Responsive Styles */
 }
 .main-header .mainmenu-holder {
   width: 100%;
@@ -2188,9 +2187,11 @@ h3.section-sub-title.shadow {
   transition: 0.3s all;
 }
 .main-header .mainmenu-holder .nav-list.desktop .nav-item, .main-header .mainmenu-holder .nav-list.mobile .nav-item {
+  position: relative;
+  display: block;
   height: 84px;
 }
-.main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-item-arrow {
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .sub-menu-item-arrow, .main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile .nav-item .sub-menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-item-arrow {
   transition: all 0.3s ease;
   display: none;
   position: absolute;
@@ -2198,97 +2199,87 @@ h3.section-sub-title.shadow {
   top: 0;
   transform: rotate(-90deg);
   width: 50px;
-  height: 50px;
+  height: 60px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.main-header .mainmenu-holder .nav-list.desktop .nav-item, .main-header .mainmenu-holder .nav-list.desktop a, .main-header .mainmenu-holder .nav-list.mobile .nav-item, .main-header .mainmenu-holder .nav-list.mobile a {
-  color: var(--primary-dark);
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .sub-menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile .nav-item .sub-menu-item-arrow {
+  display: flex;
+}
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .title {
+  white-space: nowrap;
   font-size: 16px;
+  height: 84px;
+  font-weight: 600;
   display: flex;
   align-items: center;
   cursor: pointer;
   padding: 0 32px;
-}
-.main-header .mainmenu-holder .nav-list.desktop a.menu-link, .main-header .mainmenu-holder .nav-list.mobile a.menu-link {
-  padding: 0px;
-}
-.main-header .mainmenu-holder .nav-list.desktop .nav-item:hover, .main-header .mainmenu-holder .nav-list.desktop .menu-item:hover, .main-header .mainmenu-holder .nav-list.desktop .submenu-dd a:hover, .main-header .mainmenu-holder .nav-list.mobile .nav-item:hover, .main-header .mainmenu-holder .nav-list.mobile .menu-item:hover, .main-header .mainmenu-holder .nav-list.mobile .submenu-dd a:hover {
-  background: #e9eef6;
   color: var(--primary-dark);
 }
-.main-header .mainmenu-holder .nav-list.desktop .submenu-dd, .main-header .mainmenu-holder .nav-list.mobile .submenu-dd {
-  margin-top: 20px;
+.main-header .mainmenu-holder .nav-list.desktop .nav-item a, .main-header .mainmenu-holder .nav-list.mobile .nav-item a {
+  color: var(--primary-dark);
 }
-.main-header .mainmenu-holder .nav-list.desktop .submenu-dd a, .main-header .mainmenu-holder .nav-list.mobile .submenu-dd a {
-  padding: 22px 52px;
-  margin-left: -32px;
+.main-header .mainmenu-holder .nav-list.desktop .nav-item.active, .main-header .mainmenu-holder .nav-list.desktop .nav-item .title:hover, .main-header .mainmenu-holder .nav-list.mobile .nav-item.active, .main-header .mainmenu-holder .nav-list.mobile .nav-item .title:hover {
+  background: #e9eef6;
 }
-.main-header .mainmenu-holder .nav-list.desktop > .nav-item, .main-header .mainmenu-holder .nav-list.mobile > .nav-item {
-  position: relative;
-  font-weight: 600;
-}
-.main-header .mainmenu-holder .nav-list.desktop .menu-dd, .main-header .mainmenu-holder .nav-list.desktop .submenu-dd, .main-header .mainmenu-holder .nav-list.mobile .menu-dd, .main-header .mainmenu-holder .nav-list.mobile .submenu-dd {
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-dd, .main-header .mainmenu-holder .nav-list.desktop .nav-item .submenu-dd, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-dd, .main-header .mainmenu-holder .nav-list.mobile .nav-item .submenu-dd {
   display: none;
   background-color: #fff;
+  min-width: 248px;
 }
-.main-header .mainmenu-holder .nav-list.desktop .menu-item, .main-header .mainmenu-holder .nav-list.mobile .menu-item {
-  white-space: nowrap;
-  padding: 22px 32px;
-  min-width: 348px;
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-dd .title, .main-header .mainmenu-holder .nav-list.desktop .nav-item .submenu-dd .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-dd .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .submenu-dd .title {
+  height: 60px;
   font-weight: normal;
 }
-.main-header .mainmenu-holder .nav-list.desktop .menu-dd, .main-header .mainmenu-holder .nav-list.mobile .menu-dd {
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .submenu-dd .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .submenu-dd .title {
+  padding-left: 50px;
+}
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-dd, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-dd {
   position: absolute;
   left: 0;
   top: 100%;
   background: #fff;
 }
-.main-header .mainmenu-holder .nav-list.desktop .menu-dd > .menu-item.active, .main-header .mainmenu-holder .nav-list.mobile .menu-dd > .menu-item.active {
-  background: #fff;
-  padding-right: 0;
-  padding-bottom: 0;
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-dd .menu-item, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-dd .menu-item {
+  position: relative;
 }
-.main-header .mainmenu-holder .nav-list.desktop .menu-dd > .menu-item.active .submenu-dd, .main-header .mainmenu-holder .nav-list.mobile .menu-dd > .menu-item.active .submenu-dd {
+.main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-dd .menu-item.active .sub-menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-dd .menu-item.active .sub-menu-item-arrow {
+  transform: rotate(0deg);
+}
+.main-header .mainmenu-holder .nav-list.desktop .menu-item.active .submenu-dd, .main-header .mainmenu-holder .nav-list.mobile .menu-item.active .submenu-dd {
+  display: block;
+}
+.main-header .mainmenu-holder .nav-list.desktop.desktop > .nav-item:hover .menu-dd, .main-header .mainmenu-holder .nav-list.mobile.desktop > .nav-item:hover .menu-dd {
   display: block;
 }
 .main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item {
-  height: auto;
+  height: 60px;
+}
+.main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item .title, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item .title {
+  height: 60px;
 }
 .main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item .menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item .menu-item-arrow {
   display: flex;
 }
-.main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item a, .main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item .title, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item a, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item .title {
-  padding-left: 20px;
-  height: 50px;
-  margin-top: 10px;
-}
-.main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item .menu-link, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item .menu-link {
-  padding-left: 0px;
-}
-.main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item .menu-dd, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item .menu-dd {
-  padding-left: 20px;
-}
-.main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item, .main-header .mainmenu-holder .nav-list.desktop.mobile a, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item, .main-header .mainmenu-holder .nav-list.mobile.mobile a {
-  color: var(--primary-dark);
-  font-size: 16px;
-  display: flex;
-  align-items: flex-start;
-  cursor: pointer;
-  padding: 0;
+.main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item.active, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item.active {
+  height: auto;
 }
 .main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item.active .menu-dd, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item.active .menu-dd {
+  top: 0;
   position: relative;
   display: block;
+}
+.main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item.active .menu-dd .sub-menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item.active .menu-dd .sub-menu-item-arrow {
+  display: flex;
+  right: 40px;
 }
 .main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item.active .menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item.active .menu-item-arrow {
   transform: rotate(0);
 }
-.main-header .mainmenu-holder .nav-list.desktop.mobile .submenu-dd, .main-header .mainmenu-holder .nav-list.mobile.mobile .submenu-dd {
-  padding-left: 20px;
-}
-.main-header .mainmenu-holder .nav-list.desktop.desktop > .nav-item:hover .menu-dd, .main-header .mainmenu-holder .nav-list.mobile.desktop > .nav-item:hover .menu-dd {
-  display: block;
+.main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item .menu-dd.active .sub-menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item .menu-dd.active .sub-menu-item-arrow {
+  transform: rotate(0);
 }
 .main-header .mainmenu-holder .hamburger {
   display: none;
@@ -2303,50 +2294,31 @@ h3.section-sub-title.shadow {
   margin: 2px 0;
   transition: 0.3s all;
 }
-@media (max-width: 1660px) {
-  .main-header .mainmenu-holder .nav-list > .nav-item {
-    padding: 0 18px;
-  }
-}
 @media (max-width: 1200px) {
   .main-header .mainmenu-holder .nav-list {
     flex-direction: column;
     position: absolute;
     right: -100%;
-    top: 80px;
+    top: 84px;
     background-color: white;
     width: 350px;
     height: 100vh;
-    padding: 30px 0;
     overflow-y: auto;
-  }
-  .main-header .mainmenu-holder .nav-list > .nav-item {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px 20px;
-  }
-  .main-header .mainmenu-holder .nav-list .submenu-dd {
-    margin-top: 10px;
-  }
-  .main-header .mainmenu-holder .nav-list .submenu-dd a {
-    padding: 10px 50px;
-  }
-  .main-header .mainmenu-holder .nav-list > .nav-item:hover {
-    padding-bottom: 0;
-  }
-  .main-header .mainmenu-holder .nav-list > .nav-item:hover .menu-dd {
-    position: relative;
-    top: 0;
-    margin: 7px 0 0;
-    margin-left: -20px;
-    padding: 7px 10px;
-  }
-  .main-header .mainmenu-holder .nav-list .menu-item {
-    padding: 5px 10px;
   }
   .main-header .mainmenu-holder .nav-list.mobile {
     right: 0;
+  }
+  .main-header .mainmenu-holder .nav-list.mobile .nav-item {
+    height: 60px;
+  }
+  .main-header .mainmenu-holder .nav-list.mobile .nav-item .title {
+    height: 60px;
+  }
+  .main-header .mainmenu-holder .nav-list.desktop .nav-item {
+    height: 60px;
+  }
+  .main-header .mainmenu-holder .nav-list.desktop .nav-item .title {
+    height: 60px;
   }
   .main-header .mainmenu-holder .hamburger {
     display: flex;
