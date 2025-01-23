@@ -637,26 +637,26 @@
 }
 #about-main .our-vision .content-data {
   position: relative;
-  height: 2050px;
-  background: url(../images/backgrounds/vision\ mission\ background.jpg);
+  height: 1400px;
+  background: url(../images/backgrounds/vision-mission-bg.jpg);
 }
 #about-main .our-vision .content-data .left-img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1167px;
-  left: -770px;
+  width: 356px;
+  height: 1520px;
 }
 #about-main .our-vision .content-data .content-inner {
   position: relative;
-  top: -300px;
+  top: -200px;
   overflow: hidden;
 }
 #about-main .our-vision .content-data .content-holder {
-  height: 2050px;
+  height: 1580px;
   display: flex;
   flex-direction: column;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 23% 50%);
+  clip-path: polygon(1% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
 }
 #about-main .our-vision .content-data .content-holder .content-half {
   width: 100%;
@@ -668,12 +668,12 @@
 }
 #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
   background-color: #eb1d39;
-  padding-left: 490px;
-  padding-right: 240px;
+  padding-left: 370px;
+  padding-right: 100px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .description-holder p {
   text-align: left;
-  font-size: 42px;
+  font-size: 36px;
   line-height: 1.2;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list {
@@ -682,15 +682,18 @@
   display: grid;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-  font-size: 36px;
+  font-size: 30px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+#about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-icon img {
+  width: 110px;
+}
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
   color: white;
 }
@@ -698,95 +701,28 @@
   font-size: 30px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
-  padding-left: 470px;
+  padding-left: 370px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2) {
-  padding-left: 340px;
+  padding-left: 270px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) {
-  padding-left: 200px;
+  padding-left: 150px;
 }
 #about-main .our-vision .content-data .content-holder .content-half .title-group .description-holder {
   width: 100%;
-  padding: 60px;
+  padding: 40px;
   background-color: #0053bb;
 }
 #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
-  padding-left: 290px;
+  padding-left: 230px;
 }
 #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
-  padding-left: 470px;
-}
-@media (max-width: 1600px) {
-  #about-main .our-vision .content-data .left-img {
-    left: -780px;
-  }
-  #about-main .our-vision .content-data .content-holder {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
-  }
-}
-@media (max-width: 1440px) {
-  #about-main .our-vision .content-data .left-img {
-    left: -800px;
-  }
-  #about-main .our-vision .content-data .content-holder {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 28% 50%);
-  }
-  #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
-    padding-left: 240px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .description-holder p {
-    font-size: 36px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
-    padding-left: 380px;
-  }
-  #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
-    padding-left: 400px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 32px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
-    padding-left: 380px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2) {
-    padding-left: 280px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) {
-    padding-left: 140px;
-  }
+  padding-left: 400px;
 }
 @media (max-width: 1300px) {
   #about-main .our-vision .content-data .content-holder {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 33% 50%);
-  }
-  #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
-    padding-left: 240px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .description-holder p {
-    font-size: 36px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
-    padding-left: 380px;
-  }
-  #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
-    padding-left: 430px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 32px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-title {
-    font-size: 36px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
-    padding-left: 380px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2) {
-    padding-left: 260px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) {
-    padding-left: 120px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 30% 50%);
   }
 }
 @media (max-width: 1024px) {
@@ -815,112 +751,34 @@
   #about-main .market-success .content-data .content-top .years-container .year-item .year-txt-cont .desc {
     font-size: 24px;
   }
-  #about-main .our-vision .content-data {
-    height: 1240px;
-  }
   #about-main .our-vision .content-data .left-img {
-    left: -900px;
-    top: -420px;
+    left: -50px;
+    top: 10px;
   }
   #about-main .our-vision .content-data .content-holder {
-    height: 1200px;
-    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 30% 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 33% 50%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 200px;
   }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-holder {
-    padding: 30px;
-  }
-  #about-main .our-vision .content-data .content-inner {
-    top: -150px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) {
-    height: 49%;
-  }
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
-    padding-left: 320px;
-    padding-right: 40px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder p {
-    font-size: 26px;
+    padding-left: 290px;
+    padding-right: 20px;
   }
   #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
-    padding-left: 310px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 32px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-title {
-    font-size: 28px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-icon img {
-    width: 72px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 22px;
+    padding-left: 350px;
   }
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
-    padding-left: 300px;
+    padding-left: 310px;
   }
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2) {
-    padding-left: 220px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) {
-    padding-left: 130px;
-  }
-}
-@media (max-width: 850px) {
-  #about-main .our-vision .content-data {
-    height: 1260px;
-  }
-  #about-main .our-vision .content-data .left-img {
-    left: -940px;
-    top: -420px;
-  }
-  #about-main .our-vision .content-data .content-holder {
-    height: 1200px;
-    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 35% 50%);
-  }
-  #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
     padding-left: 200px;
   }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-holder {
-    padding: 30px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) {
-    height: 49%;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
-    padding-left: 320px;
-    padding-right: 40px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder p {
-    font-size: 26px;
-  }
-  #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
-    padding-left: 310px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 32px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-title {
-    font-size: 28px;
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) {
+    padding-left: 70px;
   }
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-icon img {
-    width: 72px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 22px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
-    padding-left: 270px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2) {
-    padding-left: 180px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) {
-    padding-left: 110px;
+    width: 80px;
   }
 }
 @media (max-width: 768px) {
@@ -977,56 +835,43 @@
   #about-main .market-success .content-data .content-top {
     padding: 40px;
   }
-  #about-main .our-vision .content-data {
-    height: 1160px;
-  }
   #about-main .our-vision .content-data .left-img {
-    left: -930px;
-    top: -470px;
+    width: 280px;
   }
   #about-main .our-vision .content-data .content-holder {
-    height: 1100px;
-    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 35% 50%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 33% 50%);
   }
   #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
-    padding-left: 180px;
-    font-size: 28px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-holder {
-    padding: 30px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) {
-    height: 49%;
+    padding-left: 160px;
   }
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
-    padding-left: 240px;
-    padding-right: 40px;
+    padding-left: 250px;
+    padding-right: 20px;
   }
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder p {
-    font-size: 26px;
-  }
-  #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
-    padding-left: 280px;
     font-size: 28px;
   }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 32px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-title {
-    font-size: 24px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-icon img {
-    width: 48px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 22px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list {
-    gap: 20px;
+  #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
+    padding-left: 250px;
   }
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder {
     flex-wrap: wrap;
     gap: 10px;
+  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
+    font-size: 24px;
+  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
+    padding-left: 240px;
+  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2) {
+    padding-left: 160px;
+  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) {
+    padding-left: 100px;
+  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-icon img {
+    width: 60px;
   }
 }
 @media (max-width: 650px) {
@@ -1036,35 +881,8 @@
   #about-main .market-success .right-image img {
     width: 400px;
   }
-  #about-main .our-vision .content-data {
-    height: 1000px;
-  }
   #about-main .our-vision .content-data .left-img {
-    left: -950px;
-    top: -530px;
-  }
-  #about-main .our-vision .content-data .content-holder {
-    height: 1000px;
-    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 40% 50%);
-  }
-  #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
-    padding-left: 180px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-holder {
-    padding: 20px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) {
-    height: 49%;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
-    padding-left: 250px;
-    padding-right: 20px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder p {
-    font-size: 22px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 18px;
+    width: 240px;
   }
 }
 @media (max-width: 480px) {
@@ -1173,54 +991,45 @@
     text-align: left;
   }
   #about-main .our-vision .content-data {
-    height: 940px;
+    height: auto;
+    padding-top: 20px;
   }
-  #about-main .our-vision .content-data .left-img {
-    height: 1600px;
-    left: -1000px;
-    top: -430px;
+  #about-main .our-vision .content-data .content-inner {
+    top: 0;
   }
   #about-main .our-vision .content-data .content-holder {
-    height: 910px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 40% 42%);
+    height: initial;
   }
-  #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1 {
-    padding-left: 40px;
+  #about-main .our-vision .content-data .left-img {
+    display: none;
   }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-holder {
-    padding: 20px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half {
-    height: 60%;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) {
-    height: 46%;
-    margin-top: 40px;
-    align-content: flex-start;
+  #about-main .our-vision .content-data .content-holder {
+    clip-path: none;
   }
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
-    padding-left: 170px;
-    padding-right: 20px;
+    padding: 20px;
   }
   #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder p {
-    font-size: 22px;
+    font-size: 16px;
   }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder p {
-    font-size: 18px;
-  }
-  #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
-    padding-left: 190px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder {
-    justify-content: center;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
-    padding-left: 165px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2) {
-    padding-left: 80px;
-  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1),
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2),
   #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) {
+    padding: 20px;
+  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) p,
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(2) p,
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(3) p {
+    font-size: 16px;
+  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list {
+    gap: 20px;
+  }
+  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder .description-title {
+    font-size: 24px;
+  }
+  #about-main .our-vision .content-data .content-holder .vision-holder .title-group h1,
+  #about-main .our-vision .content-data .content-holder .mission-holder .title-group h1 {
     padding-left: 20px;
   }
 }
@@ -1272,34 +1081,5 @@
   }
   #about-main .market-success .content-data .content-bottom .bottom-data-cont .bottom-row:nth-child(2) .desc {
     width: 50%;
-  }
-  #about-main .our-vision .content-data {
-    height: 940px;
-  }
-  #about-main .our-vision .content-data .left-img {
-    height: 1770px;
-    left: -1020px;
-    top: -520px;
-  }
-  #about-main .our-vision .content-data {
-    height: 940px;
-  }
-  #about-main .our-vision .content-data .left-img {
-    height: 1960px;
-    left: -1040px;
-    top: -600px;
-  }
-  #about-main .our-vision .content-data .content-holder {
-    height: 910px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%, 40% 42%);
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder {
-    padding-left: 150px;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half:nth-child(1) .title-group .description-holder p {
-    line-height: 1.1;
-  }
-  #about-main .our-vision .content-data .content-holder .content-half .title-group .description-list .description-holder:nth-child(1) {
-    padding-left: 145px;
   }
 }

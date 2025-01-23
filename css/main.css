@@ -1672,9 +1672,9 @@ h3.section-sub-title.shadow {
   align-content: flex-start;
 }
 .page-title h1 {
-  font-size: 68px;
+  font-size: 90px;
   letter-spacing: 1px;
-  line-height: 75px;
+  line-height: 1.2;
   color: #ffffff;
   font-weight: bold;
   font-family: inherit;
@@ -1730,7 +1730,7 @@ h3.section-sub-title.shadow {
 }
 @media (max-width: 1300px) {
   .title-group h1 {
-    font-size: 60px;
+    font-size: 65px;
   }
   .title-group .description-holder p {
     font-size: 16px;
@@ -1741,7 +1741,7 @@ h3.section-sub-title.shadow {
 }
 @media (max-width: 1024px) {
   .title-group h1 {
-    font-size: 50px;
+    font-size: 55px;
   }
   .title-group .description-holder p {
     font-size: 14px;
@@ -1763,7 +1763,7 @@ h3.section-sub-title.shadow {
     text-shadow: 1.5px 2px 1.5px #0c0c0c;
   }
   .title-group h1 {
-    font-size: 40px;
+    font-size: 45px;
   }
   .title-group h3 {
     font-size: 28px;
@@ -1774,7 +1774,7 @@ h3.section-sub-title.shadow {
     grid-gap: 10px;
   }
   .title-group h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .title-group .description-holder p {
     font-size: 14px;
@@ -1789,7 +1789,7 @@ h3.section-sub-title.shadow {
     grid-gap: 8px;
   }
   .title-group h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .title-group .description-holder p {
     font-size: 12px;
@@ -3428,17 +3428,20 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   background-position: center;
   margin-top: 65px;
 }
+.g-hero-banner .container {
+  padding: 0px;
+}
 .g-hero-banner .content-data {
-  min-height: 825px;
+  min-height: 550px;
   display: flex;
   align-items: center;
   position: relative;
 }
 .g-hero-banner .banner--title {
-  padding-left: 120px;
+  padding-left: 100px;
 }
 .g-hero-banner .banner--title h1 {
-  font-size: 100px;
+  font-size: 90px;
   color: white;
   letter-spacing: 2px;
   font-style: italic;
@@ -3453,41 +3456,37 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
 .g-hero-banner .image-responsive {
   position: absolute;
   right: 0;
-  left: 50%;
   height: 100%;
 }
 .g-hero-banner .image-responsive img {
   object-position: left;
-}
-@media (max-width: 1440px) {
-  .g-hero-banner .content-data {
-    min-height: 500px;
-  }
-  .g-hero-banner .banner--title h1 {
-    font-size: 74px;
-  }
 }
 @media (max-width: 768px) {
   .g-hero-banner {
     margin-top: 60px;
   }
   .g-hero-banner .content-data {
-    min-height: 300px;
+    min-height: 400px;
   }
   .g-hero-banner .banner--title {
-    padding-left: 0;
+    padding-left: 20px;
   }
   .g-hero-banner .banner--title h1 {
     font-size: 54px;
-    text-align: center;
   }
   .g-hero-banner .image-responsive {
-    left: initial;
+    right: -100px;
   }
 }
 @media (max-width: 480px) {
+  .g-hero-banner .content-data {
+    min-height: 300px;
+  }
   .g-hero-banner .banner--title h1 {
     font-size: 46px;
     letter-spacing: 0px;
+  }
+  .g-hero-banner .image-responsive {
+    right: -200px;
   }
 }
