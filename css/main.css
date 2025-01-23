@@ -13,9 +13,9 @@
   --medium-gray: #666;
   --light-blue: #091579;
   --light-gray: #F5F5F5;
-  --content-size: 16px;
-  --container-width: 1920px;
-  --container-padding: 50px;
+  --content-size: 14px;
+  --container-width: 1440px;
+  --container-padding: 30px;
   --primary-font: "AvenirRegular";
   --button-height: 35px;
   --input-height: 40px;
@@ -145,10 +145,10 @@ body.no-scroll {
   border-radius: 3px;
   background: var(--primary-pink);
   color: #fff;
-  padding: 20px 25px;
+  padding: 15px 20px;
   text-decoration: underline;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   transition: all 0.5s ease;
 }
 .button-primary:hover, .button-primary:active, .button-primary:active:hover, .button-primary:focus {
@@ -1709,7 +1709,7 @@ h3.section-sub-title.shadow {
   max-width: 636px;
 }
 .title-group h1, .title-group h3 {
-  font-size: 70px;
+  font-size: 75px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
@@ -1717,32 +1717,23 @@ h3.section-sub-title.shadow {
   font-family: "AvenirCondencedItalic";
 }
 .title-group h3 {
-  font-size: 56px;
+  font-size: 54px;
 }
 .title-group .description-holder p {
-  font-size: 22px;
+  font-size: 18px;
   color: #ffffff;
   text-align: center;
-  line-height: 30px;
+  line-height: 1.3;
 }
 .title-group.shadow h1 {
   text-shadow: 3px 4px 3px #0c0c0c;
-}
-@media (max-width: 1440px) {
-  .title-group h1 {
-    font-size: 64px;
-  }
-  .title-group h3 {
-    font-size: 48px;
-  }
 }
 @media (max-width: 1300px) {
   .title-group h1 {
     font-size: 60px;
   }
   .title-group .description-holder p {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
   }
   .title-group h3 {
     font-size: 42px;
@@ -1753,8 +1744,7 @@ h3.section-sub-title.shadow {
     font-size: 50px;
   }
   .title-group .description-holder p {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
   }
   .title-group h3 {
     font-size: 32px;
@@ -1774,10 +1764,6 @@ h3.section-sub-title.shadow {
   }
   .title-group h1 {
     font-size: 40px;
-  }
-  .title-group .description-holder p {
-    font-size: 14px;
-    line-height: 16px;
   }
   .title-group h3 {
     font-size: 28px;
@@ -1819,7 +1805,7 @@ h3.section-sub-title.shadow {
 }
 
 .hero-banner {
-  margin-top: 84px;
+  margin-top: 65px;
   width: 100%;
   position: relative;
   background-color: var(--primary-dark);
@@ -2158,7 +2144,7 @@ h3.section-sub-title.shadow {
 
 .main-header {
   width: 100%;
-  height: 84px;
+  height: 65px;
   position: fixed;
   z-index: 1000;
   background: #fff;
@@ -2166,7 +2152,7 @@ h3.section-sub-title.shadow {
 }
 .main-header .mainmenu-holder {
   width: 100%;
-  height: 84px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2189,7 +2175,7 @@ h3.section-sub-title.shadow {
 .main-header .mainmenu-holder .nav-list.desktop .nav-item, .main-header .mainmenu-holder .nav-list.mobile .nav-item {
   position: relative;
   display: block;
-  height: 84px;
+  height: 65px;
 }
 .main-header .mainmenu-holder .nav-list.desktop .nav-item .sub-menu-item-arrow, .main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile .nav-item .sub-menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-item-arrow {
   transition: all 0.3s ease;
@@ -2198,8 +2184,8 @@ h3.section-sub-title.shadow {
   right: 10px;
   top: 0;
   transform: rotate(-90deg);
-  width: 50px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -2209,13 +2195,13 @@ h3.section-sub-title.shadow {
 }
 .main-header .mainmenu-holder .nav-list.desktop .nav-item .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .title {
   white-space: nowrap;
-  font-size: 16px;
-  height: 84px;
+  font-size: 14px;
+  height: 65px;
   font-weight: 600;
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 0 32px;
+  padding: 0 20px;
   color: var(--primary-dark);
 }
 .main-header .mainmenu-holder .nav-list.desktop .nav-item a, .main-header .mainmenu-holder .nav-list.mobile .nav-item a {
@@ -2227,10 +2213,10 @@ h3.section-sub-title.shadow {
 .main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-dd, .main-header .mainmenu-holder .nav-list.desktop .nav-item .submenu-dd, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-dd, .main-header .mainmenu-holder .nav-list.mobile .nav-item .submenu-dd {
   display: none;
   background-color: #fff;
-  min-width: 248px;
+  min-width: 240px;
 }
 .main-header .mainmenu-holder .nav-list.desktop .nav-item .menu-dd .title, .main-header .mainmenu-holder .nav-list.desktop .nav-item .submenu-dd .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .menu-dd .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .submenu-dd .title {
-  height: 60px;
+  height: 45px;
   font-weight: normal;
 }
 .main-header .mainmenu-holder .nav-list.desktop .nav-item .submenu-dd .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .submenu-dd .title {
@@ -2255,10 +2241,10 @@ h3.section-sub-title.shadow {
   display: block;
 }
 .main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item {
-  height: 60px;
+  height: 40px;
 }
 .main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item .title, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item .title {
-  height: 60px;
+  height: 35px;
 }
 .main-header .mainmenu-holder .nav-list.desktop.mobile .nav-item .menu-item-arrow, .main-header .mainmenu-holder .nav-list.mobile.mobile .nav-item .menu-item-arrow {
   display: flex;
@@ -2294,12 +2280,12 @@ h3.section-sub-title.shadow {
   margin: 2px 0;
   transition: 0.3s all;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .main-header .mainmenu-holder .nav-list {
     flex-direction: column;
     position: absolute;
     right: -100%;
-    top: 84px;
+    top: 65px;
     background-color: white;
     width: 350px;
     height: 100vh;
@@ -2309,26 +2295,28 @@ h3.section-sub-title.shadow {
     right: 0;
   }
   .main-header .mainmenu-holder .nav-list.mobile .nav-item {
-    height: 60px;
+    height: 40px;
   }
   .main-header .mainmenu-holder .nav-list.mobile .nav-item .title {
-    height: 60px;
+    height: 40px;
   }
   .main-header .mainmenu-holder .nav-list.desktop .nav-item {
-    height: 60px;
+    height: 40px;
   }
   .main-header .mainmenu-holder .nav-list.desktop .nav-item .title {
-    height: 60px;
+    height: 40px;
   }
   .main-header .mainmenu-holder .hamburger {
     display: flex;
   }
 }
+@media (max-width: 1152px) {
+  .main-header .mainmenu-holder .nav-list.desktop .nav-item .title, .main-header .mainmenu-holder .nav-list.mobile .nav-item .title {
+    padding: 0 10px;
+  }
+}
 @media (max-width: 768px) {
   .main-header {
-    height: 60px;
-  }
-  .main-header .mainmenu-holder {
     height: 60px;
   }
   .main-header .mainmenu-holder .nav-list {
@@ -2649,6 +2637,7 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
 }
 
 .site-footer {
+  font-size: 12px;
   width: 100%;
   padding: 36px 0 40px;
 }
@@ -2668,6 +2657,9 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
 }
 .site-footer .content-data .footer-left .list-holder {
   padding-left: 20px;
+}
+.site-footer .content-data .footer-left .links-list {
+  font-size: 14px;
 }
 .site-footer .content-data a {
   color: var(--primary-dark);
@@ -2708,7 +2700,7 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   width: 180px;
 }
 .site-footer .content-data .list-title {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 20px;
@@ -2718,7 +2710,7 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   gap: 12px;
 }
 .site-footer .content-data .copyright {
-  font-size: 12px;
+  font-size: 10px;
   padding: 0 20px;
 }
 .site-footer .content-data .footer-menu-holder {
@@ -2740,11 +2732,6 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   flex-direction: column;
   justify-content: space-between;
   border-left: 1px solid var(--primary-dark);
-}
-@media (max-width: 1600px) {
-  .site-footer .content-data .footer-menu-holder {
-    gap: 30px;
-  }
 }
 @media (max-width: 1350px) {
   .site-footer .content-data .footer-left .footer-logo img {
@@ -3439,7 +3426,7 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   background-color: var(--primary-color);
   background-size: cover;
   background-position: center;
-  margin-top: 84px;
+  margin-top: 65px;
 }
 .g-hero-banner .content-data {
   min-height: 825px;
