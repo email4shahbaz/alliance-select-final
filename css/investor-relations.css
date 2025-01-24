@@ -55,93 +55,53 @@
     height: 8px;
   }
 }
-#investor-relations section.section {
-  background-color: #022c86;
-}
-#investor-relations .section.programs {
+#investor-relations .programs {
   background: #022c86 url("../images/backgrounds/investor-relations-bg.jpg");
   background-size: cover;
 }
-#investor-relations .section.programs .container {
+#investor-relations .programs .container {
   padding-left: 0;
   max-width: 100%;
 }
-#investor-relations .section.programs .section-title::after {
+#investor-relations .programs .section-title::after {
   left: 120px;
   height: 11px;
   width: 103px;
   border-radius: 3px;
   background: white;
 }
-@media (max-width: 1440px) {
-  #investor-relations .section.programs .section-title {
-    grid-gap: 30px;
-  }
-  #investor-relations .section.programs .section-title::after {
-    width: 100px;
-    height: 8px;
-  }
-}
-#investor-relations .section.programs .content-data {
+#investor-relations .programs .content-data {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  color: white;
-  min-height: 1144px;
+  grid-template-columns: 1fr 4fr;
+  color: white; /* min-height: 1144px;*/
 }
-#investor-relations .section.programs .content-data .image-responsive {
+#investor-relations .programs .content-data .left-image {
   position: absolute;
-  width: 45vw;
+  bottom: 0;
+  left: -390px;
+}
+#investor-relations .programs .content-data .left-image img {
   height: 100%;
 }
-#investor-relations .section.programs .content-data .image-responsive img {
-  object-position: center right;
+#investor-relations .programs .content-data .content-area {
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
-#investor-relations .section.programs .content-data .content-area {
-  padding-top: 90px;
-  padding-bottom: 200px;
-}
-#investor-relations .section.programs .content-data .content-area .description-holder {
+#investor-relations .programs .content-data .content-area .description-holder {
   margin-top: 70px;
 }
-#investor-relations .section.programs .content-data .content-area .description-holder p {
-  font-size: 24px;
+#investor-relations .programs .content-data .content-area .description-holder p {
+  font-size: 18px;
   line-height: 1.6;
   margin-left: 11.2vw;
 }
-#investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(2) {
-  margin-top: 45px;
-  margin-left: 15.89vw;
+#investor-relations .programs .content-data .content-area .description-holder p:nth-child(2) {
+  margin-top: 30px;
+  margin-left: 18.89vw;
 }
-#investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(3) {
-  margin-top: 75px;
+#investor-relations .programs .content-data .content-area .description-holder p:nth-child(3) {
+  margin-top: 40px;
   margin-left: 26.8vw;
-}
-@media (max-width: 1024px) {
-  #investor-relations .section.programs .content-data {
-    grid-template-columns: 1fr;
-    padding: 30px 20px;
-  }
-  #investor-relations .section.programs .content-data .section-title::after {
-    left: 0;
-  }
-  #investor-relations .section.programs .content-data .content-area {
-    padding-bottom: 0px;
-    padding-top: 40px;
-  }
-  #investor-relations .section.programs .content-data .content-area .description-holder p {
-    margin-left: 0;
-  }
-  #investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(2) {
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  #investor-relations .section.programs .content-data .content-area .description-holder p:nth-child(3) {
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  #investor-relations .section.programs .content-data .position-relative {
-    display: none;
-  }
 }
 #investor-relations .investor-relations {
   background-image: url("../images/banners/investors-relation-banner-v2.jpg");
@@ -159,9 +119,6 @@
   border-radius: 3px;
 }
 @media (max-width: 1440px) {
-  #investor-relations .investor-relations .section-title {
-    grid-gap: 30px;
-  }
   #investor-relations .investor-relations .section-title::after {
     width: 300px;
     height: 8px;
@@ -283,27 +240,75 @@
     display: none;
   }
 }
+@media (max-width: 1300px) {
+  #investor-relations .programs .content-data .left-image {
+    left: -410px;
+  }
+  #investor-relations .investor-relations .arrow-image {
+    left: -40px;
+  }
+}
+@media (max-width: 1200px) {
+  #investor-relations .programs .content-data .left-image {
+    left: -450px;
+  }
+  #investor-relations .investor-relations .arrow-image {
+    left: -40px;
+  }
+  #investor-relations .programs .content-data .content-area .description-holder p {
+    margin-left: 5vw;
+  }
+}
 @media (max-width: 1024px) {
-  #investor-relations .section.programs .content-data {
-    padding-top: 30px;
-    min-height: initial;
+  #investor-relations .programs .content-data {
+    grid-template-columns: 1fr 10fr;
+  }
+  #investor-relations .programs .content-data .left-image {
+    left: -650px;
+  }
+  #investor-relations .investor-relations .arrow-image {
+    left: -40px;
+  }
+  #investor-relations .programs .content-data .content-area .description-holder p {
+    margin-left: 10px;
   }
 }
 @media (max-width: 768px) {
-  #investor-relations .section.programs .content-data .content-area .description-holder p {
-    line-height: 1.4;
-    font-size: 18px;
+  #investor-relations .programs {
+    padding: 20px;
   }
-  #investor-relations .section.programs .section-title {
+  #investor-relations .programs .content-data {
+    grid-template-columns: 1fr;
+  }
+  #investor-relations .programs .content-data .left-image {
+    display: none;
+  }
+  #investor-relations .programs .content-data .content-area .description-holder p {
+    margin-left: 0;
+  }
+  #investor-relations .programs .content-data .content-area .description-holder p:nth-child(2) {
+    margin-left: 0;
+  }
+  #investor-relations .programs .content-data .content-area .description-holder p:nth-child(3) {
+    margin-left: 0;
+  }
+  #investor-relations .programs .section-title {
     margin-bottom: 0;
+    justify-content: center;
   }
-  #investor-relations .section.programs .content-data .content-area .description-holder {
-    margin-top: 20px;
+  #investor-relations .programs .section-title::after {
+    left: 50%;
+    right: 0;
+    width: 50%;
+    transform: translateX(-50%);
+  }
+  #investor-relations .programs .content-data .content-area {
+    padding: 0;
   }
   #investor-relations .investor-relations .content-data {
     padding-bottom: 40px;
   }
-  #investor-relations .investor-relations .view-all-button {
+  #investor-relations .programs .content-data .content-area .description-holder {
     margin-top: 20px;
   }
 }
