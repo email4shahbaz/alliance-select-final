@@ -432,6 +432,9 @@
   #corporate-governance-main .g-hero-banner .banner--title img {
     width: 150px;
   }
+  #corporate-governance-main .section.main .content-data {
+    padding: 30px 0;
+  }
   #corporate-governance-main .image-section .content-data .img-holder {
     height: 375px;
   }
