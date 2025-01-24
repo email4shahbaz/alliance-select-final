@@ -1,5 +1,5 @@
 #brand-page .main-heading .section-title {
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: white;
   position: relative;
@@ -25,18 +25,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
+  position: relative;
 }
-#brand-page .section.gold .content-data .image-responsive {
+#brand-page .section.gold .content-data .left-image {
   position: absolute;
-  width: 50vw;
-  height: 100%;
+  width: 100%;
+  bottom: 0;
 }
-#brand-page .section.gold .content-data .image-responsive img {
+#brand-page .section.gold .content-data .left-image img {
   object-position: right;
+  width: 720px;
+  height: 850px;
 }
 #brand-page .section.gold .content-data .content-area {
-  padding-bottom: 200px;
-  margin-left: -20vw;
+  padding-bottom: 100px;
+  margin-left: -15vw;
   position: relative;
   z-index: 9;
 }
@@ -45,11 +48,12 @@
 }
 #brand-page .section.gold .content-data .content-area .description-holder p {
   font-size: 26px;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 #brand-page .section.gold .content-data .content-area .availability-data {
-  padding-left: 25%;
+  padding-left: 20%;
   margin-top: 100px;
+  padding-right: 20px;
 }
 #brand-page .section.gold .content-data .content-area .availability-data h5 {
   font-size: 30px;
@@ -64,75 +68,197 @@
 #brand-page .section.gold .content-data .content-area .availability-data .items-holder .item img {
   width: 100%;
 }
-#brand-page.gold-standard .section.gold .content-data .image-responsive {
+#brand-page.gold-standard .section.gold .content-data .left-image {
   width: 50vw;
 }
 #brand-page.gold-standard .section.gold .content-data .content-area {
   padding-bottom: 120px;
-  padding-top: 75px;
+  padding-top: 20px;
 }
 #brand-page.gold-standard .section.gold .content-data .content-area .description-holder {
   max-width: 1140px;
 }
 #brand-page.gold-standard .section.gold .content-data .content-area .availability-data {
-  margin-top: 340px;
-  padding-left: 37%;
+  margin-top: 140px;
+  padding-left: 30%;
 }
 #brand-page.gold-standard .section.gold .content-data .content-area .availability-data .items-holder {
   grid-template-columns: repeat(3, 1fr);
 }
-@media (max-width: 1280px) {
-  #brand-page.gold-standard .section.gold .content-data .image-responsive, #brand-page .section.gold .content-data .image-responsive {
-    position: relative;
-    width: initial;
-    height: initial;
+@media (max-width: 1300px) {
+  #brand-page .section.gold .content-data .left-image img {
+    width: 650px;
+    height: auto;
   }
-  #brand-page.gold-standard .section.gold .content-data .content-area, #brand-page .section.gold .content-data .content-area {
-    padding-bottom: initial;
-    margin-left: 0;
+}
+@media (max-width: 1120px) {
+  #brand-page .section.gold .content-data .left-image img {
+    width: 650px;
+    height: auto;
   }
-  #brand-page.gold-standard .section.gold .content-data .content-area .description-holder, #brand-page .section.gold .content-data .content-area .description-holder {
-    max-width: 100%;
+  #brand-page .section.gold .content-data .content-area .description-holder p {
+    font-size: 22px;
   }
-  #brand-page.gold-standard .section.gold .content-data .content-area .description-holder p, #brand-page .section.gold .content-data .content-area .description-holder p {
-    font-size: 16px;
+  #brand-page .section.gold .content-data .content-area {
+    margin-left: -25vw;
   }
-  #brand-page.gold-standard .section.gold .content-data .content-area .availability-data, #brand-page .section.gold .content-data .content-area .availability-data {
-    padding-left: 0;
-    margin-top: 100px;
+  #brand-page .section.gold .content-data .content-area .availability-data {
+    margin-top: 50px;
+    padding-left: 270px;
   }
-  #brand-page.gold-standard .section.gold .content-data .content-area .availability-data h5, #brand-page .section.gold .content-data .content-area .availability-data h5 {
-    font-size: 30px;
-    margin-bottom: 50px;
+  #brand-page .section.gold.standard .content-data .left-image img {
+    width: 550px;
+    height: auto;
   }
-  #brand-page.gold-standard .section.gold .content-data .content-area .availability-data .items-holder, #brand-page .section.gold .content-data .content-area .availability-data .items-holder {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    max-width: 1200px;
+  #brand-page .section.gold.standard .content-data .content-area .availability-data {
+    padding-left: 35%;
+    margin-top: 50px;
   }
-  #brand-page.gold-standard .section.gold .content-data .content-area .availability-data .items-holder .item img, #brand-page .section.gold .content-data .content-area .availability-data .items-holder .item img {
-    width: 100%;
+  #brand-page .section.gold.new .content-data .left-image img {
+    width: 550px;
+    height: auto;
+  }
+  #brand-page .section.gold.new .content-data .content-area .availability-data {
+    padding-left: 35%;
+    margin-top: 50px;
   }
 }
 @media (max-width: 1024px) {
-  #brand-page .section.gold .content-data .content-area .availability-data {
-    margin-top: 30px;
+  #brand-page .section.gold .content-data .left-image {
+    left: -50px;
   }
 }
 @media (max-width: 768px) {
-  #brand-page .section.gold .content-data {
-    grid-template-columns: 1fr;
+  #brand-page .section.gold .content-data .left-image img {
+    width: 550px;
   }
-  #brand-page .section.gold .content-data .image-responsive {
-    width: 70%;
+  #brand-page .main-heading .section-title {
+    margin-top: 10px;
+  }
+  #brand-page .section.gold .content-data .content-area .description-holder {
+    padding-bottom: 40px;
+  }
+  #brand-page .section.gold .content-data .content-area .description-holder p {
+    font-size: 18px;
+    line-height: 1.2;
   }
   #brand-page .section.gold .content-data .content-area {
-    padding-top: 140px;
-    padding: 30px 20px;
+    margin-left: -20vw;
+    padding-bottom: 50px;
   }
   #brand-page .section.gold .content-data .content-area .availability-data {
-    margin-top: 20px;
-    width: 100%;
+    padding-left: 200px;
+    padding-right: 20px;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data h5 {
+    font-size: 20px;
+  }
+  #brand-page .section.gold.standard .content-data .left-image img {
+    width: 420px;
+  }
+  #brand-page .section.gold.standard .content-data .content-area {
+    padding-bottom: 40px;
+  }
+  #brand-page .section.gold.new .content-data .left-image img {
+    width: 420px;
+  }
+  #brand-page .section.gold.new .content-data .content-area {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 650px) {
+  #brand-page .section.gold .content-data .left-image img {
+    width: 450px;
+  }
+  #brand-page .main-heading .section-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  #brand-page .section.gold .content-data .content-area .description-holder p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data {
+    padding-left: 140px;
+    padding-right: 20px;
+  }
+  #brand-page .section.gold.standard .content-data .left-image img {
+    width: 380px;
+  }
+  #brand-page .section.gold.new .content-data .left-image img {
+    width: 380px;
+  }
+}
+@media (max-width: 480px) {
+  #brand-page .section.gold .content-data .left-image img {
+    width: 340px;
+  }
+  #brand-page .section.gold .content-data .content-area {
+    margin-left: -20vw;
+  }
+  #brand-page .section.gold .content-data .content-area .description-holder {
+    padding-bottom: 20px;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data .items-holder {
+    gap: 8px;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data {
+    padding-left: 110px;
+    padding-right: 0px;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data {
+    margin-top: 10px;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data h5 {
+    font-size: 16px;
+  }
+  #brand-page .section.gold.standard .content-data .left-image img {
+    width: 240px;
+  }
+  #brand-page .section.gold.standard .content-data .content-area {
+    margin-left: -35vw;
+  }
+  #brand-page .section.gold.new .content-data .left-image img {
+    width: 240px;
+  }
+  #brand-page .section.gold.new .content-data .content-area {
+    margin-left: -35vw;
+  }
+}
+@media (max-width: 430px) {
+  #brand-page .section.gold .content-data .left-image img {
+    width: 230px;
+  }
+  #brand-page .section.gold .content-data .content-area {
+    margin-left: -40vw;
+    padding-bottom: 20px;
+  }
+  #brand-page .section.gold .content-data .content-area .description-holder {
+    padding-bottom: 40px;
+  }
+  #brand-page .section.gold .content-data .content-area .description-holder p {
+    font-size: 14px;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data {
+    padding-left: 130px;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data {
+    margin-top: 10px;
+  }
+  #brand-page .section.gold .content-data .content-area .availability-data h5 {
+    margin-bottom: 10px;
+  }
+  #brand-page .section.gold.standard .content-data .left-image img {
+    width: 200px;
+  }
+  #brand-page .section.gold.standard .content-data .content-area {
+    margin-left: -40vw;
+  }
+  #brand-page .section.gold.new .content-data .left-image img {
+    width: 200px;
+  }
+  #brand-page .section.gold.new .content-data .content-area {
+    margin-left: -40vw;
   }
 }

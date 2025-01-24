@@ -3490,3 +3490,11 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
     right: -200px;
   }
 }
+@media (max-width: 420px) {
+  .g-hero-banner .content-data {
+    min-height: 220px;
+  }
+  .g-hero-banner .image-responsive {
+    right: -240px;
+  }
+}

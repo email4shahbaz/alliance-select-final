@@ -965,5 +965,10 @@ body.mobile-menu-active{
 		.image-responsive{right: -200px;}
 		
 	}
+
+	@media (max-width: 420px) {
+		.content-data{min-height: 220px;}
+		.image-responsive{right: -240px;}
+	}
 }
 // custom
