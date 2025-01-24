@@ -22,7 +22,7 @@
   display: flex;
 }
 #share-info .box-container .title-group h1 {
-  font-size: 7vw;
+  font-size: 9vw;
   font-family: "AvenirCondencedItalic";
 }
 #share-info .share-content {
@@ -48,16 +48,17 @@
 }
 #share-info .share-content .content-data .box {
   position: relative;
-  padding: 80px 0px;
+  padding: 40px 0px;
   width: calc(100% + 110px);
-  justify-content: center;
+  justify-content: flex-start;
   transform: none;
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
 }
 #share-info .share-content .content-data .box.blue {
+  justify-content: center;
   top: 80px;
   width: calc(100% + 110px);
-  left: -60px;
+  left: -20px;
   clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 2% 100%);
 }
 #share-info .share-content .content-data .box.blue .title-group {
@@ -74,7 +75,7 @@
   padding: 80px 60px;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   row-gap: 40px;
 }
 #share-info .share-content .grid-container .box-grid .property-box {
@@ -87,101 +88,101 @@
   padding: 10px 20px;
   color: white;
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 28px;
 }
 #share-info .share-content .grid-container .box-grid .property-box .box-value {
   text-align: center;
   font-weight: 700;
   background-color: white;
   padding: 20px;
-  font-size: 28px;
+  font-size: 20px;
 }
 #share-info .share-content .bottom-logo {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 1600px) {
-  #share-info .share-content .content-data .box.blue {
-    left: -40px;
-  }
+#share-info .share-content .bottom-logo img {
+  width: 160px;
 }
-@media (max-width: 1440px) {
-  #share-info .share-content .content-data .box.blue {
-    left: -30px;
+@media (max-width: 1300px) {
+  #share-info .share-content .grid-container .box-grid {
+    padding: 40px;
   }
 }
 @media (max-width: 1280px) {
-  #share-info .share-content .content-data .box.blue {
-    left: -10px;
+  #share-info .share-content .grid-container .box-grid {
+    padding: 40px;
   }
 }
 @media (max-width: 1152px) {
-  #share-info .share-content .content-data .box.blue {
-    left: -10px;
-  }
-  #share-info .share-content .grid-container .box-grid .property-box .box-title {
-    font-size: 24px;
-  }
-  #share-info .share-content .grid-container .box-grid .property-box .box-value {
-    font-size: 18px;
+  #share-info .box-container .title-group h1 {
+    font-size: 8vw;
   }
 }
 @media (max-width: 1024px) {
-  #share-info .share-content .content-data .box.blue {
-    left: 0;
+  #share-info .share-content .content-data .title-group img {
+    width: 120px;
+  }
+  #share-info .share-content .content-data .box {
+    width: calc(100% + 80px);
+  }
+  #share-info .share-content .content-data .box.blue .title-group .description-holder p {
+    font-size: 24px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 768px) {
+  #share-info .share-content .content-data .box-container {
+    padding-top: 20px;
+  }
   #share-info .share-content .content-data {
     padding: 20px 0;
   }
-  #share-info .share-content .content-data .box-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 0;
-  }
-  #share-info .share-content .content-data .box.blue {
-    top: 0;
-    width: 100%;
-  }
-  #share-info .share-content .content-data .box.pink .food-icon {
-    width: 100px;
-    height: 100px;
-  }
-  #share-info .share-content .content-data .box {
-    width: 100%;
-    padding: 40px 0;
-  }
-  #share-info .box-container .title-group h1 {
-    font-size: 10vw;
-  }
-  #share-info .share-content .grid-container .box-grid {
-    padding: 0px 0px 40px;
-    row-gap: 20px;
-  }
-  #share-info .share-content .content-data .box.blue .title-group .description-holder p {
-    font-size: 18px;
+  #share-info .share-content .content-data .title-group img {
+    width: 80px;
   }
   #share-info .share-content .bottom-logo img {
-    width: 120px;
+    width: 100px;
+  }
+  #share-info .share-content .grid-container .box-grid {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+}
+@media (max-width: 650px) {
+  #share-info .share-content .content-data .box {
+    width: calc(100% + 40px);
+    padding: 30px 0 40px;
+  }
+  #share-info .share-content .content-data .title-group img {
+    width: 60px;
+  }
+  #share-info .box-container .title-group h1 {
+    font-size: 7vw;
+  }
+  #share-info .title-group .description-holder p {
+    max-width: 500px;
   }
 }
 @media (max-width: 480px) {
-  #share-info .share-content .content-data .box.pink .food-icon {
-    width: 54px;
-    height: 54px;
+  #share-info .share-content .content-data .box-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
   }
-  #share-info .share-content .content-data .box {
-    padding: 20px 0;
+  #share-info .share-content .content-data .box.blue {
+    top: 0;
+  }
+  #share-info .box-container .title-group h1 {
+    font-size: 12vw;
+  }
+  #share-info .share-content .grid-container .box-grid {
+    padding: 0 0 20px;
   }
   #share-info .share-content .grid-container {
-    padding-bottom: 30px;
+    padding: 15px;
   }
-  #share-info .share-content .grid-container .box-grid .property-box .box-title {
-    font-size: 18px;
-  }
-  #share-info .share-content .grid-container .box-grid .property-box .box-property {
-    font-size: 14px;
+  #share-info .share-content .bottom-logo img {
+    width: 80px;
   }
 }
 @media (max-width: 380px) {
