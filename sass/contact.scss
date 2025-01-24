@@ -7,72 +7,83 @@
     }
 
     .connect-with-you {
-        padding: 140px 0;
+        padding: 140px 0 0;
 
         .location-info {
-            margin: 140px 0 110px 0;
+            margin-bottom: 100px;
+            display: grid; grid-template-columns: 4fr 5fr;
             .left {
-                padding: 90px 70px 90px 65px; display: flex; align-items: flex-start; justify-content: center; flex-direction: column; width: 38%;
+                padding: 60px 40px 60px 40px; display: flex; align-items: flex-start; justify-content: center; flex-direction: column;
                 .group {
                     margin-bottom: 20px;
-                    .h-list {margin-bottom: 15px; gap: 20px; flex-wrap: nowrap;}
-                    h3 {color: var(--primary-dark); font-weight: bold; font-size: 24px; margin-bottom: 20px; }
-                    p {color: var(--primary-dark); font-size: 18px;}
-                    .icon-holder {
-                        max-width: 35px;
-                        &.pin {width: 56px;}
+                    .h-list {margin-bottom: 15px; gap: 20px; flex-wrap: nowrap; img{width: 28px;}}
+                    h3 {color: var(--primary-dark); font-weight: bold; font-family: 'AvenirBold'; font-size: 18px; margin-bottom: 20px; }
+                    p {color: var(--primary-dark); font-size: 14px;}
+                    .icon-holder { img{width: 28px;}
+                        max-width: 28px;
+                        &.pin {width: 28px;}
                     
                     }
                 }
             }
-            .map {width: 62%}
         }
         .contact-info {
-            h2 {font-size: 44px;}
+            h2 {font-size: 36px; font-family: 'AvenirBold'; font-weight: bold;}
             textarea {height: 210px;}
         }
 
     }
 
-    @media (max-width: 1440px) {
-        .connect-with-you{padding: 90px 0 130px 0}
-        .connect-with-you .location-info{margin: 70px 0 60px 0;}
-        .location-info {
-            margin: 80px 0 95px 0;
-        }
-        & .location-info {
-            margin: 72px 0 85px 0;
-        }
-    }
+    // @media (max-width: 1440px) {
+    //     .connect-with-you{padding: 90px 0 130px 0}
+    //     .connect-with-you .location-info{margin: 70px 0 60px 0;}
+    //     .location-info {
+    //         margin: 80px 0 95px 0;
+    //     }
+    //     & .location-info {
+    //         margin: 72px 0 85px 0;
+    //     }
+    // }
 
-    @media (max-width: 1200px) {
-        .connect-with-you .location-info .left{padding: 40px 30px}
-        .page-title h1{font-size: 48px;}
+    @media (max-width: 1152px) {
+        .connect-with-you{padding-top: 80px;}
+        .connect-with-you .content-data{padding: 20px 80px 60px;}
     }
 
     @media (max-width: 1024px) {
-        .page-title h1{font-size: 38px;}
-        .connect-with-you{padding-top: 50px; padding-bottom: 50px;}
-        .connect-with-you .location-info{margin: 40px 0;}
-        .connect-with-you .content-data .contact-info .left, .apply-job .content-data .contact-info .left{padding: 0 30px;}
-        .connect-with-you .content-data .contact-info .form-wrapper, .apply-job .content-data .contact-info .form-wrapper{padding: 30px;}
+        .connect-with-you .content-data{padding: 20px 40px 40px;}
+        .connect-with-you .location-info{margin-bottom: 60px;}
+        // .connect-with-you .location-info{margin: 40px 0;}
+        // .connect-with-you .content-data .contact-info .left, .apply-job .content-data .contact-info .left{padding: 0 30px;}
+        // .connect-with-you .content-data .contact-info .form-wrapper, .apply-job .content-data .contact-info .form-wrapper{padding: 30px;}
     }
     @media (max-width: 768px) {
-        .hero-banner{margin-top: 60px;}
-        .page-title h1{font-size: 32px;}
-        .connect-with-you .location-info{flex-direction: column;}
-        .connect-with-you .location-info .left{width: 100%; padding-bottom: 0px;}
-        .connect-with-you .location-info .map{width: 100%; height: 400px;}
-        .connect-with-you .content-data .grid-box, .apply-job .content-data .grid-box{
-            flex-direction: column;
-            gap: 30px;
-        }
-        .connect-with-you .content-data .contact-info .left{width: 100%;}
-        .connect-with-you .content-data .contact-info .form-wrapper{width: 100%;}
+        .connect-with-you{padding-top: 30px;}
+        .connect-with-you .content-data{padding: 10px 20px 20px;}
+        .connect-with-you .location-info{grid-template-columns: 1fr;}
+        .connect-with-you .location-info .left{padding: 20px;}
+        .connect-with-you .location-info .left .map{min-height: 300px;}
+        .connect-with-you .content-data .contact-info .left, .apply-job .content-data .contact-info .left{width: 100%;}
+        .connect-with-you .content-data .contact-info .form-wrapper, .apply-job .content-data .contact-info .form-wrapper{width: 100%;}
+        .connect-with-you .content-data .grid-box, .apply-job .content-data .grid-box{gap: 20px}
+        .connect-with-you .contact-info h2{font-size: 24px; width: 100%; text-align: center; padding-top: 10px;}
+        // .hero-banner{margin-top: 60px;}
+        // .connect-with-you .location-info{flex-direction: column;}
+        // .connect-with-you .location-info .left{width: 100%; padding-bottom: 0px;}
+        // .connect-with-you .location-info .map{width: 100%; height: 400px;}
+        // .connect-with-you .content-data .grid-box, .apply-job .content-data .grid-box{
+        //     flex-direction: column;
+        //     gap: 30px;
+        // }
+        // .connect-with-you .content-data .contact-info .left{width: 100%;}
+        // .connect-with-you .content-data .contact-info .form-wrapper{width: 100%;}
     }
 
     @media (max-width: 650px) {
-        .connect-with-you{padding-top: 10px}
+        .connect-with-you{padding: 30px 0}
+        .connect-with-you .content-data{padding: 0}
+        .connect-with-you .location-info{margin-bottom: 20px;}
+
         .page-title{h1{margin-bottom: 0px; font-size: 24px;}}
         .connect-with-you .content-data .contact-info .left{padding-top: 20px;}
         .connect-with-you .contact-info h2{font-size: 32px; padding-bottom: 10px;}

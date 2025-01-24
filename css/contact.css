@@ -8,18 +8,19 @@
   padding: 0;
 }
 #contact .connect-with-you {
-  padding: 140px 0;
+  padding: 140px 0 0;
 }
 #contact .connect-with-you .location-info {
-  margin: 140px 0 110px 0;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
 }
 #contact .connect-with-you .location-info .left {
-  padding: 90px 70px 90px 65px;
+  padding: 60px 40px 60px 40px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 38%;
 }
 #contact .connect-with-you .location-info .left .group {
   margin-bottom: 20px;
@@ -29,103 +30,94 @@
   gap: 20px;
   flex-wrap: nowrap;
 }
+#contact .connect-with-you .location-info .left .group .h-list img {
+  width: 28px;
+}
 #contact .connect-with-you .location-info .left .group h3 {
   color: var(--primary-dark);
   font-weight: bold;
-  font-size: 24px;
+  font-family: "AvenirBold";
+  font-size: 18px;
   margin-bottom: 20px;
 }
 #contact .connect-with-you .location-info .left .group p {
   color: var(--primary-dark);
-  font-size: 18px;
+  font-size: 14px;
 }
 #contact .connect-with-you .location-info .left .group .icon-holder {
-  max-width: 35px;
+  max-width: 28px;
+}
+#contact .connect-with-you .location-info .left .group .icon-holder img {
+  width: 28px;
 }
 #contact .connect-with-you .location-info .left .group .icon-holder.pin {
-  width: 56px;
-}
-#contact .connect-with-you .location-info .map {
-  width: 62%;
+  width: 28px;
 }
 #contact .connect-with-you .contact-info h2 {
-  font-size: 44px;
+  font-size: 36px;
+  font-family: "AvenirBold";
+  font-weight: bold;
 }
 #contact .connect-with-you .contact-info textarea {
   height: 210px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1152px) {
   #contact .connect-with-you {
-    padding: 90px 0 130px 0;
+    padding-top: 80px;
   }
-  #contact .connect-with-you .location-info {
-    margin: 70px 0 60px 0;
-  }
-  #contact .location-info {
-    margin: 80px 0 95px 0;
-  }
-  #contact .location-info {
-    margin: 72px 0 85px 0;
-  }
-}
-@media (max-width: 1200px) {
-  #contact .connect-with-you .location-info .left {
-    padding: 40px 30px;
-  }
-  #contact .page-title h1 {
-    font-size: 48px;
+  #contact .connect-with-you .content-data {
+    padding: 20px 80px 60px;
   }
 }
 @media (max-width: 1024px) {
-  #contact .page-title h1 {
-    font-size: 38px;
-  }
-  #contact .connect-with-you {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  #contact .connect-with-you .content-data {
+    padding: 20px 40px 40px;
   }
   #contact .connect-with-you .location-info {
-    margin: 40px 0;
-  }
-  #contact .connect-with-you .content-data .contact-info .left, #contact .apply-job .content-data .contact-info .left {
-    padding: 0 30px;
-  }
-  #contact .connect-with-you .content-data .contact-info .form-wrapper, #contact .apply-job .content-data .contact-info .form-wrapper {
-    padding: 30px;
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 768px) {
-  #contact .hero-banner {
-    margin-top: 60px;
+  #contact .connect-with-you {
+    padding-top: 30px;
   }
-  #contact .page-title h1 {
-    font-size: 32px;
+  #contact .connect-with-you .content-data {
+    padding: 10px 20px 20px;
   }
   #contact .connect-with-you .location-info {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   #contact .connect-with-you .location-info .left {
-    width: 100%;
-    padding-bottom: 0px;
+    padding: 20px;
   }
-  #contact .connect-with-you .location-info .map {
+  #contact .connect-with-you .location-info .left .map {
+    min-height: 300px;
+  }
+  #contact .connect-with-you .content-data .contact-info .left, #contact .apply-job .content-data .contact-info .left {
     width: 100%;
-    height: 400px;
+  }
+  #contact .connect-with-you .content-data .contact-info .form-wrapper, #contact .apply-job .content-data .contact-info .form-wrapper {
+    width: 100%;
   }
   #contact .connect-with-you .content-data .grid-box, #contact .apply-job .content-data .grid-box {
-    flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
-  #contact .connect-with-you .content-data .contact-info .left {
+  #contact .connect-with-you .contact-info h2 {
+    font-size: 24px;
     width: 100%;
-  }
-  #contact .connect-with-you .content-data .contact-info .form-wrapper {
-    width: 100%;
+    text-align: center;
+    padding-top: 10px;
   }
 }
 @media (max-width: 650px) {
   #contact .connect-with-you {
-    padding-top: 10px;
+    padding: 30px 0;
+  }
+  #contact .connect-with-you .content-data {
+    padding: 0;
+  }
+  #contact .connect-with-you .location-info {
+    margin-bottom: 20px;
   }
   #contact .page-title h1 {
     margin-bottom: 0px;
