@@ -90,8 +90,11 @@
   #contact .connect-with-you .location-info .left {
     padding: 20px;
   }
-  #contact .connect-with-you .location-info .left .map {
+  #contact .connect-with-you .location-info .map {
     min-height: 300px;
+  }
+  #contact .connect-with-you .content-data .grid-box, #contact .apply-job .content-data .grid-box {
+    flex-direction: column;
   }
   #contact .connect-with-you .content-data .contact-info .left, #contact .apply-job .content-data .contact-info .left {
     width: 100%;

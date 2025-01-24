@@ -1,24 +1,26 @@
 #careers {
-    .title-group { margin-bottom: 35px;
-        h1 { font-style: normal; font-family: inherit; line-height: 80px; font-weight: 700; text-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5);}
-        h3 {
-            font-size: 44px; letter-spacing: -1px; color: #ffffff; font-weight: 600;
+    .title-group { margin-bottom: 40px;
+        gap: 10px;
+        h1 { font-style: normal; font-family: 'AvenirBold';  font-weight: 700; text-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5);}
+        h3, h4 {
+            font-size: 44px; font-weight: 500; font-family: 'AvenirRegular'; text-transform: none; letter-spacing: -1px; color: #ffffff; font-weight: 600;
             &:first-child {
                 position: relative; font-size: 46px; max-width: 760px; line-height: 60px; padding-bottom: 55px; margin-bottom: 75px;
-                &::before {position: absolute; content: ""; background: white; height: 9px; border-radius: 3px; width: 390px; bottom: 0; left: 50%; transform: translateX(-50%);}
+                &::before {position: absolute; content: ""; background: white; height: 7px; border-radius: 3px; width: 390px; bottom: 0; left: 50%; transform: translateX(-50%);}
             }
         }
+        h4{font-size: 36px;}
     }
     .search-jobs {
-        display: flex; align-items: flex-end; gap: 24px; margin-bottom: 158px; align-items: flex-start;
+        display: flex; align-items: flex-end; gap: 24px; margin-bottom: 115px; align-items: flex-start;
 
         .dropdown-wrapper {
             display: flex; flex-direction: column; gap: 18px; width: 100%; position: relative;
             label { font-size: 22px; color: #ffffff; font-weight: 600; margin-left: 20px;}
             .round-edges{background: transparent;}
             .select-dropdown {
-                flex: 1; color: #464646; font-size: 24px; justify-items: flex-start; position: relative; background-color: #e9eef6; border-radius: 12px; position: relative; z-index: 9;
-                padding: 25px 24px 30px 24px; width: 100%; cursor: pointer; outline: none; appearance: none; -webkit-appearance: none; -moz-appearance: none;
+                flex: 1; color: #464646; font-size: 24px; justify-items: flex-start; position: relative; background-color: #e9eef6; border-radius: 4px; position: relative; z-index: 9;
+                padding: 15px 20px; width: 100%; cursor: pointer; outline: none; appearance: none; -webkit-appearance: none; -moz-appearance: none;
 
                 &::after { content: ''; position: absolute; right: 15px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-left: 13.5px solid transparent; border-right: 13.5px solid transparent; border-top: 15px solid #464646; pointer-events: none; }
             }
@@ -35,10 +37,10 @@
 
             }
         }
-        .button-primary {border-radius: 12px; background-color: #ec1d39; text-decoration: none; font-weight: bold; padding: 22px 65px; box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5); font-size: 22px; min-height: 87px; margin-top: 42px;}
+        .button-primary {border-radius: 12px; background-color: #ec1d39; text-decoration: none; font-weight: bold; padding: 20px 65px; box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5); font-size: 22px; margin-top: 42px;}
     }
     .cards-wrapper {
-        display: flex; align-items: center; gap: 50px; margin-bottom: 145px;
+        display: flex; align-items: center; gap: 50px; margin-bottom: 100px;
 
         .job-card {
             padding: 30px 48px; display: flex; flex-direction: column; gap: 15px; font-size: 18px;
@@ -58,12 +60,13 @@
     }
     .contact-info {
         .left {
-            h2 {position: relative; padding-bottom: 42px;
+            h2 {position: relative; padding-bottom: 42px; font-size: 23px;
+                font-family: 'AvenirBold';
                 &::after { content: ""; position: absolute; width: 102px; height: 11px; border-radius: 3px; background-color: var(--primary-dark); left: 58px; bottom: 0; }
             }
             .email {
                 display: flex; align-items: center; gap: 8px; margin-top: 42px;
-                p {font-size: 22px; letter-spacing: -1px; color: var(--light-blue);}
+                p {font-size: 18px; letter-spacing: -1px; color: var(--light-blue);}
             }
         }
         .file-upload {
@@ -76,13 +79,29 @@
 
     }
 
-    @media (max-width: 1200px) {
-        .apply-job{padding: 40px 0;}
+    @media (max-width: 1152px) {
+        .apply-job .content-data{padding: 60px 80px;}
         .search-jobs, .cards-wrapper{margin-bottom: 80px;}
-        .apply-job .content-data .grid-box{flex-direction: column;padding-top: 20px;}
         .apply-job .content-data .contact-info .left{width: 100%;}
         .apply-job .content-data .contact-info .form-wrapper{width: 100%; padding: 30px;}
     }
+
+    @media (max-width: 1024px) {
+        .apply-job .content-data{padding: 20px 30px 40px;}
+        .title-group h3:first-child, .title-group h4:first-child{font-size: 36px; line-height: 1.2;}
+        .title-group h4{font-size: 28px;}
+        .cards-wrapper .job-card .title h2{font-size: 36px;}
+        .cards-wrapper .job-card{padding: 20px;}
+
+        .search-jobs, .cards-wrapper{margin-bottom: 80px;}
+        .apply-job .content-data .grid-box{flex-direction: column;padding-top: 20px;}
+    }
+
+    @media (max-width: 650px) {
+     //   .apply-job .content-data{padding: 20px 0}
+        
+    }
+
 
     @media (max-width: 768px) {
         .title-group h3:first-child{font-size: 32px; margin-bottom: 20px; padding-bottom: 20px;}
@@ -109,6 +128,7 @@
         .title-group h3:first-child::before{height: 3px;}
     }
     @media (max-width: 480px) {
+        .apply-job .content-data{padding-left: 0; padding-right: 0;}
         .title-group h3:first-child{font-size: 24px; margin-bottom: 0px; line-height: 30px;}
         .apply-job .content-data .contact-info .left h2{font-size: 24px;}
         .apply-job .content-data .contact-info .left{padding: 20px;}

@@ -480,14 +480,14 @@ h3.section-sub-title{
 
 .round-edges {border-radius: 12px; box-shadow: 8.866px 9.508px 14.5px rgba(0, 0, 0, 0.5); background: #e9edf6; overflow: hidden;}
 .connect-with-you, .apply-job {
-	position: relative; padding: 130px 0; background: linear-gradient(to bottom, #091880 0%, #003fa911 20%, #003fa911 60%, #091880 100%); background: url('../images/backgrounds/contact-page-bg.jpg') no-repeat center/cover; overflow: hidden;
+	position: relative;  background: linear-gradient(to bottom, #091880 0%, #003fa911 20%, #003fa911 60%, #091880 100%); background: url('../images/backgrounds/contact-page-bg.jpg') no-repeat center/cover; overflow: hidden;
 
 	.content-data {
 		margin: 0 auto; position: relative; z-index: 1;
 		padding: 100px 140px;
 
 		.grid-box {
-			display: grid;
+			display: flex;
 		}
 		.contact-info {
 			.left {
