@@ -15,20 +15,24 @@
 }
 #press-release-main .press-release .content-data .title-group .description-holder p {
   text-align: left;
-  font-size: 28px;
+  font-size: 23px;
 }
 #press-release-main .press-release .content-data .title-group h5, #press-release-main .press-release .content-data .title-group h4 {
-  font-size: 32px;
+  font-size: 40px;
   color: white;
   text-align: left;
 }
 #press-release-main .press-release .content-data .title-group h4 {
-  font-size: 36px;
+  font-size: 40px;
   font-style: italic;
+  font-family: "AvenirCondencedItalic";
 }
 #press-release-main .press-release .content-data .right {
-  padding: 80px 60px 40px;
+  width: 105%;
+  padding: 60px 60px 30px;
   display: grid;
+  position: relative;
+  left: -50px;
   gap: 40px;
   justify-content: center;
 }
@@ -124,6 +128,21 @@
     gap: 40px;
   }
 }
+@media (max-width: 1024px) {
+  #press-release-main .press-release .content-data .title-group h5 {
+    font-size: 28px;
+  }
+  #press-release-main .press-release .content-data .title-group h4 {
+    font-size: 28px;
+  }
+  #press-release-main .press-release .content-data .right .description-holder p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  #press-release-main .press-release.detail .content-data {
+    grid-template-columns: 2fr 5fr;
+  }
+}
 @media (max-width: 768px) {
   #press-release-main .press-release-cards .content-data .cards-container .cards-holder {
     grid-template-columns: 1fr 1fr;
@@ -142,6 +161,12 @@
   #press-release-main .press-release-cards .content-data .cards-container .cards-holder .press-card .card-description {
     font-size: 18px;
   }
+  #press-release-main .press-release.detail .content-data .right {
+    padding: 20px 20px 20px 60px;
+  }
+  #press-release-main .press-release .content-data .right .description-holder {
+    gap: 20px;
+  }
 }
 @media (max-width: 650px) {
   #press-release-main .press-release-cards .content-data .cards-container .cards-holder {
@@ -155,6 +180,17 @@
 @media (max-width: 480px) {
   #press-release-main .press-release-cards .content-data .cards-container .cards-holder {
     grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  #press-release-main .press-release.detail .content-data {
+    grid-template-columns: 1fr;
+  }
+  #press-release-main .press-release.detail .content-data .left {
+    display: none;
+  }
+  #press-release-main .press-release.detail .content-data .right {
+    width: 100%;
+    left: 0;
     padding: 20px;
   }
 }

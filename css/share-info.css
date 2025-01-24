@@ -23,7 +23,7 @@
 }
 #share-info .box-container .title-group h1 {
   font-size: 7vw;
-  font-family: "Avenir-Condenced-Italic";
+  font-family: "AvenirCondencedItalic";
 }
 #share-info .share-content {
   width: 100%;
@@ -79,7 +79,7 @@
 }
 #share-info .share-content .grid-container .box-grid .property-box {
   display: grid;
-  font-family: "Avenir-heavy-Demi-Condenced";
+  font-family: "AvenirHeavyDemiCondenced";
   box-shadow: 2px 2px 6px #000;
 }
 #share-info .share-content .grid-container .box-grid .property-box .box-title {
