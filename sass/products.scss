@@ -2,10 +2,10 @@
     padding: 70px 0 100px 0; background: url('../images/backgrounds/products-bg.jpg'); background-repeat: no-repeat; background-size: cover; overflow: hidden;
 }
 #products {    
-    .hero-banner {
-         position: relative;
-        .overlay-image {position: absolute; right: 0; top: 0; z-index: 1; height: 100%;}
-    }
+    // .hero-banner {
+    //      position: relative;
+    //     .overlay-image {position: absolute; right: 0; top: 0; z-index: 1; height: 100%;}
+    // }
     .products-section {
          padding: 70px 0 100px 0; background: url('../images/backgrounds/products-bg.jpg'); background-repeat: no-repeat; background-size: cover; overflow: hidden;
 
@@ -47,10 +47,10 @@
         }
     }
 
-    @media (max-width: 1440px) {
-        .hero-banner .container .title-group{left: 125px;}
-        .products-section .title-group.horizontal{padding: 0 30px; margin-bottom: 60px; gap: 60px; h1{ font-size: 60px;}}
-    }
+    // @media (max-width: 1440px) {
+    //     .hero-banner .container .title-group{left: 125px;}
+    //     .products-section .title-group.horizontal{padding: 0 30px; margin-bottom: 60px; gap: 60px; h1{ font-size: 60px;}}
+    // }
     @media (max-width: 1200px) {
         .hero-banner .container .title-group{left: 60px; h1{font-size: 60px;}}
         .products-section .title-group.horizontal{padding: 0 30px; margin-bottom: 60px; gap: 60px; h1{ font-size: 60px; line-height: 1;}}
@@ -62,6 +62,7 @@
         .products-section .title-group.horizontal p{line-height: 1.5;}
         .products-section .products-with-categories .cards-holder{margin: 0 45px; gap: 20px; .cat-box{height: 250px; padding: 20px 20px 40px 20px; .image-holder{margin-top: 30px}}}
         .products-section .products-with-categories .cards-holder .cat-box h3{font-size: 24px;}
+        .product-details-section .table-wrapper.bordered table tbody tr td{padding: 0px;}
     }
     @media (max-width: 768px) {
         .hero-banner .container .title-group h1{font-size: 42px;}
@@ -164,33 +165,35 @@
         }
     }
 
-    @media (max-width: 1440px) {
-        .product-details-section .table-wrapper{padding: 0 20px;}
-    }
+    // @media (max-width: 1440px) {
+    //     .product-details-section .table-wrapper{padding: 0 20px;}
+    // }
 
     @media (max-width: 1280px) {
-        .hero-banner .container .title-group{left: 60px; h1{font-size: 60px;}}
+        //.hero-banner .container .title-group{left: 60px; h1{font-size: 60px;}}
         .product-details-section .table-wrapper {padding: 0;}
     }
     @media (max-width: 1024px) {
         .product-details-section{padding: 30px 0 50px;}
-        .hero-banner .container .title-group h1{font-size: 50px;}
+        //.hero-banner .container .title-group h1{font-size: 50px;}
         .product-details-section.pouched .table-wrapper {
             margin-bottom: 0;
             table tbody { height: 300px;}
         }
+        .product-details-section .table-wrapper.bordered table tbody tr{td{padding: 10px 0}; &:last-child{td{padding-bottom: 20px;}}}
     }
 
     @media (max-width: 875px) {
-        .hero-banner .container .title-group {left: 20px; h1{font-size: 42px;}}
+//        .hero-banner .container .title-group {left: 20px; h1{font-size: 42px;}}
         .product-details-section .table-wrapper table tbody tr td:not(:last-child){padding: 10px; font-size: 16px; border-width: 2px;}
         .product-details-section .table-wrapper table tbody tr td:last-child{padding: 10px; font-size: 16px; border-width: 2px;}
         .title-group{margin-bottom: 20px; gap: 0px;}
-        .product-details-section{padding-top: 0px;}
+        .product-details-section{padding-top: 20px;}
         .product-details-section .table-wrapper table thead{height: 60px; tr{font-size: 14px;}}
     }
 
     @media (max-width: 480px) {
-        .hero-banner .container .title-group {left: 20px; h1{font-size: 36px;}}
+        .product-details-section .table-wrapper table tbody tr td:not(:last-child){font-size: 14px; padding: 0px;}
+        .product-details-section .table-wrapper table tbody tr td:last-child{padding: 10px; font-size: 14px; border-width: 2px;}
     }
 }

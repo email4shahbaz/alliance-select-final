@@ -1603,8 +1603,9 @@ a:hover, a:active, a:focus {
 }
 
 h2.section-title {
-  font-size: 70px;
+  font-size: 54px;
   text-transform: uppercase;
+  font-family: "AvenirBold";
 }
 h2.section-title.shadow {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -1613,9 +1614,9 @@ h2.section-title.italic {
   font-family: "AvenirCondencedItalic";
   font-style: italic;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1300px) {
   h2.section-title {
-    font-size: 56px;
+    font-size: 48px;
   }
 }
 @media (max-width: 1024px) {
@@ -1636,21 +1637,16 @@ h2.section-title.italic {
 }
 
 h3.section-sub-title {
-  font-size: 42px;
+  font-size: 36px;
   color: white;
   text-transform: uppercase;
 }
 h3.section-sub-title.shadow {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
-@media (max-width: 1440px) {
-  h3.section-sub-title {
-    font-size: 48px;
-  }
-}
 @media (max-width: 1024px) {
   h3.section-sub-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 @media (max-width: 768px) {
@@ -1918,7 +1914,7 @@ h3.section-sub-title.shadow {
   gap: 40px;
   align-items: center;
   width: 100%;
-  font-size: 60px;
+  font-size: 54px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: bold;
@@ -1930,42 +1926,56 @@ h3.section-sub-title.shadow {
   background: white;
   border-radius: 5px;
 }
-#organization .organization-section .container {
+#organization .organization-section {
   background-color: var(--primary-dark);
   background-image: url("../images/backgrounds/organizationbg.jpg");
   background-size: cover;
 }
-#organization .organization-section .content-data {
-  padding: 80px 0px 120px;
+#organization .organization-section .container > .content-data {
+  padding: 70px 40px;
 }
 #organization .organization-section.corporate .content-data {
   padding: 80px 0px 40px;
 }
-#organization .organization-section.board .content-data {
-  padding: 100px 60px;
+#organization .organization-section.board .content-data .accordion-item:first-child {
+  margin-bottom: 60px;
 }
 #organization .designation-holder {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 #organization .designation-holder .person {
-  font-size: 28px;
+  font-size: 24px;
   color: white;
   border-bottom: 2px solid white;
-  padding: 30px 40px;
+  padding: 20px 40px;
 }
 #organization .designation-holder .person:last-child {
   border: none;
 }
-@media (max-width: 1024px) {
-  #organization .organization-section.board .content-data {
-    padding: 40px 10px;
-  }
+@media (max-width: 1300px) {
   #organization .designation-title {
-    font-size: 48px;
+    font-size: 44px;
     gap: 20px;
   }
   #organization .designation-holder .person {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  #organization .organization-section.board .container > .content-data {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 1024px) {
+  #organization .designation-title {
+    font-size: 36px;
+  }
+  #organization .designation-title::after {
+    height: 6px;
+  }
+  #organization .designation-holder .person {
+    font-size: 20px;
+  }
+  #organization .organization-section.board .container > .content-data {
+    padding: 40px 20px;
   }
 }
 @media (max-width: 768px) {
@@ -1973,46 +1983,40 @@ h3.section-sub-title.shadow {
     padding: 40px 0 60px;
   }
   #organization .designation-title {
-    font-size: 36px;
-    gap: 20px;
+    font-size: 28px;
   }
   #organization .designation-title::after {
-    height: 6px;
+    height: 4px;
   }
   #organization .organization-section.corporate {
-    padding: 0px;
-  }
-  #organization .organization-section.corporate .content-data {
-    padding: 40px 20px;
+    padding: 0px; /*.content-data{padding: 40px 20px;}*/
   }
   #organization .organization-section.board {
-    padding: 0px;
-  }
-  #organization .organization-section.board .content-data {
-    padding: 40px 20px;
+    padding: 0px; /*.content-data{padding: 40px 20px;}*/
   }
   #organization .designation-holder .person {
     padding: 20px;
+  }
+  #organization .organization-section.board .container > .content-data {
+    padding: 20px 10px 20px;
   }
 }
 @media (max-width: 480px) {
   #organization .organization-section {
     padding: 20px 0 30px;
   }
-  #organization .organization-section.board .content-data {
-    padding: 20px 0;
-  }
   #organization .designation-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   #organization .designation-holder {
     margin-bottom: 20px;
   }
   #organization .designation-holder .person {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 10px;
   }
-  #organization .organization-section.corporate .content-data {
-    padding: 20px 0;
+  #organization .organization-section.board .container > .content-data {
+    padding: 10px 0 10px;
   }
 }
 
@@ -2842,6 +2846,86 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   }
 }
 
+.accordion-items-holder {
+  margin: 20px 80px 60px;
+}
+
+.accordion-item {
+  transition: 0.3s all;
+}
+.accordion-item .accordion-item-header {
+  background: #0054bc;
+  border: 1px solid #fff;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-items: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+.accordion-item .expendable-area {
+  transition: 0.3s ease;
+  background: #fef8ef;
+  margin-top: 1px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+}
+.accordion-item .expendable-area .content-data {
+  display: grid;
+  gap: 20px;
+  min-height: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0 !important;
+}
+.accordion-item .expendable-area .content-data a {
+  font-size: 22px;
+  text-decoration: underline;
+}
+.accordion-item.active .expendable-area {
+  grid-template-rows: 1fr;
+}
+.accordion-item.active .expendable-area .content-data {
+  height: auto;
+  overflow: hidden;
+  padding: 50px 20px !important;
+}
+@media (max-width: 1024px) {
+  .accordion-item .accordion-item-header {
+    font-size: 24px;
+  }
+  .accordion-item .accordion-item-header svg {
+    --size: 20px;
+    height: var(--size);
+    width: var(--size);
+  }
+  .accordion-item .expendable-area .content-data a {
+    font-size: 20px;
+  }
+  .accordion-item.active .expendable-area .content-data {
+    padding: 20px !important;
+  }
+}
+@media (max-width: 768px) {
+  .accordion-item .accordion-item-header {
+    font-size: 24px;
+  }
+  .accordion-item .accordion-item-header svg {
+    --size: 20px;
+    height: var(--size);
+    width: var(--size);
+  }
+  .accordion-item .expendable-area .content-data a {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 1280px) {
   [data-gap-xl="0"] {
     --item-gap: 0px;
@@ -2938,6 +3022,9 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   }
 }
 @media (max-width: 1180px) {
+  .accordion-items-holder {
+    margin: 20px 20px 0px;
+  }
   [data-gap-lg="0"] {
     --item-gap: 0px;
   }
@@ -3128,6 +3215,9 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   }
 }
 @media (max-width: 768px) {
+  .accordion-items-holder {
+    margin: 20px 20px 0px;
+  }
   .swiper-button-prev::after, .swiper-button-next::after {
     width: 28px;
     height: 28px;
@@ -3330,80 +3420,10 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
   }
 }
 @media (max-width: 480px) {
-  .cookies-alert {
-    max-width: 100%;
-    bottom: 10px;
-    left: 10px;
-    padding: 20px;
-  }
-  .demo-alert {
-    width: 80%;
+  .accordion-items-holder {
+    margin: 10px 0px;
   }
 }
-.accordion-items-holder {
-  margin: 20px 0 60px;
-}
-
-.accordion-item {
-  transition: 0.3s all;
-}
-.accordion-item .accordion-item-header {
-  background: #0054bc;
-  border: 1px solid #fff;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  justify-items: center;
-  align-items: center;
-  padding: 15px 20px;
-  font-size: 48px;
-  font-weight: 700;
-  color: white;
-  cursor: pointer;
-}
-.accordion-item .expendable-area {
-  transition: 0.3s ease;
-  background: #fef8ef;
-  margin-top: 1px;
-  text-align: center;
-  display: grid;
-  grid-template-rows: 0fr;
-  overflow: hidden;
-}
-.accordion-item .expendable-area .content-data {
-  display: grid;
-  gap: 20px;
-  min-height: 0;
-  height: 0;
-  overflow: hidden;
-  transition: 0.3s ease;
-  padding: 0 !important;
-}
-.accordion-item .expendable-area .content-data a {
-  font-size: 28px;
-  text-decoration: underline;
-}
-.accordion-item.active .expendable-area {
-  grid-template-rows: 1fr;
-}
-.accordion-item.active .expendable-area .content-data {
-  height: auto;
-  overflow: hidden;
-  padding: 50px 20px !important;
-}
-@media (max-width: 1024px) {
-  .accordion-item .accordion-item-header {
-    font-size: 24px;
-  }
-  .accordion-item .accordion-item-header svg {
-    --size: 20px;
-    height: var(--size);
-    width: var(--size);
-  }
-  .accordion-item .expendable-area .content-data a {
-    font-size: 20px;
-  }
-}
-
 @media (max-width: 1200px) {
   :root {
     --container-padding: 20px ;
@@ -3495,6 +3515,6 @@ body.mobile-menu-active .hamburger .bar:nth-child(3) {
     min-height: 220px;
   }
   .g-hero-banner .image-responsive {
-    right: -240px;
+    right: -180px;
   }
 }

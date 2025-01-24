@@ -1,0 +1,279 @@
+#organization .title-group {
+  gap: 25px;
+  margin: 0 auto 70px auto;
+  justify-items: center;
+  max-width: 822px;
+}
+#organization .organization-section {
+  padding: 40px 80px;
+}
+#organization .organization-section.pouched .table-wrapper {
+  margin-bottom: 120px;
+}
+#organization .organization-section.pouched .table-wrapper table tbody {
+  height: 370px;
+}
+#organization .organization-section.canned .table-wrapper td {
+  max-width: 20%;
+  width: 100%;
+}
+#organization .organization-section.canned .table-wrapper tbody td {
+  padding: 15px 40px;
+  border-right: 3px solid #00226d;
+}
+#organization .organization-section.canned .table-wrapper tbody td.medium {
+  border: none;
+}
+#organization .organization-section .table-wrapper {
+  padding: 0 45px;
+  overflow-x: scroll;
+}
+#organization .organization-section .table-wrapper table {
+  background: white;
+  border-radius: 14px;
+  width: 100%;
+  border-spacing: 0;
+  overflow: hidden;
+  width: 100%;
+  min-width: 600px;
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.9);
+}
+#organization .organization-section .table-wrapper table td {
+  max-width: 33%;
+  width: 100%;
+}
+#organization .organization-section .table-wrapper table thead {
+  background: var(--primary-color);
+  color: white;
+  height: 85px;
+}
+#organization .organization-section .table-wrapper table thead tr {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+#organization .organization-section .table-wrapper table tbody tr:not(:last-child) td {
+  border-bottom: 3px solid #00226d;
+}
+#organization .organization-section .table-wrapper table tbody tr {
+  font-size: 20px;
+  line-height: 28px;
+  color: #00226d;
+  font-weight: 500;
+}
+#organization .organization-section .table-wrapper table tbody tr td {
+  text-align: center;
+  font-weight: 600;
+  padding: 38px 40px;
+}
+#organization .organization-section .table-wrapper table tbody tr td p {
+  max-width: 350px;
+  margin: auto;
+}
+#organization .organization-section .table-wrapper table tbody tr td:not(:last-child) {
+  border-right: 3px solid #00226d;
+}
+#organization .organization-section .table-wrapper table tbody tr td.medium p {
+  max-width: 275px;
+  margin: auto;
+}
+#organization .organization-section .table-wrapper.bordered table {
+  border-collapse: collapse;
+  border-radius: 0;
+}
+#organization .organization-section .table-wrapper.bordered table thead th {
+  background: #0054bc;
+  border: 1px solid white;
+  font-size: 34px;
+}
+#organization .organization-section .table-wrapper.bordered table thead th:nth-child(1) {
+  width: 60%;
+}
+#organization .organization-section .table-wrapper.bordered table tbody tr td {
+  border: 0;
+  padding: 20px 20px;
+}
+#organization .organization-section .table-wrapper.bordered table tbody tr:last-child td {
+  padding-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  #organization .organization-section .table-wrapper.bordered table {
+    border-collapse: collapse;
+    border-radius: 0;
+  }
+  #organization .organization-section .table-wrapper.bordered table thead th {
+    background: #0054bc;
+    border: 1px solid white;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1280px) {
+  #organization .organization-section .table-wrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  #organization .organization-section {
+    padding: 30px 0 50px;
+  }
+  #organization .organization-section.pouched .table-wrapper {
+    margin-bottom: 0;
+  }
+  #organization .organization-section.pouched .table-wrapper table tbody {
+    height: 300px;
+  }
+  #organization .organization-section .table-wrapper.bordered table tbody tr td {
+    padding: 10px 0;
+  }
+  #organization .organization-section .table-wrapper.bordered table tbody tr:last-child td {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 875px) {
+  #organization .organization-section .table-wrapper table tbody tr td:not(:last-child) {
+    padding: 10px;
+    font-size: 16px;
+    border-width: 2px;
+  }
+  #organization .organization-section .table-wrapper table tbody tr td:last-child {
+    padding: 10px;
+    font-size: 16px;
+    border-width: 2px;
+  }
+  #organization .title-group {
+    margin-bottom: 20px;
+    gap: 0px;
+  }
+  #organization .organization-section {
+    padding-top: 20px;
+  }
+  #organization .organization-section .table-wrapper table thead {
+    height: 60px;
+  }
+  #organization .organization-section .table-wrapper table thead tr {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  #organization .organization-section .table-wrapper table tbody tr td:not(:last-child) {
+    font-size: 14px;
+    padding: 0px;
+  }
+  #organization .organization-section .table-wrapper table tbody tr td:last-child {
+    padding: 10px;
+    font-size: 14px;
+    border-width: 2px;
+  }
+}
+
+#organization .designation-title {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+#organization .designation-title::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: white;
+  border-radius: 5px;
+}
+#organization .organization-section {
+  background-color: var(--primary-dark);
+  background-image: url("../images/backgrounds/organizationbg.jpg");
+  background-size: cover;
+}
+#organization .organization-section .container > .content-data {
+  padding: 70px 40px;
+}
+#organization .organization-section.corporate .content-data {
+  padding: 80px 0px 40px;
+}
+#organization .organization-section.board .content-data .accordion-item:first-child {
+  margin-bottom: 60px;
+}
+#organization .designation-holder {
+  margin-bottom: 50px;
+}
+#organization .designation-holder .person {
+  font-size: 24px;
+  color: white;
+  border-bottom: 2px solid white;
+  padding: 20px 40px;
+}
+#organization .designation-holder .person:last-child {
+  border: none;
+}
+@media (max-width: 1300px) {
+  #organization .designation-title {
+    font-size: 44px;
+    gap: 20px;
+  }
+  #organization .designation-holder .person {
+    font-size: 22px;
+  }
+  #organization .organization-section.board .container > .content-data {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 1024px) {
+  #organization .designation-title {
+    font-size: 36px;
+  }
+  #organization .designation-title::after {
+    height: 6px;
+  }
+  #organization .designation-holder .person {
+    font-size: 20px;
+  }
+  #organization .organization-section.board .container > .content-data {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  #organization .organization-section {
+    padding: 40px 0 60px;
+  }
+  #organization .designation-title {
+    font-size: 28px;
+  }
+  #organization .designation-title::after {
+    height: 4px;
+  }
+  #organization .organization-section.corporate {
+    padding: 0px; /*.content-data{padding: 40px 20px;}*/
+  }
+  #organization .organization-section.board {
+    padding: 0px; /*.content-data{padding: 40px 20px;}*/
+  }
+  #organization .designation-holder .person {
+    padding: 20px;
+  }
+  #organization .organization-section.board .container > .content-data {
+    padding: 20px 10px 20px;
+  }
+}
+@media (max-width: 480px) {
+  #organization .organization-section {
+    padding: 20px 0 30px;
+  }
+  #organization .designation-title {
+    font-size: 20px;
+  }
+  #organization .designation-holder {
+    margin-bottom: 20px;
+  }
+  #organization .designation-holder .person {
+    font-size: 16px;
+    padding: 10px;
+  }
+  #organization .organization-section.board .container > .content-data {
+    padding: 10px 0 10px;
+  }
+}

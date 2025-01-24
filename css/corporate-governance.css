@@ -8,7 +8,7 @@
   display: grid;
   align-content: center;
   background: #0054bc;
-  padding: 60px 80px;
+  padding: 40px 60px;
   transform: skewX(-25deg);
 }
 #corporate-governance-main .box-container .box.red {
@@ -28,6 +28,10 @@
 #corporate-governance-main .box-container .title-group .description-holder p {
   line-height: 1.5;
 }
+#corporate-governance-main .title-group h1 {
+  font-size: 52px;
+  font-family: "AvenirBold";
+}
 #corporate-governance-main .image-section {
   background-color: #a9ccf0;
 }
@@ -43,20 +47,11 @@
 #corporate-governance-main .image-section .content-data .img-holder {
   position: relative;
   left: -180px;
-  height: 575px;
+  height: 433px;
   background: #a9ccf0;
-  padding-right: 156px;
-  border-right: 60px solid white;
+  padding-right: 124px;
+  border-right: 45px solid white;
   transform: skewX(32deg);
-}
-#corporate-governance-main .image-section .content-data .img-holder.right {
-  padding-right: initial;
-  padding-left: 156px;
-  border-left: 60px solid white;
-  border-right: none;
-  right: -180px;
-  left: initial;
-  transform: skewX(-32deg);
 }
 #corporate-governance-main .image-section .content-data .img-holder img {
   width: 100%;
@@ -67,6 +62,7 @@
 #corporate-governance-main .image-section .content-data .title-group {
   position: relative;
   left: -120px;
+  width: calc(100% + 100px);
   margin-top: 20px;
 }
 #corporate-governance-main .image-section .content-data .title-group .description-holder {
@@ -79,8 +75,8 @@
 }
 #corporate-governance-main .image-section.right .content-data .img-holder {
   padding-right: initial;
-  padding-left: 156px;
-  border-left: 60px solid white;
+  padding-left: 124px;
+  border-left: 45px solid white;
   border-right: none;
   right: -180px;
   left: initial;
@@ -91,7 +87,8 @@
 }
 #corporate-governance-main .image-section.right .content-data .title-group {
   left: initial;
-  right: -100px;
+  right: -20px;
+  width: calc(100% + 100px);
 }
 #corporate-governance-main .social-responsibilities {
   width: 100%;
@@ -106,7 +103,7 @@
   position: relative;
 }
 #corporate-governance-main .social-responsibilities .content-data .title-group .description-holder {
-  max-width: 1350px;
+  max-width: 1000px;
 }
 #corporate-governance-main .social-responsibilities .box-container .title-group h1 {
   font-size: 36px;
@@ -127,7 +124,7 @@
   padding: 0 30px;
 }
 #corporate-governance-main .risk-management .content-data .title-group p {
-  max-width: 1200px;
+  max-width: 800px;
 }
 #corporate-governance-main .risk-management .content-data .box-container {
   grid-template-columns: 1fr 1fr;
@@ -138,7 +135,7 @@
 #corporate-governance-main .risk-management .content-data .box {
   position: relative;
   padding: 80px 0px;
-  width: calc(100% + 110px);
+  width: calc(100% + 60px);
   justify-content: center;
   transform: none;
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
@@ -146,6 +143,9 @@
 #corporate-governance-main .risk-management .content-data .box .title-group {
   padding-left: 40px;
   transform: none;
+}
+#corporate-governance-main .risk-management .content-data .box .title-group h1 {
+  font-size: 44px;
 }
 #corporate-governance-main .risk-management .content-data .box .title-group h1 .button-primary {
   margin-left: 20px;
@@ -325,48 +325,6 @@
   font-size: 24px;
   color: #022c86;
 }
-@media (max-width: 1600px) {
-  #corporate-governance-main .risk-management .content-data .box {
-    width: calc(100% + 80px);
-  }
-  #corporate-governance-main .risk-management .content-data .box .title-group {
-    padding-right: 30px;
-  }
-  #corporate-governance-main .press-release-cards .content-data .cards-container .cards-holder {
-    padding: 60px 80px;
-  }
-  #corporate-governance-main .press-release-cards .content-data .cards-container .cards-holder {
-    gap: 60px;
-  }
-}
-@media (max-width: 1440px) {
-  #corporate-governance-main .image-section .content-data .title-group {
-    left: -60px;
-    margin-bottom: 0px;
-  }
-  #corporate-governance-main .image-section .content-data .title-group .description-holder p {
-    padding: 0 30px;
-  }
-  #corporate-governance-main .risk-management .content-data .box {
-    width: calc(100% + 80px);
-  }
-  #corporate-governance-main .risk-management .content-data .box .title-group {
-    padding-right: 80px;
-  }
-  #corporate-governance-main .risk-management .content-data .box.pink {
-    width: calc(100% + 80px);
-    left: -80px;
-  }
-  #corporate-governance-main .risk-management .content-data .box.pink .title-group {
-    padding-right: 0px;
-  }
-  #corporate-governance-main .press-release .content-data .title-group .description-holder p {
-    font-size: 22px;
-  }
-  #corporate-governance-main .press-release-cards .content-data .cards-container .cards-holder {
-    gap: 30px;
-  }
-}
 @media (max-width: 1280px) {
   #corporate-governance-main .social-responsibilities .box-container .title-group h1 {
     font-size: 28px;
@@ -393,26 +351,11 @@
   }
 }
 @media (max-width: 1024px) {
+  #corporate-governance-main .title-group h1 {
+    font-size: 46px;
+  }
   #corporate-governance-main .social-responsibilities .box-container .title-group h1 {
     font-size: 24px;
-  }
-  #corporate-governance-main .image-section .content-data .title-group {
-    width: calc(100% + 60px);
-    left: -80px;
-  }
-  #corporate-governance-main .image-section .content-data .img-holder {
-    border-width: 20px;
-    padding-right: 80px;
-  }
-  #corporate-governance-main .image-section.right .content-data .img-holder {
-    border-width: 20px;
-    padding-left: 80px;
-  }
-  #corporate-governance-main .risk-management .content-data .box {
-    width: calc(100% + 70px);
-  }
-  #corporate-governance-main .image-section.right .content-data .title-group {
-    right: -40px;
   }
   #corporate-governance-main .press-release .content-data .right {
     padding: 40px 30px 0;
@@ -469,6 +412,23 @@
   }
 }
 @media (max-width: 768px) {
+  #corporate-governance-main .title-group h1 {
+    font-size: 36px;
+  }
+  #corporate-governance-main .risk-management .content-data .box .title-group h1 {
+    font-size: 36px;
+  }
+  #corporate-governance-main .image-section .content-data .img-holder {
+    border-width: 20px;
+    padding-right: 120px;
+  }
+  #corporate-governance-main .image-section.right .content-data .img-holder {
+    border-width: 20px;
+    padding-left: 120px;
+  }
+  #corporate-governance-main .g-hero-banner .banner--title img {
+    width: 150px;
+  }
   #corporate-governance-main .image-section .content-data .img-holder {
     height: 375px;
   }
@@ -492,6 +452,14 @@
   #corporate-governance-main .image-section .content-data .img-holder {
     height: 300px;
   }
+  #corporate-governance-main .image-section .content-data .img-holder {
+    border-width: 10px;
+    padding-right: 80px;
+  }
+  #corporate-governance-main .image-section.right .content-data .img-holder {
+    border-width: 10px;
+    padding-left: 80px;
+  }
   #corporate-governance-main .box-container .box {
     padding: 20px;
   }
@@ -507,8 +475,17 @@
   }
 }
 @media (max-width: 480px) {
+  #corporate-governance-main .title-group h1 {
+    font-size: 28px;
+  }
+  #corporate-governance-main .risk-management .content-data .box .title-group h1 {
+    font-size: 28px;
+  }
   #corporate-governance-main .social-responsibilities .box-container .title-group h1 {
     font-size: 18px;
+  }
+  #corporate-governance-main .reports.section {
+    padding: 20px 0;
   }
   #corporate-governance-main .image-section .content-data .img-holder {
     border-width: 10px;
@@ -549,6 +526,35 @@
   }
 }
 @media (max-width: 430px) {
+  #corporate-governance-main .image-section .content-data {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  #corporate-governance-main .image-section .content-data .title-group {
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+  }
+  #corporate-governance-main .image-section .content-data .img-holder {
+    display: none;
+  }
+  #corporate-governance-main .image-section.right .content-data {
+    grid-template-columns: 1fr;
+  }
+  #corporate-governance-main .image-section.right .content-data .title-group {
+    width: 100%;
+    left: 0;
+  }
+  #corporate-governance-main .image-section.right .content-data .img-holder {
+    display: none;
+  }
+  #corporate-governance-main .image-section .content-data .title-group .description-holder p {
+    line-height: 1.2;
+    padding: 0px;
+  }
+  #corporate-governance-main .image-section .content-data .title-group {
+    margin-top: 10px;
+  }
   #corporate-governance-main .press-release-cards .content-data .cards-container .cards-holder {
     padding: 20px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -556,10 +562,15 @@
 }
 #corporate-governance-main.reports section.section {
   background-color: #00226d;
-  padding: 125px 0;
+  padding: 0px 0;
 }
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   #corporate-governance-main.reports section.section {
-    padding: 80px 0;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 480px) {
+  #corporate-governance-main.reports section.section {
+    padding: 20px 0;
   }
 }

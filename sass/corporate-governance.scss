@@ -1,7 +1,11 @@
 #corporate-governance-main{
     .box-container{display: grid; gap: 36px; grid-template-columns: 1fr 1fr 1fr; overflow: hidden;
-        .box{display: grid; align-content: center; background: #0054bc; padding: 60px 80px; &.red{background: var(--primary-red);} &.pink{background: #f73f40 }; transform: skewX(-25deg);}
-        .title-group{gap: 10px; margin-bottom: 0px; transform: skewX(25deg); h1{line-height: 1.2} .description-holder{ p{line-height: 1.5;}}}
+        .box{display: grid; align-content: center; background: #0054bc; padding: 40px 60px; &.red{background: var(--primary-red);} &.pink{background: #f73f40 }; transform: skewX(-25deg);}
+        .title-group{gap: 10px; margin-bottom: 0px; transform: skewX(25deg); h1{line-height: 1.2;} .description-holder{ p{line-height: 1.5;}}}
+    }
+
+    .title-group{
+        h1{font-size: 52px; font-family: 'AvenirBold';}
     }
 
     .image-section{
@@ -16,26 +20,27 @@
             .img-holder{
                 position: relative;
                 left: -180px;
-                height: 575px;
+                height: 433px;
                 background: #a9ccf0;
-                padding-right: 156px;
-                border-right: 60px solid white;
+                padding-right: 124px;
+                border-right: 45px solid white;
                 transform: skewX(32deg);
-                &.right{
-                    padding-right: initial;
-                    padding-left: 156px;
-                    border-left: 60px solid white;;
-                    border-right: none;
-                    right: -180px;
-                    left: initial;
-                    transform: skewX(-32deg);
-                }
+                // &.right{
+                //     padding-right: initial;
+                //     padding-left: 124px;
+                //     border-left: 45px solid white;;
+                //     border-right: none;
+                //     right: -180px;
+                //     left: initial;
+                //     transform: skewX(-32deg);
+                // }
                 img{width: 100%; height: 100%; object-position: right; object-fit: cover;}
             }
       
             .title-group{
                 position: relative;
                 left: -120px;
+                width: calc(100% + 100px);
                 margin-top: 20px;
                 .description-holder{display: grid; gap: 40px; p{padding: 0 40px; line-height: 1.5;}}
             }
@@ -45,8 +50,8 @@
             .content-data{
                 .img-holder{
                     padding-right: initial;
-                    padding-left: 156px;
-                    border-left: 60px solid white;;
+                    padding-left: 124px;
+                    border-left: 45px solid white;;
                     border-right: none;
                     right: -180px;
                     left: initial;
@@ -55,7 +60,8 @@
                 }
                 .title-group{
                     left: initial;
-                    right: -100px;
+                    right: -20px;
+                    width: calc(100% + 100px);
                 }
             }
         }
@@ -69,7 +75,7 @@
         .content-data{
             padding: 0 30px;
             position: relative;
-            .title-group{.description-holder{max-width: 1350px;}}
+            .title-group{ .description-holder{max-width: 1000px;}}
             
         }
         .box-container .title-group h1{font-size: 36px;}
@@ -83,10 +89,10 @@
             overflow: hidden;
             padding: 70px 0px;
             background-image: url("../images/backgrounds/corporate-bg2.jpg");
-            .title-group{padding: 0 30px; p{max-width: 1200px;}}
+            .title-group{padding: 0 30px; p{max-width: 800px;}}
             .box-container{grid-template-columns: 1fr 1fr; overflow:initial; /*transform: scale(1.1)*/; padding: 40px 0; gap: 0px;}
-            .box{ position: relative; padding: 80px 0px; width: calc(100% + 110px); justify-content: center; transform: none; clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-                .title-group{padding-left: 40px; transform: none; h1{ .button-primary{margin-left: 20px; text-shadow: none; margin-top: 10px}}}
+            .box{ position: relative; padding: 80px 0px; width: calc(100% + 60px); justify-content: center; transform: none; clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+                .title-group{padding-left: 40px; transform: none; h1{font-size: 44px; .button-primary{margin-left: 20px; text-shadow: none; margin-top: 10px}}}
                 &.pink{top: 80px; width: calc(100% + 110px); left: -110px; clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);}
             }
             //.box{&:nth-child(1){padding-left: 80px; margin-bottom: 80px;}}
@@ -98,7 +104,7 @@
         width: 100%;
         background: #a9ccf0;
         .container{padding: 0px;}
-       .content-data{
+        .content-data{
             background-image: url(../images/backgrounds/corporate-govern-enterprisebg1.jpg);
             background-size: cover;
             background-position-y: 100%;
@@ -197,25 +203,6 @@
     }
 
 
-   
-   
-
-    @media (max-width: 1600px) {
-        .risk-management .content-data .box{width: calc(100% + 80px); .title-group{padding-right: 30px;}}
-        .press-release-cards .content-data .cards-container .cards-holder{ padding: 60px 80px;}
-        .press-release-cards .content-data .cards-container .cards-holder{gap: 60px;}
-       
-    }
-
-    @media (max-width: 1440px) {
-        .image-section .content-data .title-group{left: -60px; margin-bottom: 0px;.description-holder{p{padding: 0 30px;}}}
-        .risk-management .content-data .box{width: calc(100% + 80px); .title-group{padding-right: 80px;}}
-        .risk-management .content-data .box{&.pink{width: calc(100% + 80px); left: -80px; .title-group{padding-right: 0px;}}}
-
-        .press-release .content-data .title-group .description-holder p{font-size: 22px;}
-        .press-release-cards .content-data .cards-container .cards-holder{gap: 30px;}
-    }
-
     @media (max-width: 1280px) {
         .social-responsibilities .box-container .title-group h1{font-size: 28px;}
         .box-container .box{padding: 40px;}
@@ -233,12 +220,14 @@
 
    
     @media (max-width: 1024px) {
+        .title-group h1{font-size: 46px;}
+
         .social-responsibilities .box-container .title-group h1{font-size: 24px;}
-        .image-section .content-data .title-group{width: calc(100% + 60px); left: -80px;}
-        .image-section .content-data .img-holder{border-width: 20px; padding-right: 80px;}
-        .image-section {&.right{.content-data .img-holder{border-width: 20px; padding-left: 80px;}}}
-        .risk-management .content-data .box{width: calc(100% + 70px);}
-        .image-section.right .content-data .title-group{right: -40px;}
+        // .image-section .content-data .title-group{width: calc(100% + 60px); left: -80px;}
+        // .image-section .content-data .img-holder{border-width: 20px; padding-right: 80px;}
+        // .image-section {&.right{.content-data .img-holder{border-width: 20px; padding-left: 80px;}}}
+        // .risk-management .content-data .box{width: calc(100% + 70px);}
+        // .image-section.right .content-data .title-group{right: -40px;}
 
         .press-release .content-data .right{padding: 40px 30px 0;}
         .press-release .content-data .title-group h4{font-size: 24px;}
@@ -261,6 +250,16 @@
     }
 
     @media (max-width: 768px) {
+        .title-group h1{font-size: 36px;}
+        .risk-management .content-data .box .title-group h1{font-size: 36px;}
+        .image-section .content-data .img-holder{border-width: 20px; padding-right: 120px;}
+        .image-section {&.right{.content-data .img-holder{border-width: 20px; padding-left: 120px;}}}
+
+        .g-hero-banner .banner--title{img{width: 150px;}}
+
+
+
+
         .image-section .content-data .img-holder{height: 375px;}
         .social-responsibilities .container{padding: 30px 0;}
         .risk-management .content-data{padding: 30px 0;}
@@ -273,7 +272,14 @@
 
     @media (max-width: 650px) {
         .image-section .content-data .img-holder{height: 300px;}
+        .image-section .content-data .img-holder{border-width: 10px; padding-right: 80px;}
+        .image-section {&.right{.content-data .img-holder{border-width: 10px; padding-left: 80px;}}}
+
         .box-container .box{padding: 20px;}
+
+
+
+
         //.image-section .content-data .title-group{width: calc(100% + 120px); .description-holder{gap: 10px;}}
         .risk-management .content-data .box .title-group{padding-left: 0px; padding-right: 40px;}
         .press-release .content-data .right{padding: 20px 20px 20px 0;}
@@ -281,7 +287,12 @@
     }
 
     @media (max-width: 480px) {
+        .title-group{h1{font-size: 28px;}}
+        .risk-management .content-data .box .title-group h1{font-size: 28px;}
         .social-responsibilities .box-container .title-group h1{font-size: 18px;}
+
+        .reports.section{padding: 20px 0;}
+        
         .image-section .content-data .img-holder{border-width: 10px; padding-right: 40px;}
         .image-section {&.right{.content-data .img-holder{border-width: 10px; padding-left: 40px;}}}
         .image-section .content-data .title-group .description-holder p{line-height: 1.2; padding: 0px;}
@@ -296,6 +307,13 @@
     }
 
     @media (max-width: 430px) {
+        .image-section .content-data{grid-template-columns: 1fr; gap: 10px; .title-group{width: 100%; left: 0; padding: 0 20px;} .img-holder{display: none;}}
+        .image-section {&.right{.content-data{grid-template-columns: 1fr; .title-group{width: 100%; left: 0;} .img-holder{display: none;}}}}
+        .image-section .content-data .title-group .description-holder p{line-height: 1.2; padding: 0px;}
+        .image-section .content-data .title-group{margin-top: 10px;}
+
+
+
         .press-release-cards .content-data .cards-container .cards-holder{padding: 20px; grid-template-columns:  repeat(auto-fill, minmax(320px, 1fr));}
         
     }
@@ -305,15 +323,12 @@
     }
 
     &.reports{
-       
-
         section.section{
             background-color: #00226d;
-            padding: 125px 0;
+            padding: 0px 0;
 
-            @media (max-width: 1440px) {
-                padding: 80px 0;
-            }
+            @media (max-width: 768px) { padding: 40px 0; }
+            @media (max-width: 480px) { padding: 20px 0; }
         }
     }
 
