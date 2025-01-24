@@ -1640,6 +1640,7 @@ h3.section-sub-title {
   font-size: 36px;
   color: white;
   text-transform: uppercase;
+  font-family: "AvenirBold";
 }
 h3.section-sub-title.shadow {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);

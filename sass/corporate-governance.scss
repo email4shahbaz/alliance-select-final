@@ -1,4 +1,14 @@
 #corporate-governance-main{
+    .g-hero-banner{
+
+    }
+
+    .section{&.main{
+        .content-data{
+             padding: 80px 0;
+        }
+    }}
+
     .box-container{display: grid; gap: 36px; grid-template-columns: 1fr 1fr 1fr; overflow: hidden;
         .box{display: grid; align-content: center; background: #0054bc; padding: 40px 60px; &.red{background: var(--primary-red);} &.pink{background: #f73f40 }; transform: skewX(-25deg);}
         .title-group{gap: 10px; margin-bottom: 0px; transform: skewX(25deg); h1{line-height: 1.2;} .description-holder{ p{line-height: 1.5;}}}
