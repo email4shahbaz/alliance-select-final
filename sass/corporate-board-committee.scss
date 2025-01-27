@@ -1,0 +1,140 @@
+#corporate-governance-board-committee{
+    background: var(--primary-dark);
+    .board-committee-section{
+        background: var(--primary-dark);
+        .container{
+            padding: 0;
+            .content-data{
+                padding: 80px 0;
+                .title-group{padding: 0 120px;}
+            }
+        }
+    }
+ 
+
+    .skew-box-container{display: grid; width: 100%; gap: 30px; grid-template-columns: 1fr 1fr; overflow: hidden;
+        &.three{grid-template-columns: 1fr 1fr 1fr; margin-top: 40px; .skew-box{padding: 40px 20px 40px 80px;}}
+        .skew-box{
+            width: 100%;
+            display: grid; align-content: center; background: #0054bc; padding: 60px 120px;
+            &.red{background: var(--primary-red);}
+            &.pink{background: #f73f40;};
+            transform: skewX(-25deg);
+
+            &:first-child{
+                transform-origin: 100%;
+                transform: scaleX(1.2) skewX(-21deg);
+                .box-content{transform-origin: 100%; transform: skew(21deg) scaleX(.8);}
+            }
+
+            &:last-child{
+                transform-origin: 0%;
+                transform: scaleX(1.2) skewX(-21deg);
+                .box-content{transform-origin: 0%; transform: skew(21deg) scaleX(.8);}
+            }
+           
+            .box-content{
+                transform: skew(25deg) ; color: white;
+                .title{font-size: 28px; font-family: 'AvenirBold'; }
+                .members{display: grid; gap: 10px; margin-top: 10px; .member{font-size: 18px;}}
+            }
+        }
+        
+    }
+
+    .board-committee-text-section{
+        background: url("../images/backgrounds/corporate-govern-enterprisebg1.jpg"); background-size: cover; background-repeat: no-repeat;
+
+        .container{
+            padding: 0;
+            .content-data{
+                padding: 50px 80px;
+                .title-group{padding: 0 20px;  .description-holder{p{text-align: left; padding-left: 110px; line-height: 1.5;}}}
+
+                .committee-holder{
+                    border-left: 2px solid white; .title-group{h4{padding-left: 40px;}}
+                }
+            }
+        }
+    }
+
+   
+    @media (max-width: 1024px) {
+        .skew-box-container .skew-box{padding: 30px 60px;}
+        .skew-box-container.three .skew-box{padding: 20px 10px 20px 40px;}
+        .skew-box-container.three{grid-template-columns: 1fr 1fr; grid-template-rows: auto auto;}
+        
+        .skew-box-container.three .skew-box{
+            &:last-child{
+                grid-row: 2; grid-column: span 2;
+                display: flex;
+                justify-content: center;
+                padding: 40px 0;
+                transform: scaleX(1) skew(-21deg);
+            }
+        }
+    }
+    
+
+    @media (max-width: 768px) {
+        .board-committee-section .container .content-data{padding: 40px 0;}
+        .board-committee-text-section .container .content-data{padding: 40px 20px;}
+
+        .skew-box-container, .skew-box-container.three{grid-template-columns: 1fr;}
+        .skew-box-container .skew-box{
+            display: flex;
+            justify-content: center;
+            transform: skew(-25deg) scaleX(1) ;
+        }
+
+        .skew-box-container.three .skew-box:first-child{
+            transform: skew(-21deg) scaleX(1) ;
+        }
+
+        .skew-box-container.three .skew-box:last-child{
+            grid-column: span 1;
+            grid-row: 3;
+            padding: 20px 10px 20px 40px;
+            transform: skew(-21deg) scaleX(1) ;
+        }
+
+        .skew-box-container.three .skew-box{
+            transform: skew(-25deg) scaleX(1);
+            &:nth-child(odd){
+                background: var(--primary-pink);
+            }
+            &:nth-child(even){
+                background: #0054bc;
+            }
+        }
+
+        .skew-box-container .skew-box .box-content .title{font-size: 24px;}
+        .skew-box-container .skew-box .box-content .members .member{font-size: 16px;}
+
+    }
+
+    @media (max-width: 650px) {
+        
+    }
+
+    @media (max-width: 480px) {
+        .board-committee-section .container .content-data{padding: 20px 0;}
+        .board-committee-text-section .container .content-data{padding: 20px}
+        .board-committee-section .container .content-data .title-group{padding: 0 20px;}
+        .board-committee-text-section .container .content-data .title-group .description-holder p{padding-left: 20px;}
+        .board-committee-text-section .container .content-data .committee-holder .title-group{.description-holder p{padding-left: 20px;}}
+        .board-committee-text-section .container .content-data .committee-holder .title-group h4{padding-left: 0px;}
+        .skew-box-container .skew-box .box-content .title{font-size: 20px;}
+        .skew-box-container .skew-box .box-content .members .member{font-size: 14px;}
+    }
+
+    @media (max-width: 430px) {
+    }
+
+    @media (max-width: 380px) {
+     
+    }
+
+}
+
+

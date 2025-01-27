@@ -345,22 +345,25 @@ h3.section-sub-title{
 
 	&.centered{justify-items: center; align-content: center; text-align: center;}
 	&.half-width{max-width: 636px;}
-	h1, h3{font-size: 75px; line-height: 1.2; text-transform: uppercase; color: #ffffff; font-weight: bold; font-family: 'AvenirCondencedItalic'; }
+	h1, h3, h4{font-size: 75px; line-height: 1.2; text-transform: uppercase; color: #ffffff; font-weight: bold; font-family: 'AvenirCondencedItalic'; }
 	h3{font-size: 54px}
+	h4{font-size: 36px;}
 	.description-holder p{ font-size: 18px;  color: #ffffff; text-align: center; line-height: 1.3;}
 
 	&.shadow{
-		h1{text-shadow: 3px 4px 3px #0c0c0c;}
+		h1, h3, h4{text-shadow: 3px 4px 3px #0c0c0c;}
 	}
 	
 
 	@media (max-width: 1300px) {
 		h1{font-size: 65px;} .description-holder p{font-size: 16px;}
 		h3{font-size: 42px;}
+		h4{font-size: 36px;}
 	}
 	@media (max-width: 1024px) {
 		h1{font-size: 55px;} .description-holder p{font-size: 14px;}
 		h3{font-size: 32px;}
+		h4{font-size: 32px;}
 	}
 
 	@media (max-width: 992px) {
@@ -371,18 +374,21 @@ h3.section-sub-title{
 		&.shadow {h1{text-shadow: 1.5px 2px 1.5px #0c0c0c;}}
 		h1{font-size: 45px; } 
 		h3{font-size: 28px;}
+		h4{font-size: 26px;}
 	}
 
 	@media (max-width: 650px) {
 		grid-gap: 10px;
 		h1{font-size: 35px;  } .description-holder p{font-size: 14px; line-height: 16px;}
 		h3{font-size: 22px;}
+		h4{font-size: 20px;}
 	}
 
 	@media (max-width: 480px) {
 		grid-gap: 8px;
 		h1{font-size: 30px;} .description-holder p{font-size: 12px; line-height: 14px;}
 		h3{font-size: 18px;}
+		h4{font-size: 16px;}
 	}
 }
 
