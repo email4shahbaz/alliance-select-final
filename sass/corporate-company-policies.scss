@@ -1,6 +1,7 @@
 #corporate-governance-policies{
     background: var(--primary-dark);
     .policies-section{
+        background: url("../images/backgrounds/corporate-govern-policiesbg.jpg");
         .container{padding: 0;
             .content-data{
                 padding: 60px 40px 60px 0;
@@ -60,7 +61,7 @@
     }
 
     .company-policy-text-section{
-        background: url("../images/backgrounds/corporate-govern-enterprisebg1.jpg"); background-size: cover; background-repeat: no-repeat;
+        background: var(--primary-dark);
 
         .container{
             padding: 0;
@@ -77,12 +78,12 @@
 
                 .committee-holder{
                     .committee{
-                        padding-right: 470px;
-                        &:first-child{padding-right: 270px;}
+                        padding-right: 460px;
+                        &:first-child{padding-right: 370px;}
                     }
                 }
 
-                .title-group{.description-holder{p{text-align: left;  line-height: 1.5;}}}
+                .title-group{gap: 10px; .description-holder{p{text-align: left;  line-height: 1.5;}}}
 
                 // .committee-holder{
                 //     .title-group{h4{padding-left: 40px;}}
@@ -92,18 +93,19 @@
     }
 
     @media (max-width: 1152px) {
-        .company-policy-text-section .container .content-data .committee-holder .committee:first-child{padding-right: 40px;}
+        .company-policy-text-section .container .content-data .committee-holder .committee:first-child{padding-right: 160px;}
         .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2){padding-right: 380px;}
     }
    
     @media (max-width: 1024px) {
+        .company-policy-text-section .container .content-data .right-image{right: -20px; width: 470px;}
         .policies-section .container .content-data .policies-holder .policy .heading{margin-right:40px ;}
         .policies-section .container .content-data .policies-holder .policy:nth-child(2){.heading{margin-right:50px ;}}
     }
 
     @media (max-width: 850px) {
         .policies-section .container .content-data .policies-holder .policy:nth-child(2){.heading{margin-right:20px ;}}
-        .company-policy-text-section .container .content-data .right-image{width: 400px; height: auto;}
+        .company-policy-text-section .container .content-data .right-image{width: 390px; height: auto;}
         .company-policy-text-section .container .content-data{padding: 30px}
         .policies-section .container .content-data{padding: 30px 30px 30px 0;}
         .policies-section .container .content-data .policies-holder .policy .description{padding: 0 0 0 30px;}

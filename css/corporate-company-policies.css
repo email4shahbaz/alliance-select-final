@@ -1,6 +1,9 @@
 #corporate-governance-policies {
   background: var(--primary-dark);
 }
+#corporate-governance-policies .policies-section {
+  background: url("../images/backgrounds/corporate-govern-policiesbg.jpg");
+}
 #corporate-governance-policies .policies-section .container {
   padding: 0;
 }
@@ -50,9 +53,7 @@
   margin: 0 20px 0 0;
 }
 #corporate-governance-policies .company-policy-text-section {
-  background: url("../images/backgrounds/corporate-govern-enterprisebg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--primary-dark);
 }
 #corporate-governance-policies .company-policy-text-section .container {
   padding: 0;
@@ -69,10 +70,13 @@
   bottom: 0;
 }
 #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee {
-  padding-right: 470px;
+  padding-right: 460px;
 }
 #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:first-child {
-  padding-right: 270px;
+  padding-right: 370px;
+}
+#corporate-governance-policies .company-policy-text-section .container .content-data .title-group {
+  gap: 10px;
 }
 #corporate-governance-policies .company-policy-text-section .container .content-data .title-group .description-holder p {
   text-align: left;
@@ -80,13 +84,17 @@
 }
 @media (max-width: 1152px) {
   #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:first-child {
-    padding-right: 40px;
+    padding-right: 160px;
   }
   #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2) {
     padding-right: 380px;
   }
 }
 @media (max-width: 1024px) {
+  #corporate-governance-policies .company-policy-text-section .container .content-data .right-image {
+    right: -20px;
+    width: 470px;
+  }
   #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .heading {
     margin-right: 40px;
   }
@@ -99,7 +107,7 @@
     margin-right: 20px;
   }
   #corporate-governance-policies .company-policy-text-section .container .content-data .right-image {
-    width: 400px;
+    width: 390px;
     height: auto;
   }
   #corporate-governance-policies .company-policy-text-section .container .content-data {
