@@ -1,0 +1,186 @@
+#corporate-governance-board-committee {
+  background: var(--primary-dark);
+}
+#corporate-governance-board-committee .board-committee-section {
+  background: var(--primary-dark);
+}
+#corporate-governance-board-committee .board-committee-section .container {
+  padding: 0;
+}
+#corporate-governance-board-committee .board-committee-section .container .content-data {
+  padding: 80px 0;
+}
+#corporate-governance-board-committee .board-committee-section .container .content-data .title-group {
+  padding: 0 120px;
+}
+#corporate-governance-board-committee .skew-box-container {
+  display: grid;
+  width: 100%;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+#corporate-governance-board-committee .skew-box-container.three {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+}
+#corporate-governance-board-committee .skew-box-container.three .skew-box {
+  padding: 40px 20px 40px 80px;
+}
+#corporate-governance-board-committee .skew-box-container .skew-box {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  background: #0054bc;
+  padding: 60px 120px;
+  transform: skewX(-25deg);
+}
+#corporate-governance-board-committee .skew-box-container .skew-box.red {
+  background: var(--primary-red);
+}
+#corporate-governance-board-committee .skew-box-container .skew-box.pink {
+  background: #f73f40;
+}
+#corporate-governance-board-committee .skew-box-container .skew-box:first-child {
+  transform-origin: 100%;
+  transform: scaleX(1.2) skewX(-21deg);
+}
+#corporate-governance-board-committee .skew-box-container .skew-box:first-child .box-content {
+  transform-origin: 100%;
+  transform: skew(21deg) scaleX(0.8);
+}
+#corporate-governance-board-committee .skew-box-container .skew-box:last-child {
+  transform-origin: 0%;
+  transform: scaleX(1.2) skewX(-21deg);
+}
+#corporate-governance-board-committee .skew-box-container .skew-box:last-child .box-content {
+  transform-origin: 0%;
+  transform: skew(21deg) scaleX(0.8);
+}
+#corporate-governance-board-committee .skew-box-container .skew-box .box-content {
+  transform: skew(25deg);
+  color: white;
+}
+#corporate-governance-board-committee .skew-box-container .skew-box .box-content .title {
+  font-size: 28px;
+  font-family: "AvenirBold";
+}
+#corporate-governance-board-committee .skew-box-container .skew-box .box-content .members {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+#corporate-governance-board-committee .skew-box-container .skew-box .box-content .members .member {
+  font-size: 18px;
+}
+#corporate-governance-board-committee .board-committee-text-section {
+  background: url("../images/backgrounds/corporate-govern-enterprisebg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#corporate-governance-board-committee .board-committee-text-section .container {
+  padding: 0;
+}
+#corporate-governance-board-committee .board-committee-text-section .container .content-data {
+  padding: 50px 80px;
+}
+#corporate-governance-board-committee .board-committee-text-section .container .content-data .title-group {
+  padding: 0 20px;
+}
+#corporate-governance-board-committee .board-committee-text-section .container .content-data .title-group .description-holder p {
+  text-align: left;
+  padding-left: 110px;
+  line-height: 1.5;
+}
+#corporate-governance-board-committee .board-committee-text-section .container .content-data .committee-holder {
+  border-left: 2px solid white;
+}
+#corporate-governance-board-committee .board-committee-text-section .container .content-data .committee-holder .title-group h4 {
+  padding-left: 40px;
+}
+@media (max-width: 1024px) {
+  #corporate-governance-board-committee .skew-box-container .skew-box {
+    padding: 30px 60px;
+  }
+  #corporate-governance-board-committee .skew-box-container.three .skew-box {
+    padding: 20px 10px 20px 40px;
+  }
+  #corporate-governance-board-committee .skew-box-container.three {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  #corporate-governance-board-committee .skew-box-container.three .skew-box:last-child {
+    grid-row: 2;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    transform: scaleX(1) skew(-21deg);
+  }
+}
+@media (max-width: 768px) {
+  #corporate-governance-board-committee .board-committee-section .container .content-data {
+    padding: 40px 0;
+  }
+  #corporate-governance-board-committee .board-committee-text-section .container .content-data {
+    padding: 40px 20px;
+  }
+  #corporate-governance-board-committee .skew-box-container, #corporate-governance-board-committee .skew-box-container.three {
+    grid-template-columns: 1fr;
+  }
+  #corporate-governance-board-committee .skew-box-container .skew-box {
+    display: flex;
+    justify-content: center;
+    transform: skew(-25deg) scaleX(1);
+  }
+  #corporate-governance-board-committee .skew-box-container.three .skew-box:first-child {
+    transform: skew(-21deg) scaleX(1);
+  }
+  #corporate-governance-board-committee .skew-box-container.three .skew-box:last-child {
+    grid-column: span 1;
+    grid-row: 3;
+    padding: 20px 10px 20px 40px;
+    transform: skew(-21deg) scaleX(1);
+  }
+  #corporate-governance-board-committee .skew-box-container.three .skew-box {
+    transform: skew(-25deg) scaleX(1);
+  }
+  #corporate-governance-board-committee .skew-box-container.three .skew-box:nth-child(odd) {
+    background: var(--primary-pink);
+  }
+  #corporate-governance-board-committee .skew-box-container.three .skew-box:nth-child(even) {
+    background: #0054bc;
+  }
+  #corporate-governance-board-committee .skew-box-container .skew-box .box-content .title {
+    font-size: 24px;
+  }
+  #corporate-governance-board-committee .skew-box-container .skew-box .box-content .members .member {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  #corporate-governance-board-committee .board-committee-section .container .content-data {
+    padding: 20px 0;
+  }
+  #corporate-governance-board-committee .board-committee-text-section .container .content-data {
+    padding: 20px;
+  }
+  #corporate-governance-board-committee .board-committee-section .container .content-data .title-group {
+    padding: 0 20px;
+  }
+  #corporate-governance-board-committee .board-committee-text-section .container .content-data .title-group .description-holder p {
+    padding-left: 20px;
+  }
+  #corporate-governance-board-committee .board-committee-text-section .container .content-data .committee-holder .title-group .description-holder p {
+    padding-left: 20px;
+  }
+  #corporate-governance-board-committee .board-committee-text-section .container .content-data .committee-holder .title-group h4 {
+    padding-left: 0px;
+  }
+  #corporate-governance-board-committee .skew-box-container .skew-box .box-content .title {
+    font-size: 20px;
+  }
+  #corporate-governance-board-committee .skew-box-container .skew-box .box-content .members .member {
+    font-size: 14px;
+  }
+}

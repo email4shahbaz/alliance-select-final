@@ -1,0 +1,196 @@
+#corporate-governance-policies {
+  background: var(--primary-dark);
+}
+#corporate-governance-policies .policies-section .container {
+  padding: 0;
+}
+#corporate-governance-policies .policies-section .container .content-data {
+  padding: 60px 40px 60px 0;
+}
+#corporate-governance-policies .policies-section .container .content-data .policies-holder {
+  display: grid;
+  gap: 40px;
+}
+#corporate-governance-policies .policies-section .container .content-data .policies-holder .policy {
+  color: white;
+}
+#corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .heading {
+  white-space: nowrap;
+  padding: 40px 200px 40px 60px;
+  float: left;
+  text-align: center;
+  margin: 0 70px 0 0;
+  background: var(--primary-pink);
+  clip-path: polygon(0% 0%, 60% 0%, 85% 100%, 0% 100%, 0% 0%);
+  shape-outside: polygon(0% 0%, 60% 0%, 85% 100%, 0% 100%, 0% 0%);
+}
+#corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .heading.blue {
+  background: #0054bc;
+}
+#corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .description {
+  position: relative;
+  padding: 0 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .description p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+#corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(2) .heading {
+  padding: 40px 150px 40px 60px;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%, 0% 0%);
+  shape-outside: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%, 0% 0%);
+  margin: 0 90px 0 0;
+}
+#corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(3) .heading {
+  padding: 40px 130px 40px 60px;
+  clip-path: polygon(0% 0%, 90% 0%, 70% 100%, 0% 100%, 0% 0%);
+  shape-outside: polygon(0% 0%, 90% 0%, 70% 100%, 0% 100%, 0% 0%);
+  margin: 0 20px 0 0;
+}
+#corporate-governance-policies .company-policy-text-section {
+  background: url("../images/backgrounds/corporate-govern-enterprisebg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#corporate-governance-policies .company-policy-text-section .container {
+  padding: 0;
+}
+#corporate-governance-policies .company-policy-text-section .container .content-data {
+  position: relative;
+  padding: 50px 0 50px 50px;
+}
+#corporate-governance-policies .company-policy-text-section .container .content-data .right-image {
+  float: right;
+  margin-left: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee {
+  padding-right: 470px;
+}
+#corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:first-child {
+  padding-right: 270px;
+}
+#corporate-governance-policies .company-policy-text-section .container .content-data .title-group .description-holder p {
+  text-align: left;
+  line-height: 1.5;
+}
+@media (max-width: 1152px) {
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:first-child {
+    padding-right: 40px;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2) {
+    padding-right: 380px;
+  }
+}
+@media (max-width: 1024px) {
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .heading {
+    margin-right: 40px;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(2) .heading {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 850px) {
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(2) .heading {
+    margin-right: 20px;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .right-image {
+    width: 400px;
+    height: auto;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data {
+    padding: 30px;
+  }
+  #corporate-governance-policies .policies-section .container .content-data {
+    padding: 30px 30px 30px 0;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .description {
+    padding: 0 0 0 30px;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee {
+    padding-right: 350px;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2) {
+    padding-right: 230px;
+  }
+}
+@media (max-width: 768px) {
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(1) {
+    padding-right: 0;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2) {
+    padding-right: 280px;
+  }
+}
+@media (max-width: 650px) {
+  #corporate-governance-policies .company-policy-text-section .container .content-data .right-image {
+    width: 300px;
+    height: auto;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee {
+    padding-right: 250px;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2) {
+    padding-right: 0;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .description p {
+    font-size: 16px;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .description {
+    top: initial;
+    transform: none;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(1) .heading,
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(2) .heading,
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(3) .heading {
+    padding: 10px 70px 10px 20px;
+    margin-right: 20px;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(1) .heading img,
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(2) .heading img,
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(3) .heading img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 480px) {
+  #corporate-governance-policies .company-policy-text-section .container .content-data .right-image {
+    width: 175px;
+    height: auto;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(3) {
+    padding-right: 0;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(4) {
+    padding-right: 0;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder {
+    gap: 20px;
+  }
+  #corporate-governance-policies .policies-section .container .content-data {
+    padding: 20px 20px 20px 0;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy .description {
+    padding-left: 20px;
+  }
+  #corporate-governance-policies .company-policy-text-section .container .content-data {
+    padding: 20px;
+  }
+}
+@media (max-width: 430px) {
+  #corporate-governance-policies .company-policy-text-section .container .content-data .right-image {
+    right: -60px;
+  }
+}
+@media (max-width: 380px) {
+  #corporate-governance-policies .company-policy-text-section .container .content-data .right-image {
+    right: -90px;
+  }
+  #corporate-governance-policies .policies-section .container .content-data .policies-holder .policy:nth-child(3) .heading {
+    padding-right: 30px;
+  }
+}

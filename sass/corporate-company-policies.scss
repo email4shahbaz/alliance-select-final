@@ -1,0 +1,159 @@
+#corporate-governance-policies{
+    background: var(--primary-dark);
+    .policies-section{
+        .container{padding: 0;
+            .content-data{
+                padding: 60px 40px 60px 0;
+                .policies-holder{
+                    display: grid;
+                    gap: 40px;
+                    .policy{
+                        color: white;
+                        //transform: skewX(25deg);
+                        //display: grid; grid-template-columns: 1fr 3fr; color: white; gap: 40px;
+                        .heading{
+                            white-space: nowrap;
+                            padding: 40px 200px 40px 60px;
+                            float: left;
+                            text-align: center;
+                           // width: 30%;
+                            //min-height: 400px;
+                            margin: 0 70px 0 0;
+                            background: var(--primary-pink);
+                            clip-path: polygon(0% 0%, 60% 0%, 85% 100%, 0% 100%, 0% 0%);
+                            shape-outside: polygon(0% 0%, 60% 0%, 85% 100%, 0% 100%, 0% 0%);
+
+                            &.blue{background: #0054bc;}
+                        }
+                        .description{
+                        position: relative;
+                           padding: 0 40px;
+                           top: 50%;
+                           transform: translateY(-50%);
+                            p{
+                                font-size: 18px; line-height: 1.5;
+                             }
+                        }
+
+                        &:nth-child(2){
+                            .heading{
+                                padding: 40px 150px 40px 60px;
+                                clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%, 0% 0%);
+                                shape-outside: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%, 0% 0%);
+                                margin: 0 90px 0 0;
+                            }
+
+                        }
+                        &:nth-child(3){
+                            .heading{
+                                padding: 40px 130px 40px 60px;
+                                clip-path: polygon(0% 0%, 90% 0%, 70% 100%, 0% 100%, 0% 0%);
+                                shape-outside: polygon(0% 0%, 90% 0%, 70% 100%, 0% 100%, 0% 0%);
+                                margin: 0 20px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+
+    .company-policy-text-section{
+        background: url("../images/backgrounds/corporate-govern-enterprisebg1.jpg"); background-size: cover; background-repeat: no-repeat;
+
+        .container{
+            padding: 0;
+            .content-data{
+                position: relative;
+                .right-image{
+                    float: right;
+                    margin-left: 40px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+                padding: 50px 0 50px 50px;
+
+                .committee-holder{
+                    .committee{
+                        padding-right: 470px;
+                        &:first-child{padding-right: 270px;}
+                    }
+                }
+
+                .title-group{.description-holder{p{text-align: left;  line-height: 1.5;}}}
+
+                // .committee-holder{
+                //     .title-group{h4{padding-left: 40px;}}
+                // }
+            }
+        }
+    }
+
+    @media (max-width: 1152px) {
+        .company-policy-text-section .container .content-data .committee-holder .committee:first-child{padding-right: 40px;}
+        .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2){padding-right: 380px;}
+    }
+   
+    @media (max-width: 1024px) {
+        .policies-section .container .content-data .policies-holder .policy .heading{margin-right:40px ;}
+        .policies-section .container .content-data .policies-holder .policy:nth-child(2){.heading{margin-right:50px ;}}
+    }
+
+    @media (max-width: 850px) {
+        .policies-section .container .content-data .policies-holder .policy:nth-child(2){.heading{margin-right:20px ;}}
+        .company-policy-text-section .container .content-data .right-image{width: 400px; height: auto;}
+        .company-policy-text-section .container .content-data{padding: 30px}
+        .policies-section .container .content-data{padding: 30px 30px 30px 0;}
+        .policies-section .container .content-data .policies-holder .policy .description{padding: 0 0 0 30px;}
+        .company-policy-text-section .container .content-data .committee-holder .committee{padding-right: 350px;}
+        .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2){padding-right: 230px;}
+    }
+
+    
+
+    @media (max-width: 768px) {
+        .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(1){padding-right: 0;}
+        .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2){padding-right: 280px;}
+
+    }
+
+    @media (max-width: 650px) {
+        .company-policy-text-section .container .content-data .right-image{width: 300px; height: auto;}
+        .company-policy-text-section .container .content-data .committee-holder .committee{padding-right: 250px;}
+        .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(2){padding-right: 0;}
+        .policies-section .container .content-data .policies-holder .policy .description p{font-size: 16px;}
+        .policies-section .container .content-data .policies-holder .policy .description{top: initial; transform: none;}
+
+
+        .policies-section .container .content-data .policies-holder .policy:nth-child(1),
+        .policies-section .container .content-data .policies-holder .policy:nth-child(2),
+        .policies-section .container .content-data .policies-holder .policy:nth-child(3) {
+            .heading{padding: 10px 70px 10px 20px; margin-right: 20px; img{width: 100px; height: 100px;}}
+        }
+    }
+
+    @media (max-width: 480px) {
+        .company-policy-text-section .container .content-data .right-image{width: 175px; height: auto;}
+        .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(3){padding-right: 0;}
+        .company-policy-text-section .container .content-data .committee-holder .committee:nth-child(4){padding-right: 0;}
+        .policies-section .container .content-data .policies-holder{gap: 20px;}
+
+        .policies-section .container .content-data{padding: 20px 20px 20px 0;}
+        .policies-section .container .content-data .policies-holder .policy .description{padding-left: 20px;}
+        .company-policy-text-section .container .content-data{padding: 20px;}
+    }
+
+    @media (max-width: 430px) {
+        .company-policy-text-section .container .content-data .right-image{right: -60px}
+    }
+
+    @media (max-width: 380px) {
+        .company-policy-text-section .container .content-data .right-image{right: -90px}
+        .policies-section .container .content-data .policies-holder .policy:nth-child(3) .heading{padding-right: 30px;}
+    }
+
+}
+
+
