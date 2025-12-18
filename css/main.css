@@ -43,10 +43,22 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "AvenirMedium";
+  src: local("AvenirNext LT Pro Medium"), url("../fonts/AvenirNextLTPro-Medium.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
   font-family: "AvenirCondencedItalic";
   font-style: normal;
   font-weight: 500;
   src: local("AvenirNext LT Pro MediumCn"), url("../fonts/AvenirNextLTPro-BoldCnIt.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirHeavy";
+  font-style: normal;
+  font-weight: 500;
+  src: local("AvenirNext LT Pro Heavy"), url("../fonts/AvenirNextLTPro-Heavy.ttf") format("opentype");
   font-display: swap;
 }
 @font-face {
@@ -61,6 +73,12 @@
   font-style: normal;
   font-weight: 500;
   src: local("AvenirNext LT Pro MediumCn"), url("../fonts/AvenirNextLTPro-DemiCn.otf");
+}
+@font-face {
+  font-family: "AWConqueror-Std";
+  font-style: normal;
+  font-weight: 500;
+  src: local("AWConqueror-Std Font"), url("../fonts/AWConqueror-Std.otf");
 }
 html {
   scroll-behavior: smooth;

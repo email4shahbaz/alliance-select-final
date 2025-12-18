@@ -1,3 +1,238 @@
+#brand-page {
+  background-color: #f6eacb;
+}
+#brand-page .gold-bg {
+  background: linear-gradient(85deg, #D6AD64 0%, #E5CE8F 100%);
+}
+#brand-page .g-hero-banner {
+  background-color: #d9b670;
+}
+#brand-page .g-hero-banner .banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: -65px;
+  display: block;
+}
+#brand-page .g-hero-banner .banner-text {
+  padding: 20px 60px;
+  text-align: center;
+  font-size: 32px;
+  margin-top: -180px;
+}
+#brand-page .feature-banner {
+  position: relative;
+  overflow: hidden;
+}
+#brand-page .feature-banner .feature-wrapper {
+  position: relative;
+}
+#brand-page .feature-banner .feature-wrapper .curve-top {
+  width: 100%;
+  height: 80px;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content {
+  display: flex;
+  background-color: #ffffff;
+  gap: 40px;
+  padding: 80px 20px 0 0;
+  min-height: 786px;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  overflow-x: clip;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-image img {
+  width: 100%;
+  height: fit-content;
+  top: 50%;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-image .first-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: auto;
+  height: 135%;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+  font-size: 65px;
+  font-family: "AvenirRegular";
+  color: #e1a400;
+  margin-bottom: 40px;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content h2 span {
+  font-family: "AvenirHeavy";
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li {
+  gap: 16px;
+  text-align: left;
+  margin-bottom: 24px;
+  display: flex;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li img {
+  width: 96px;
+  height: 90px;
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li .feature-heading {
+  font-size: 36px;
+  color: #333;
+  font-family: "AvenirBold";
+}
+#brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li .feature-txt {
+  font-family: "AvenirDemi";
+  font-size: 26px;
+  color: #555;
+  padding-right: 40px;
+  line-height: 1.2;
+}
+#brand-page .varients {
+  margin-top: -5px;
+}
+#brand-page .varients .gold-bg {
+  padding: 50px 130px 50px 120px;
+  text-align: center;
+}
+#brand-page .varients .gold-bg h2 {
+  font-size: 48px;
+  font-family: "AvenirBold";
+  color: #333;
+  margin-bottom: 40px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card {
+  width: 100%;
+  border-radius: 50px;
+  background-color: #362f2d;
+  padding: 30px 40px;
+  margin-bottom: 40px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card:nth-child(even) {
+  margin-right: 40px;
+  background-color: #ffffff;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card:nth-child(even) .card-text .varient-title {
+  color: #8c6011 !important;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card:nth-child(even) .card-text .varient-subtitle {
+  color: #000000 !important;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top {
+  display: flex;
+  padding: 0 8px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top img {
+  width: 250px;
+  height: fit-content;
+  box-shadow: 8px 12px 12px rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  background: #fff;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text {
+  color: white;
+  align-self: center;
+  text-align: left;
+  margin-left: 40px;
+  padding-right: 60px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {
+  font-family: "AvenirBold";
+  font-size: 35px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .checkmark {
+  display: flex;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .checkmark img {
+  width: 48px;
+  height: 43px;
+  margin-right: 10px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .checkmark .varient-subtitle {
+  font-size: 22px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-bottom {
+  margin-top: 20px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-bottom .table-shadow {
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  overflow: hidden; /* clips table corners */
+  background: #fff;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table {
+  width: 100%;
+  border-collapse: separate; /* important! */
+  border-spacing: 0; /* remove gaps */
+  border-radius: 8px; /* rounded corners */
+  overflow: hidden;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table thead {
+  color: white;
+  background-color: #ae8338;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table thead tr th {
+  font-family: "AvenirBold";
+  font-size: 18px;
+  padding: 16px 0;
+  border: none;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr {
+  background-color: white;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td {
+  font-family: "AvenirDemi";
+  font-size: 18px;
+  padding: 10px 5px;
+  border-spacing: 2; /* remove gaps */
+  border-left: 2px solid #232323;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td:first-child {
+  border-left: none; /* Remove left border for the first cell */
+  border-spacing: 0;
+}
+@media screen and (max-width: 600px) {
+  #brand-page .responsive-table thead {
+    display: none;
+  }
+  #brand-page .responsive-table tr {
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px; /* round corners per row */
+    padding: 8px;
+  }
+  #brand-page .responsive-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 12px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  #brand-page .responsive-table td:last-child {
+    border-bottom: none;
+  }
+  #brand-page .responsive-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex: 1;
+  }
+}
 #brand-page .main-heading .section-title {
   margin-top: 20px;
   margin-bottom: 20px;

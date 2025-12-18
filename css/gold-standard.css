@@ -1,0 +1,441 @@
+#brand-page {
+  background-color: #f6eacb;
+}
+#brand-page .gold-bg {
+  background-color: #181B22;
+}
+#brand-page .g-hero-banner {
+  background-color: #2a2e3a;
+  background-image: url("../images/banners/gold-standard/fishes-bg.jpg");
+  position: relative;
+}
+#brand-page .g-hero-banner .banner-container {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+#brand-page .g-hero-banner .banner-container .banner-logo {
+  width: 40%;
+  padding-left: 60px;
+}
+#brand-page .g-hero-banner .banner-container .banner-logo img {
+  width: 94%;
+  height: fit-content;
+  margin-top: -100px;
+}
+#brand-page .g-hero-banner .banner-container .image-container {
+  width: 53%;
+}
+#brand-page .g-hero-banner .banner-container .image-container .banner-image {
+  width: 100%;
+  height: auto;
+  margin-top: -40px;
+}
+#brand-page .g-hero-banner .banner-text {
+  padding: 20px 118px;
+  text-align: center;
+  font-size: 29px;
+  color: #ffffff;
+}
+#brand-page .g-hero-banner .banner-text .brand-story {
+  margin: 0;
+  line-height: 2;
+  overflow: hidden;
+}
+#brand-page .g-hero-banner .banner-text .btn-container {
+  display: flex;
+  justify-content: center;
+}
+#brand-page .g-hero-banner .banner-text .btn-container .btnReadMore {
+  margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 15px 30px;
+}
+#brand-page .g-hero-banner .banner-text .btn-container .btnReadMore:hover {
+  background-color: rgba(255, 255, 255, 0.2666666667);
+}
+#brand-page .g-hero-banner .feature-wrapper {
+  position: relative;
+  margin-top: 90px;
+}
+#brand-page .g-hero-banner .feature-wrapper .curve-top {
+  width: 100%;
+  height: fit-content;
+}
+#brand-page .g-hero-banner .feature-wrapper .feature-content {
+  display: flex;
+  background-color: #ffffff;
+  gap: 40px;
+  margin-top: -5px;
+  overflow-x: clip;
+}
+#brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+#brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image img {
+  width: 100%;
+  height: fit-content;
+  top: 50%;
+}
+#brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .first-image, #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .second-image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: auto;
+  height: 200%;
+}
+#brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .first-image {
+  transform: translateX(10%) translateY(-58%);
+}
+#brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .second-image {
+  height: 160%;
+  transform: translateX(37%) translateY(-40%);
+}
+#brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content {
+  width: 60%;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+#brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+  text-align: center;
+  font-size: 65px;
+  font-family: "AWConqueror-Std";
+  color: #C8981D;
+  margin-bottom: 40px;
+}
+#brand-page .varients {
+  margin-top: -5px;
+}
+#brand-page .varients .gold-bg {
+  padding: 50px 70px 50px 90px;
+  text-align: center;
+}
+#brand-page .varients .gold-bg h2 {
+  font-size: 52px;
+  font-family: "AvenirBold";
+  color: #c99f3a;
+}
+#brand-page .varients .gold-bg h3 {
+  font-size: 36px;
+  font-family: "AvenirBold";
+  font-style: italic;
+  color: #ffffff;
+  margin: 10px 0 40px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card {
+  width: 100%;
+  border-radius: 50px;
+  background-color: #15151F;
+  padding: 30px 40px;
+  margin-bottom: 40px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card:nth-child(even) {
+  margin-right: 40px;
+  background-color: #ffffff;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card:nth-child(even) .card-text .table-shadow table tbody tr {
+  background-color: #E1E1E1;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top {
+  display: flex;
+  gap: 20px;
+  padding: 0 8px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
+  width: 250px;
+  height: fit-content;
+  border-radius: 4px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text {
+  color: white;
+  align-self: center;
+  text-align: left;
+  margin: 0 40px;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {
+  color: #c99f3a;
+  font-family: "AvenirBold";
+  font-size: 44px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .table-shadow {
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  overflow: hidden; /* clips table corners */
+  background: #fff;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table {
+  width: 100%;
+  text-align: center;
+  border-collapse: separate; /* important! */
+  border-spacing: 0; /* remove gaps */
+  border-radius: 8px; /* rounded corners */
+  overflow: hidden;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead {
+  color: white;
+  background-color: #2A2E3A;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th {
+  font-family: "AvenirBold";
+  font-size: 18px;
+  padding: 16px 0;
+  border: none;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr {
+  background-color: white;
+  color: #232323;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td {
+  font-family: "AvenirDemi";
+  font-size: 18px;
+  padding: 20px 10px;
+  border-spacing: 2; /* remove gaps */
+  border-left: 2px solid #232323;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td:first-child {
+  border-left: none; /* Remove left border for the first cell */
+  border-spacing: 0;
+}
+#brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description {
+  font-size: 26px;
+  margin-top: 25px;
+}
+@media (max-width: 1152px) {
+  #brand-page .g-hero-banner .banner-text p {
+    font-size: 24px;
+    margin: 0;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .first-image {
+    height: 180%;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .second-image {
+    height: 140%;
+    transform: translateX(50%) translateY(-40%);
+  }
+  #brand-page .varients .gold-bg h2 {
+    font-size: 40px;
+  }
+  #brand-page .varients .gold-bg h3 {
+    font-size: 28px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text {
+    padding: 0;
+    margin: 0;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
+    width: 220px;
+  }
+  #brand-page .varients .gold-bg {
+    padding: 30px 80px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top img {
+    width: 180px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text {
+    margin-left: 20px;
+    padding-right: 20px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .first-image {
+    height: 160%;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .second-image {
+    height: 160%;
+    transform: translateX(40%) translateY(-40%);
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content {
+    padding: 30px 0;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+  #brand-page .g-hero-banner .feature-wrapper {
+    margin-top: 40px;
+  }
+  #brand-page .varients .gold-bg {
+    padding: 30px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
+    width: 180px;
+  }
+}
+@media (max-width: 870px) {
+  #brand-page .g-hero-banner .banner-text .brand-story {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content {
+    padding: 20px 0;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th {
+    font-size: 12px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td {
+    font-size: 12px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #brand-page .g-hero-banner .banner-container {
+    gap: 40px;
+  }
+  #brand-page .g-hero-banner .banner-container .banner-logo {
+    padding-left: 30px;
+  }
+  #brand-page .g-hero-banner .banner-text {
+    padding: 20px 60px;
+  }
+  #brand-page .g-hero-banner .feature-wrapper {
+    margin-top: 30px;
+  }
+  #brand-page .varients .gold-bg h2 {
+    font-size: 32px;
+  }
+  #brand-page .varients .gold-bg h3 {
+    font-size: 22px;
+  }
+  #brand-page .varients .gold-bg {
+    padding: 30px 30px 10px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {
+    font-size: 24px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
+    width: 120px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card {
+    border-radius: 25px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td {
+    padding: 10px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .table-shadow {
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 650px) {
+  #brand-page .g-hero-banner .banner-text .brand-story {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #brand-page .g-hero-banner .banner-text .btn-container .btnReadMore {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .first-image {
+    height: 140%;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-image .second-image {
+    height: 130%;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content {
+    padding: 10px 0;
+  }
+  #brand-page .varients .gold-bg {
+    padding: 20px 20px 10px;
+  }
+}
+@media (max-width: 480px) {
+  #brand-page .g-hero-banner .banner-container {
+    gap: 20px;
+  }
+  #brand-page .g-hero-banner .banner-container .banner-logo {
+    padding-left: 15px;
+  }
+  #brand-page .g-hero-banner .banner-text .brand-story {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  #brand-page .g-hero-banner .banner-text {
+    padding: 10px 30px;
+  }
+  #brand-page .varients .gold-bg h2 {
+    font-size: 24px;
+  }
+  #brand-page .varients .gold-bg h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {
+    font-size: 18px;
+    text-align: center;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
+    width: 80px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card {
+    padding: 10px;
+    border-radius: 15px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top {
+    padding: 0;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content {
+    padding: 10px 0;
+  }
+  #brand-page .varients .gold-bg {
+    padding: 10px 0 0 0;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 430px) {
+  #brand-page .g-hero-banner .banner-text .brand-story {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+    font-size: 18px;
+  }
+  #brand-page .varients .gold-bg h2 {
+    font-size: 18px;
+  }
+  #brand-page .varients .gold-bg h3 {
+    font-size: 14px;
+  }
+}
