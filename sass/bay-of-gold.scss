@@ -1,11 +1,24 @@
 #brand-page{
-    background-color: #f6eacb;
-    .gold-bg {
-        background: linear-gradient(
+    background: linear-gradient(
             85deg,
             #D6AD64 0%,
             #E5CE8F 100%
         );
+    .swiper-wrapper {
+        align-items: stretch;
+    }
+    .swiper-slide {
+        height: auto;
+        display: flex;
+    }
+
+    .container{padding: 0;}
+    .gold-bg {
+        // background: linear-gradient(
+        //     85deg,
+        //     #D6AD64 0%,
+        //     #E5CE8F 100%
+        // );
     }
     .g-hero-banner{
         background-color: #d9b670;
@@ -18,10 +31,11 @@
         }
        
         .banner-text{
-                padding: 20px 60px;
+                padding: 20px 80px;
                 text-align: center;
                 font-size: 32px;
-                margin-top: -180px;
+                margin-top: -200px;
+                line-height: 1.8;
                // padding-top: 64px;
         }
     }
@@ -32,6 +46,10 @@
         overflow: hidden;
         .feature-wrapper{
             position: relative;
+            
+             display: flex;
+  flex-direction: column;
+  flex: 1;
             .curve-top{
                 width: 100%;
                 height: fit-content;
@@ -39,10 +57,12 @@
         
             .feature-content{
                 display: flex;
+                flex: 1;
+                margin-top: -3px;
+
                 background-color: #ffffff;
                 gap: 40px;
-                padding: 80px 20px 0 0;
-                min-height: 786px;
+                padding: 20px 40px 0 0;
 
                 .feature-image{
                     position: relative;
@@ -84,7 +104,7 @@
                     display: flex;
                     align-items: center;
                     h2{
-                        font-size: 65px;
+                        font-size: 80px;
                         font-family: 'AvenirRegular';
                         color: #e1a400;
                         margin-bottom: 40px;
@@ -133,10 +153,10 @@
     .varients{
         margin-top: -5px;
        .gold-bg{
-            padding: 50px 130px 50px 120px;
+            padding: 76px 160px 50px 170px;
             text-align: center;
             h2{
-                font-size: 48px;
+                font-size: 56px;
                 font-family: 'AvenirBold';
                 color: #333;
                 margin-bottom: 40px;
@@ -163,7 +183,7 @@
                         display: flex;
                         padding: 0 8px;
                         .v-img{
-                            width: 250px;
+                            width: 270px;
                             height: fit-content;
                             box-shadow: 8px 12px 12px rgba(0, 0, 0, 0.35);
                             border-radius: 4px;
@@ -177,7 +197,7 @@
                             padding-right: 60px;
                             .varient-title{
                                 font-family: 'AvenirBold';
-                                font-size: 35px;
+                                font-size: 37px;
                                 margin-bottom: 10px;
                                 line-height: 1;
                             }
@@ -218,7 +238,7 @@
                                     th{
                                         font-family: 'AvenirBold';
                                         font-size: 18px;
-                                        padding: 16px 0;
+                                        padding: 16px 5px;
                                         border: none;
                                     }
                                 }
@@ -262,9 +282,8 @@
         .g-hero-banner .banner-text p{font-size: 24px; margin: 0;}
         .feature-banner .feature-wrapper .feature-content {
             padding: 40px 20px 0 0;
-            min-height: 620px;
             .feature-txt-content{
-                h2{font-size: 50px;}
+                h2{font-size: 65px;}
                 .feature-list li {.feature-heading{font-size: 26px;} .feature-txt{font-size: 18px;}}
             }
         }
@@ -272,12 +291,12 @@
         .varients .gold-bg {
             padding: 30px 80px;
             .cards-container .varient-card .card-top {
-                img{ width: 180px; }
+                .v-img{ width: 220px; }
                 .card-text {
                     margin-left: 20px;
                     padding-right: 20px;
                     .varient-title { font-size: 32px; }
-                    .checkmark .varient-subtitle { font-size: 18px; }
+                    .checkmark .varient-subtitle { font-size: 20px; }
                 }
             }
         }
@@ -294,7 +313,6 @@
     @media (max-width: 870px) {
         .feature-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 40px; margin-bottom: 30px;}
         .varients .gold-bg{padding: 20px 40px;}
-        .feature-banner .feature-wrapper .feature-content{min-height: 700px;}
         #brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li .feature-heading { font-size: 22px; }
         #brand-page .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li .feature-txt { font-size: 16px; }   
         .feature-banner .feature-wrapper .feature-content .feature-image .first-image{ height: 110%; }
@@ -306,7 +324,7 @@
     @media (max-width: 768px) {
         .g-hero-banner .banner-text {margin-top: -120px}
         .g-hero-banner .banner-text p{font-size: 18px;}
-        .feature-banner .feature-wrapper .feature-content{padding: 0; min-height: 450px; gap: 20px;
+        .feature-banner .feature-wrapper .feature-content{padding: 0;  gap: 20px;
             .feature-txt-content{
                 h2{font-size: 32px; margin-bottom: 30px;}
                 .feature-list li {.feature-heading{font-size: 18px;} .feature-txt{font-size: 14px;} img{width: 50px; height: 45px;}}
@@ -316,7 +334,7 @@
             height: 90%;
         }
          .varients .gold-bg h2{font-size: 32px; margin-bottom: 20px;}
-        .varients .gold-bg{padding: 20px 10px;}
+        .varients .gold-bg{padding: 20px 40px;}
         .varients .gold-bg .cards-container .varient-card{border-radius: 20px; padding: 15px 20px; margin-bottom: 20px;}
         .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 124px;}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title{font-size: 24px;}
@@ -332,9 +350,9 @@
 
     }
     @media (max-width: 480px) {
-        .g-hero-banner .banner-text {margin-top: -80px; padding: 10px;}
-        .feature-banner .feature-wrapper .feature-content .feature-image .first-image{ height: 80%;}
-        .feature-banner .feature-wrapper .feature-content{flex-direction: column; align-items: center; min-height: 420px; padding: 10px 0 0 0;
+        .g-hero-banner .banner-text {margin-top: -80px; padding: 10px 50px;}
+        //.feature-banner .feature-wrapper .feature-content .feature-image .first-image{ height: 80%;}
+        .feature-banner .feature-wrapper .feature-content{/*flex-direction: column; align-items: center;*/  padding: 10px 0 0 0;
             .feature-txt-content{
                 width: 100%;
                 h2{font-size: 28px; margin-bottom: 20px;}
@@ -342,86 +360,27 @@
             }
         }
 
-        .feature-banner .feature-wrapper .feature-content .feature-txt-content h2{text-align: center;}
-        .feature-banner .feature-wrapper .feature-content .feature-image{
-             .third-image{ position: relative; width: 100%; transform: translateY(0px); }
-        }
+        .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list{padding-left: 0px;}
 
-        .feature-banner .feature-wrapper .feature-content .first-image-container{
-             .first-image{ position: relative; width: 100%; transform: translateY(0px); 
-                content: url('../images/banners/feature-images/banner-img1b.png');
-            }
-        }
-
-        .g-hero-banner .banner-text p{font-size: 16px;}
+        .g-hero-banner .banner-text p{font-size: 20px;}
         .feature-banner .feature-wrapper .feature-content .feature-txt-content h2 { font-size: 24px; }
         .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li{margin-bottom: 10px;}
         .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li .feature-heading { font-size: 14px; }
         .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li .feature-txt{ font-size: 12px; padding-right: 0px;}
-
-        .varients .gold-bg .cards-container .varient-card .card-top{ flex-direction: column; align-items: center; text-align: center;
-            .card-text{
-                margin-left: 0;
-                padding-right: 0;
-                margin-top: 20px;
-            }
-        }
-        .varients .gold-bg{padding: 10px 0;}
-        .varients .gold-bg .cards-container .varient-card .card-top .v-img{ width: 90px; height: auto;  }
-        .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title{font-size: 20px; text-align: center; line-height: 1.2;}
-        .varients .gold-bg .cards-container .varient-card .card-top .card-text .checkmark{flex-direction: column; align-items: center; gap: 10px; text-align: center;}
-
-        .responsive-table thead {
-            display: none;
-        }
-        .responsive-table colgroup {
-            display: none;
-        }
-        .responsive-table tr {
-            text-align: left;
-            display: block;
-            margin-bottom: 12px;
-           // border: 1px solid #ccc;
-            border-radius: 12px; /* round corners per row */
-            padding: 8px;
-        }
-        .responsive-table td {
-            display: flex;
-            gap: 40px;
-            text-align: right;
-            justify-content: space-between;
-            padding: 6px 12px;
-            border: none;
-            border-bottom: 1px solid #eee;
-
-            &::before {
-                text-align: left;
-            }
-        }
-        .responsive-table td:last-child {
-            border-bottom: none;
-        }
-        .responsive-table td::before {
-            content: attr(data-label);
-            font-weight: bold;
-            flex: 1;
-        }
-
-        .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td{
-            border-left: none;;
-        }
-        .varients .gold-bg .cards-container .varient-card{
-            &:nth-child(even){
-                margin-right: 0px;
-                .card-bottom table {background-color: #D6AD64; color: white}
-                .card-bottom table tbody tr{background-color: #D6AD64;}
-            }
-        }
+        .varients .gold-bg h2{font-size: 28px;}
+        .varients .gold-bg{padding: 10px 20px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .v-img{ width: 90px; height: 90px;  }
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title{font-size: 20px; /*text-align: center;*/ line-height: 1.2;}
+        .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td{ border-left: none;; }
 
     }
 
     @media (max-width: 430px) {
-       
+        .g-hero-banner .banner-text p{font-size: 16px;}
+        .varients .gold-bg .cards-container .varient-card{padding: 15px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text{padding-right: 10px;}
+        .varients .gold-bg .cards-container .varient-card .card-bottom table thead tr th{font-size: 12px;}
+        .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td{font-size: 12px;}
 
     }
 
