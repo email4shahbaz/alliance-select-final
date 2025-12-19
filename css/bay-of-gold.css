@@ -407,16 +407,39 @@
   #brand-page .varients .gold-bg {
     padding: 10px 20px;
   }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .checkmark {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .checkmark .varient-subtitle {
+    text-align: center;
+  }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
     width: 90px;
     height: 90px;
+    margin-bottom: 10px;
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {
-    font-size: 20px; /*text-align: center;*/
+    font-size: 20px;
+    text-align: center;
     line-height: 1.2;
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td {
     border-left: none;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table thead tr th {
+    font-size: 10px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td {
+    font-size: 10px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.35);
   }
 }
 @media (max-width: 430px) {
@@ -428,11 +451,5 @@
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text {
     padding-right: 10px;
-  }
-  #brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table thead tr th {
-    font-size: 12px;
-  }
-  #brand-page .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td {
-    font-size: 12px;
   }
 }

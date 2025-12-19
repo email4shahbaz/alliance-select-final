@@ -369,9 +369,16 @@
         .feature-banner .feature-wrapper .feature-content .feature-txt-content .feature-list li .feature-txt{ font-size: 12px; padding-right: 0px;}
         .varients .gold-bg h2{font-size: 28px;}
         .varients .gold-bg{padding: 10px 20px;}
-        .varients .gold-bg .cards-container .varient-card .card-top .v-img{ width: 90px; height: 90px;  }
-        .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title{font-size: 20px; /*text-align: center;*/ line-height: 1.2;}
+        .varients .gold-bg .cards-container .varient-card .card-top{flex-direction: column; align-items: center;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text .checkmark{flex-direction: column; align-items: center; gap: 10px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text .checkmark .varient-subtitle{text-align: center;}
+        .varients .gold-bg .cards-container .varient-card .card-top .v-img{ width: 90px; height: 90px; margin-bottom: 10px;  }
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title{font-size: 20px; text-align: center; line-height: 1.2;}
         .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td{ border-left: none;; }
+        .varients .gold-bg .cards-container .varient-card .card-bottom table thead tr th{font-size: 10px;}
+        .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td{font-size: 10px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .v-img{box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.35);}
+
 
     }
 
@@ -379,8 +386,6 @@
         .g-hero-banner .banner-text p{font-size: 16px;}
         .varients .gold-bg .cards-container .varient-card{padding: 15px;}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text{padding-right: 10px;}
-        .varients .gold-bg .cards-container .varient-card .card-bottom table thead tr th{font-size: 12px;}
-        .varients .gold-bg .cards-container .varient-card .card-bottom table tbody tr td{font-size: 12px;}
 
     }
 

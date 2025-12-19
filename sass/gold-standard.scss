@@ -1,8 +1,9 @@
 #brand-page{
-    background-color: #f6eacb;
+    background-color: #181B22;
     .gold-bg {
         background-color: #181B22;
     }
+    .container{padding: 0;}
     .g-hero-banner{
         background-color: #2a2e3a;
         background-image: url('../images/banners/gold-standard/fishes-bg.jpg');
@@ -31,9 +32,9 @@
             }
         }
         .banner-text{
-            padding: 20px 118px;
+            padding: 20px 110px;
             text-align: center;
-            font-size: 29px;
+            font-size: 31px;
             color: #ffffff;
            
 
@@ -104,7 +105,7 @@
                     align-items: center;
                     h2{
                         text-align: center;
-                        font-size: 65px;
+                        font-size: 72px;
                         font-family: 'AWConqueror-Std';
                         color: #C8981D;
                         margin-bottom: 40px;
@@ -119,7 +120,7 @@
     .varients{
         margin-top: -5px;
        .gold-bg{
-            padding: 50px 70px 50px 90px;
+            padding: 50px 95px 50px 110px;
             text-align: center;
             h2{
                 font-size: 52px;
@@ -152,15 +153,14 @@
                     width: 100%;
                     border-radius: 50px;
                     background-color: #15151F;
-                    padding: 30px 40px;
+                    padding: 60px 90px 25px 50px;
                     margin-bottom: 40px;
                     .card-top{
                         display: flex;
-                        gap: 20px;
-                        padding: 0 8px;
+                        gap: 30px;
                         .v-img{
-                            width: 250px;
-                            height: fit-content;
+                            width: 310px;
+                            height: 400px;
                            // box-shadow: 8px 12px 12px rgba(0, 0, 0, 0.35);
                             border-radius: 4px;
                             //background: #fff;
@@ -169,7 +169,8 @@
                             color: white;
                             align-self: center;
                             text-align: left;
-                            margin: 0 40px;
+                            width: 100%;
+                           // margin: 0 40px;
                             .varient-title{
                                 color: #c99f3a;
                                 font-family: 'AvenirBold';
@@ -197,7 +198,7 @@
                                         th{
                                             font-family: 'AvenirBold';
                                             font-size: 18px;
-                                            padding: 16px 0;
+                                            padding: 20px 40px;
                                             border: none;
                                         }
                                     }
@@ -209,7 +210,7 @@
                                         td{
                                             font-family: 'AvenirDemi';
                                             font-size: 18px;
-                                            padding: 20px 10px;
+                                            padding: 20px 40px;
                                             border-spacing: 2;         /* remove gaps */
                                             border-left: 2px solid #232323;
 
@@ -240,23 +241,14 @@
         .g-hero-banner .banner-text p{font-size: 24px; margin: 0;}
         .g-hero-banner .feature-wrapper .feature-content .feature-image .first-image{ height: 180%; }
         .g-hero-banner .feature-wrapper .feature-content .feature-image .second-image{ height: 140%; transform: translateX(50%) translateY(-40%); }
-
+        .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 60px;}
         .varients .gold-bg h2{font-size: 40px;}
         .varients .gold-bg h3{font-size: 28px;}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text{padding: 0; margin: 0}
-        .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 220px;}
-
-        .varients .gold-bg {
-            padding: 30px 80px;
-            .cards-container .varient-card .card-top {
-                img{ width: 180px; }
-                .card-text {
-                    margin-left: 20px;
-                    padding-right: 20px;
-                    .varient-title { font-size: 32px; }
-                }
-            }
-        }
+        .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 210px; height: 300px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {font-size: 32px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th{padding: 10px 30px; font-size: 14px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td{padding: 10px 30px; font-size: 14px;}
     }
 
     @media (max-width: 1024px) {
@@ -267,7 +259,8 @@
         .g-hero-banner .feature-wrapper{margin-top: 40px;}
         .varients .gold-bg{padding: 30px;}
         .varients .gold-bg .cards-container .varient-card{padding: 15px 20px; margin-bottom: 20px; }
-        .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 180px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 180px; height: 250px;}
+        .varients .gold-bg .cards-container .varient-card{border-radius: 30px;}
     }
 
     @media (max-width: 870px) {
@@ -288,7 +281,7 @@
         .varients .gold-bg h3{font-size: 22px;}
         .varients .gold-bg{padding: 30px 30px 10px}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title{font-size: 24px;}
-        .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 120px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 120px; height: 175px;}
         .varients .gold-bg .cards-container .varient-card{border-radius: 25px;}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td{padding: 10px;}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text .table-shadow{box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35)}
@@ -305,26 +298,33 @@
         .varients .gold-bg{padding: 20px 20px 10px}
     }
 
+    @media (max-width: 540px) {
+        .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 28px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description{font-size: 12px; margin-top: 10px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th{padding: 5px 10px; font-size: 10px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td{padding: 5px 10px; font-size: 10px;}
+
+    }
+
     @media (max-width: 480px) {
         .g-hero-banner .banner-container{gap: 20px;}
         .g-hero-banner .banner-container .banner-logo{padding-left: 15px;}
         .g-hero-banner .banner-text .brand-story{font-size: 14px; line-height: 1.8;}
         .g-hero-banner .banner-text{padding: 10px 30px;}
+        .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 24px; margin-bottom: 10px;}
+        .g-hero-banner .feature-wrapper .feature-content .feature-txt-content{padding: 10px 0;}
 
         .varients .gold-bg h2{font-size: 24px;}
         .varients .gold-bg h3{font-size: 16px; margin: 10px 0;}
 
         .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title{font-size: 18px; text-align: center;}
-        .varients .gold-bg .cards-container .varient-card .card-top{
-            flex-direction: column; align-items: center;
-        }
-        .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 80px;}
+        .varients .gold-bg .cards-container .varient-card .card-top{ gap: 10px; flex-direction: column; align-items: center; }
+        .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 100px; height: 110px;}
         .varients .gold-bg .cards-container .varient-card{padding: 10px; border-radius: 15px;}
         .varients .gold-bg .cards-container .varient-card .card-top{padding: 0}
-        .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 24px; margin-bottom: 10px;}
-        .g-hero-banner .feature-wrapper .feature-content .feature-txt-content{padding: 10px 0;}
-        .varients .gold-bg{padding: 10px 0 0 0}
-        .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description{font-size: 12px; margin-top: 10px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text .table-shadow{border-radius: 5px; }
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text table{border-radius: 4px; }
+        .varients .gold-bg{padding: 20px}
     }
 
     @media (max-width: 430px) {

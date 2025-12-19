@@ -1,5 +1,6 @@
 #brand-page{
-    background-color: rgb(206, 227, 239);
+    .container{padding: 0;}
+    background-color: #0C2F65;
     .gold-bg {
         background-color: #0C2F65;
     }
@@ -34,9 +35,10 @@
             }
         }
         .banner-text{
-            padding: 20px 118px;
+            padding: 0px 80px;
             text-align: center;
             font-size: 28px;
+            margin-top: -20px;
             color: #ffffff;
            
 
@@ -123,7 +125,7 @@
     .varients{
         margin-top: -5px;
        .gold-bg{
-            padding: 50px 70px 50px 90px;
+            padding: 50px 120px;
             text-align: center;
             h2{
                 font-size: 52px;
@@ -158,17 +160,14 @@
                     border-radius: 50px;
                     background-color: #20A9E0;
                     padding: 30px 40px;
-                    margin-bottom: 40px;
+                    margin-bottom: 30px;
                     .card-top{
                         display: flex;
-                        gap: 20px;
-                        padding: 0 8px;
+                        gap: 50px;
                         .v-img{
                             width: 350px;
                             height: fit-content;
-                           // box-shadow: 8px 12px 12px rgba(0, 0, 0, 0.35);
                             border-radius: 4px;
-                            //background: #fff;
                         }
                         .card-text{
                             color: white;
@@ -203,7 +202,7 @@
                                         th{
                                             font-family: 'AvenirBold';
                                             font-size: 18px;
-                                            padding: 16px 0;
+                                            padding: 10px 30px;
                                             border: none;
                                         }
                                     }
@@ -272,16 +271,18 @@
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content{padding: 30px 0;}
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 52px; margin-bottom: 30px;}
         .g-hero-banner .feature-wrapper{margin-top: 40px;}
-        .varients .gold-bg{padding: 30px;}
-        .varients .gold-bg .cards-container .varient-card{padding: 15px 20px; margin-bottom: 20px; }
+        .varients .gold-bg{padding: 30px 60px;}
+        .varients .gold-bg .cards-container .varient-card{padding: 15px 20px; margin-bottom: 20px; border-radius: 30px; }
         .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td{padding: 20px 10px;}
     }
 
     @media (max-width: 870px) {
-        .g-hero-banner .banner-container .banner-logo img{margin-top: -120px;}
+        .g-hero-banner .banner-container .banner-logo img{margin-top: -120px; margin-left: 0;}
+        
         .g-hero-banner .banner-text .brand-story{font-size: 22px; line-height: 1.8;}
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content{padding: 20px 0;}
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 54px; margin-bottom: 20px;}
+        .varients .gold-bg .cards-container .varient-card .card-top{gap:30px;}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th{font-size: 12px;}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td{font-size: 12px;}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description{font-size: 20px; margin-top: 15px;}
@@ -306,22 +307,30 @@
     }
 
     @media (max-width: 650px) {
-        .g-hero-banner .banner-text .brand-story{font-size: 18px; line-height: 1.5;}
+        .g-hero-banner .banner-container {gap: 0;}
+        .g-hero-banner .banner-container .image-container{margin-top: 20px; margin-left: 0;}
+        .g-hero-banner .banner-container .image-container img{ height:420px!important; width: fit-content!important;}
+        .g-hero-banner .banner-text .brand-story{font-size: 18px; line-height: 2.3;}
+        .g-hero-banner .banner-container .banner-logo img{margin-top: 0;}
         .g-hero-banner .banner-text .btn-container .btnReadMore{padding: 10px 20px; font-size: 16px;}
        // .g-hero-banner .feature-wrapper .feature-content .feature-image .first-image{height: 140%;}
        // .g-hero-banner .feature-wrapper .feature-content .feature-image .second-image{height: 130%;}
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 36px; margin-bottom: 20px;}
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content{padding: 10px 0;}
+        .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 24px; margin-bottom: 10px;}
+        .g-hero-banner .feature-wrapper .feature-content .feature-txt-content{padding: 10px 0;}
+
         .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 140px;}
-        .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th{padding: 8px 0;}
-        .varients .gold-bg{padding: 20px 20px 10px}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th{padding: 5px 10px; font-size: 10px;}
+        .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td{padding: 5px 10px; font-size: 10px;}
+        .varients .gold-bg{padding: 20px 40px}
     }
 
     @media (max-width: 480px) {
-        .g-hero-banner .banner-container{gap: 20px;}
-        .g-hero-banner .banner-container .banner-logo{padding-left: 15px;}
-        .g-hero-banner .banner-text .brand-story{font-size: 14px; line-height: 1.8;}
         .g-hero-banner .banner-text{padding: 10px 30px;}
+        .g-hero-banner .banner-container .image-container img{ height:280px!important; width: fit-content!important;}
+        .g-hero-banner .banner-text .brand-story{font-size: 14px; line-height: 2;}
+
 
         .varients .gold-bg h2{font-size: 24px;}
         .varients .gold-bg h3{font-size: 16px; margin: 10px 0;}
@@ -332,15 +341,17 @@
         }
         .varients .gold-bg .cards-container .varient-card .card-top .v-img{width: 100px;}
         .varients .gold-bg .cards-container .varient-card{padding: 10px; border-radius: 15px;}
-        .varients .gold-bg .cards-container .varient-card .card-top{padding: 0}
+        .varients .gold-bg .cards-container .varient-card .card-top{padding: 0; gap: 10px;}
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 26px; margin-bottom: 10px;}
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content{padding: 10px 0;}
-        .varients .gold-bg{padding: 10px 0}
+        .varients .gold-bg{padding: 20px}
         .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description{font-size: 12px; margin-top: 10px;}
     }
 
     @media (max-width: 430px) {
-        .g-hero-banner .banner-text .brand-story{font-size: 13px; line-height: 1.5;}
+        .g-hero-banner .banner-container .image-container img{ height:250px!important; width: fit-content!important;}
+        .g-hero-banner .banner-text .brand-story{font-size: 14px; line-height: 2;}
+
         .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2{font-size: 22px;}
         .varients .gold-bg h2{font-size: 18px;}
         .varients .gold-bg h3{font-size: 14px;}

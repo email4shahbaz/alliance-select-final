@@ -1,8 +1,11 @@
 #brand-page {
-  background-color: #f6eacb;
+  background-color: #181B22;
 }
 #brand-page .gold-bg {
   background-color: #181B22;
+}
+#brand-page .container {
+  padding: 0;
 }
 #brand-page .g-hero-banner {
   background-color: #2a2e3a;
@@ -32,9 +35,9 @@
   margin-top: -40px;
 }
 #brand-page .g-hero-banner .banner-text {
-  padding: 20px 118px;
+  padding: 20px 110px;
   text-align: center;
-  font-size: 29px;
+  font-size: 31px;
   color: #ffffff;
 }
 #brand-page .g-hero-banner .banner-text .brand-story {
@@ -107,7 +110,7 @@
 }
 #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
   text-align: center;
-  font-size: 65px;
+  font-size: 72px;
   font-family: "AWConqueror-Std";
   color: #C8981D;
   margin-bottom: 40px;
@@ -116,7 +119,7 @@
   margin-top: -5px;
 }
 #brand-page .varients .gold-bg {
-  padding: 50px 70px 50px 90px;
+  padding: 50px 95px 50px 110px;
   text-align: center;
 }
 #brand-page .varients .gold-bg h2 {
@@ -135,7 +138,7 @@
   width: 100%;
   border-radius: 50px;
   background-color: #15151F;
-  padding: 30px 40px;
+  padding: 60px 90px 25px 50px;
   margin-bottom: 40px;
 }
 #brand-page .varients .gold-bg .cards-container .varient-card:nth-child(even) {
@@ -147,19 +150,18 @@
 }
 #brand-page .varients .gold-bg .cards-container .varient-card .card-top {
   display: flex;
-  gap: 20px;
-  padding: 0 8px;
+  gap: 30px;
 }
 #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
-  width: 250px;
-  height: fit-content;
+  width: 310px;
+  height: 400px;
   border-radius: 4px;
 }
 #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text {
   color: white;
   align-self: center;
   text-align: left;
-  margin: 0 40px;
+  width: 100%;
 }
 #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {
   color: #c99f3a;
@@ -189,7 +191,7 @@
 #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th {
   font-family: "AvenirBold";
   font-size: 18px;
-  padding: 16px 0;
+  padding: 20px 40px;
   border: none;
 }
 #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr {
@@ -199,7 +201,7 @@
 #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td {
   font-family: "AvenirDemi";
   font-size: 18px;
-  padding: 20px 10px;
+  padding: 20px 40px;
   border-spacing: 2; /* remove gaps */
   border-left: 2px solid #232323;
 }
@@ -223,6 +225,9 @@
     height: 140%;
     transform: translateX(50%) translateY(-40%);
   }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+    font-size: 60px;
+  }
   #brand-page .varients .gold-bg h2 {
     font-size: 40px;
   }
@@ -234,20 +239,19 @@
     margin: 0;
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
-    width: 220px;
-  }
-  #brand-page .varients .gold-bg {
-    padding: 30px 80px;
-  }
-  #brand-page .varients .gold-bg .cards-container .varient-card .card-top img {
-    width: 180px;
-  }
-  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text {
-    margin-left: 20px;
-    padding-right: 20px;
+    width: 210px;
+    height: 300px;
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .varient-title {
     font-size: 32px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td {
+    padding: 10px 30px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1024px) {
@@ -277,6 +281,10 @@
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
     width: 180px;
+    height: 250px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card {
+    border-radius: 30px;
   }
 }
 @media (max-width: 870px) {
@@ -329,6 +337,7 @@
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
     width: 120px;
+    height: 175px;
   }
   #brand-page .varients .gold-bg .cards-container .varient-card {
     border-radius: 25px;
@@ -370,6 +379,23 @@
     padding: 20px 20px 10px;
   }
 }
+@media (max-width: 540px) {
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+    font-size: 28px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table thead tr th {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table tbody tr td {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}
 @media (max-width: 480px) {
   #brand-page .g-hero-banner .banner-container {
     gap: 20px;
@@ -384,6 +410,13 @@
   #brand-page .g-hero-banner .banner-text {
     padding: 10px 30px;
   }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content {
+    padding: 10px 0;
+  }
   #brand-page .varients .gold-bg h2 {
     font-size: 24px;
   }
@@ -396,11 +429,13 @@
     text-align: center;
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top {
+    gap: 10px;
     flex-direction: column;
     align-items: center;
   }
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top .v-img {
-    width: 80px;
+    width: 100px;
+    height: 110px;
   }
   #brand-page .varients .gold-bg .cards-container .varient-card {
     padding: 10px;
@@ -409,19 +444,14 @@
   #brand-page .varients .gold-bg .cards-container .varient-card .card-top {
     padding: 0;
   }
-  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .table-shadow {
+    border-radius: 5px;
   }
-  #brand-page .g-hero-banner .feature-wrapper .feature-content .feature-txt-content {
-    padding: 10px 0;
+  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text table {
+    border-radius: 4px;
   }
   #brand-page .varients .gold-bg {
-    padding: 10px 0 0 0;
-  }
-  #brand-page .varients .gold-bg .cards-container .varient-card .card-top .card-text .card-description {
-    font-size: 12px;
-    margin-top: 10px;
+    padding: 20px;
   }
 }
 @media (max-width: 430px) {
